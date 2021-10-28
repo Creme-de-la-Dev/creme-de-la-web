@@ -1,0 +1,63 @@
+// Colors
+$main-purple: #5260A6;
+$light-purple: #7989DE;
+$cta-orange: #D74E09;
+$cta-green: #35BB8E;
+$light-green: #6ABFA2;
+$light-gray: #F3F3F3;
+$text-white: #FBFBFB;
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+$poppins: "Poppins", sans-serif;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+
+// Body
+body {
+  background-color: $light-gray !important;
+}
+
+// Navbar
+.navbar {
+  background-color: $main-purple; 
+}
+
+.navbar-brand {
+  font-family: $poppins;
+  font-weight: $semibold;
+  color: $text-white;
+  letter-spacing: 0.1em;
+  
+}
+
+.navbar-brand  a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: $text-white !important;
+}
+
+a.nav-link {
+  color: $text-white !important;
+  font-family: $poppins;
+  font-weight: $regular;
+  letter-spacing: 0.05em;
+}
+
+button.navbar-toggler {
+  color: $light-gray;
+  border: 1px solid $light-gray;
+}
+
+.container-fluid {
+  padding: 0 30px !important;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding: 0 1.5rem !important;
+}
