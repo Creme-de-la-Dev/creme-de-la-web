@@ -22,6 +22,8 @@ body {
 // Navbar
 .navbar {
   background-color: $main-purple; 
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .navbar-brand {
@@ -60,4 +62,28 @@ button.navbar-toggler {
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding: 0 1.5rem !important;
+}
+
+// Home Page
+.home-header {
+  display: flex;
+  justify-content: space-between;
+}
+// .title-and-btn {
+//   display: flex;
+//   align-items: center;
+// }
+
+.ale-img {
+  width: 35% !important;
+  padding-top: 3rem;
+}
+
+.title {
+  display: flex;
+  align-content: center;
+  padding-top: 10rem;
+  font-family: $poppins;
+  font-weight: $semibold;
+  max-width: 640px;
 }
