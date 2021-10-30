@@ -4,6 +4,7 @@ import Headers from './Headers';
 import Footer from './Footer';
 
 import { Button } from 'reactstrap';
+import { FaArrowCircleDown } from 'react-icons/fa';
 import ale from './images/uale.png';
 
 function App() {
@@ -14,9 +15,9 @@ function App() {
         <div className="home-header">
           <div className="title-and-btn">
             <div className="title"><h1>Todo conteúdo que você adora, agora em um só lugar.</h1></div>
-            <div className="cta-btn">
+            <div>
               <Button>
-                  Explore a página
+                 <FaArrowCircleDown className="arrow-icon"/>  Explore a página
               </Button>
             </div>
           </div>
