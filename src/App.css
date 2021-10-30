@@ -70,9 +70,27 @@ button.navbar-toggler {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-top: 10rem;
+  padding: 10rem 0 6rem 0;
+  font-family: "Poppins", sans-serif;
+  max-width: 640px;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 600 !important;
+}
+
+.btn-secondary {
+  color: #FBFBFB;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  max-width: 640px;
+  font-size: 1.2em !important;
+  background-color: #D74E09 !important;
+  border-style: none !important;
+  width: 15em;
+  height: 3em;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 27px !important;
 }
 /*# sourceMappingURL=App.css.map */

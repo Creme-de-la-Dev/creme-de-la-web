@@ -16,7 +16,7 @@ function App() {
             <div className="title"><h1>Todo conteúdo que você adora, agora em um só lugar.</h1></div>
             <div className="cta-btn">
               <Button>
-                Explore a página
+                  Explore a página
               </Button>
             </div>
           </div>
@@ -28,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+  
