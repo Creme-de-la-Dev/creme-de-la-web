@@ -1,7 +1,10 @@
+// -------COMPONENTS-------
+
 // Colors
 $main-purple: #5260A6;
 $light-purple: #7989DE;
 $cta-orange: #D74E09;
+$cta-orange-hover: #b34006;
 $cta-green: #35BB8E;
 $light-green: #6ABFA2;
 $light-gray: #F3F3F3;
@@ -22,6 +25,8 @@ body {
 // Navbar
 .navbar {
   background-color: $main-purple; 
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .navbar-brand {
@@ -61,3 +66,54 @@ button.navbar-toggler {
 .navbar-expand-md .navbar-nav .nav-link {
   padding: 0 1.5rem !important;
 }
+
+// -------HOME-------
+.home-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ale-img {
+  width: 35% !important;
+  padding-top: 3rem;
+}
+
+.title {
+  display: flex;
+  align-content: center;
+  padding: 10rem 0 6rem 0;
+  font-family: $poppins;
+  max-width: 640px;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 600 !important;
+}
+
+.btn-secondary {
+  color: $text-white;
+  font-family: $poppins;
+  font-weight: $semibold;
+  font-size: 1.2em !important;
+  background-color: $cta-orange !important;
+  border-style: none !important;
+  width: 15em;
+  height: 3em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 27px !important;
+
+  &:hover {
+    background-color: $cta-orange-hover !important;
+    color: $light-gray !important;
+  }
+
+  &:focus {
+    border-color: none !important;
+  }
+}
+
+.arrow-icon {
+  margin-right: 2%;
+}
+
