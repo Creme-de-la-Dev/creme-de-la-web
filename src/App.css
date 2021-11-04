@@ -64,7 +64,7 @@ button.navbar-toggler {
   padding-top: 3rem;
 }
 
-.title {
+.title-class {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +72,8 @@ button.navbar-toggler {
       align-content: center;
   padding: 10rem 0 6rem 0;
   font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
   max-width: 640px;
 }
 
@@ -107,26 +109,15 @@ button.navbar-toggler {
   height: 100vh;
 }
 
-.card {
-  background-color: #F3F3F3;
-  max-width: 1000px;
-  max-height: 200px;
-}
-
 div.main {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 180vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-8.49%, #7989DE), color-stop(112.22%, #5260A6));
   background: linear-gradient(180deg, #7989DE -8.49%, #5260A6 112.22%);
   border-radius: 30px 30px 0px 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.cards {
+  padding-top: 50px;
 }
 
 div.container-card {
@@ -146,10 +137,12 @@ div.container-card {
   color: #fff;
   padding: 25px;
   border-radius: 10px;
+  margin: 2rem auto;
+  max-height: 328px;
 }
 
 .imag {
-  width: 50% !important;
+  width: 25% !important;
 }
 
 div.imag {
@@ -188,10 +181,16 @@ div.text-container p {
   border-radius: 27px !important;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   width: 30%;
+  height: 30%;
 }
 
 .green-cta-btn:hover {
@@ -200,6 +199,17 @@ div.text-container p {
 
 .play-icon {
   margin-right: 1%;
+  width: 20px;
+}
+
+.game-icon {
+  margin-right: 1%;
+  width: 20px;
+}
+
+.merch-icon {
+  margin-right: 1%;
+  width: 20px;
 }
 
 @media screen and (min-width: 768px) {
