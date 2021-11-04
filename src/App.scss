@@ -6,9 +6,11 @@ $light-purple: #7989DE;
 $cta-orange: #D74E09;
 $cta-orange-hover: #b34006;
 $cta-green: #35BB8E;
+$cta-green-hover: #269B74;
 $light-green: #6ABFA2;
 $light-gray: #F3F3F3;
 $text-white: #FBFBFB;
+$dark-gray: #1C1C1C;
 
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -86,12 +88,9 @@ button.navbar-toggler {
   max-width: 640px;
 }
 
-h1 {
-  font-size: 3rem !important;
-  font-weight: 600 !important;
-}
 
-.btn-secondary {
+
+.orange-cta-btn {
   color: $text-white;
   font-family: $poppins;
   font-weight: $semibold;
@@ -115,5 +114,107 @@ h1 {
 
 .arrow-icon {
   margin-right: 2%;
+}
+
+// Home Page Content
+.content {
+  margin-top: 10%;
+  height: 100vh;
+}
+
+// Card
+.card {
+  background-color: $light-gray;
+  max-width: 1000px;
+  max-height: 200px;
+}
+
+div.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #7989DE -8.49%, #5260A6 112.22%);
+  border-radius: 30px 30px 0px 0px;
+  justify-content: center;
+}
+
+div.container-card {
+  background: $light-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  color:#fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+.imag {
+  width: 50% !important;
+}
+
+div.imag {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+div.text-container {
+  margin: 60px 45px 55px;
+
+  h1 {
+    font-weight: 600;
+    margin: 0 0 15px;
+    font-family: $poppins;
+    color: $main-purple;
+  }
+  p {
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 30px 0;
+    color: $dark-gray;
+    font-family: $poppins;
+    padding-top: 5%;
+  }
+
+}
+
+.green-cta-btn {
+  background-color: $cta-green !important;
+  font-family: $poppins !important;
+  font-weight: 500 !important;
+  border-style: none !important;
+  padding: 3% 2% !important;
+  border-radius: 27px !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  width: 30%;
+  &:hover {
+    background-color: $cta-green-hover !important;
+  }
+}
+
+.play-icon {
+  margin-right: 1%;
+}
+
+@media screen and (min-width: 768px) {
+  div.container-card {
+    width: 100%;
+    flex-direction: row;
+  }
+  div.imag {
+    min-width: 360px;
+    height: 420px;
+  }
+  div.text-container {
+    margin: 0 60px;
+    max-width: 660px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.container-card {
+    max-width: 1200px;
+  }
 }
 
