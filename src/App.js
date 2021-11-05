@@ -82,6 +82,7 @@ function App() {
           </div>
         </div>
       </section>
+      < Footer />
     </div>
   );
 }
