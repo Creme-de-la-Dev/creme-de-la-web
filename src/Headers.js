@@ -41,7 +41,7 @@ const Headers = (props) => {
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
-                Merch
+                Loja
               </NavLink>
             </NavItem>
             <NavItem>

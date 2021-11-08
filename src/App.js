@@ -1,3 +1,6 @@
+// React
+import { useEffect } from 'react';
+
 // Style
 import './App.css';
 import 'animate.css';
@@ -8,7 +11,7 @@ import Footer from './Footer';
 
 // Images
 import ale from './images/uale.png';
-import series from './images/series-svg.svg';
+import shows from './images/series-svg.svg';
 import games from './images/games-svg.svg';
 import merch from './images/merch-svg.svg';
 
@@ -18,8 +21,17 @@ import { Button } from 'reactstrap';
 // Icons
 import { FaArrowCircleDown, FaPlayCircle, FaGamepad, FaShoppingCart } from 'react-icons/fa';
 
+// Animations
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+  
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div className="App">
       <Headers />
@@ -32,7 +44,7 @@ function App() {
               </h1>
             </div>
           <div>
-              <Button className="orange-cta-btn animate__animated animate__fadeInLeft">
+              <Button className="orange-cta-btn animate__animated animate__fadeInLeft" href="#main-section">
                  <FaArrowCircleDown className="arrow-icon"/>  Explore a página
               </Button>
             </div>
@@ -40,11 +52,11 @@ function App() {
             <img src={ale} alt="o ale." className="ale-img animate__animated animate__fadeIn"/>
         </div>
       </div>
-      <section className="content">
+      <section className="content" id="main-section">
         <div className="main">
           <div className="cards">
-            <div className="container-card animate__animated animate__fadeInUp">
-              <img className="imag" src={series} alt="series" />
+            <div className="container-card company aos-init aos-animate" data-aos="fade-up">
+              <img className="imag" src={shows} alt="shows" />
               <div className="text-container">
                 <h1>Séries Aclamadas</h1>
                 <p>
@@ -55,19 +67,19 @@ function App() {
                 </Button>
               </div>
             </div>
-            <div className="container-card animate__animated animate__fadeInUp">
+            <div className="container-card company aos-init aos-animate" data-aos="fade-up">
               <img className="imag" src={games} alt="games" />
               <div className="text-container">
                 <h1>Jogos Divertidos</h1>
                 <p>
-                  Jogos de navegador criaddos pela equipe Creme de la Nage estão disponíveis, sendo estes Flappy Catito, Lorax Kart e futuramente, Cremeball.
+                  Jogos de navegador criados pela equipe Creme de la Nage estão disponíveis, sendo estes Flappy Catito, Lorax Kart e futuramente, Cremeball.
                 </p>
                 <Button className="green-cta-btn">
                   <FaGamepad className="game-icon" /> Jogar Agora
                 </Button>
               </div>
             </div>
-            <div className="container-card animate__animated animate__fadeInUp">
+            <div className="container-card company aos-init aos-animate" data-aos="fade-up">
               <img className="imag" src={merch} alt="merch" />
               <div className="text-container">
                 <h1>Brinquedos e acessórios</h1>

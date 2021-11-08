@@ -39,12 +39,12 @@ const Footer = () => {
       
       <div className="mb-4">
         <FaPhoneAlt className="phone-icon" />
-        <p>+55 (11)96619-7577</p>
+        <p>+55 (11) 96619-7577</p>
       </div>
       
       <div>
       <MdEmail className="mail-icon" />
-      <p><a href="mailto:support@company.com">lolsniperwtf@gmail.com</a></p>
+      <p><a href="mailto:lolsniperwtf@gmail.com">lolsniperwtf@gmail.com</a></p>
       </div>
       
       </div>
@@ -57,11 +57,11 @@ const Footer = () => {
       </p>
       
       <div className="footer-icons">
-        <a href="#" className="icon"><FaFacebookSquare /></a>
-        <a href="#" className="icon"><FaTwitterSquare /></a>
-        <a href="#" className="icon"><FaInstagram /></a>
-        <a href="#" className="icon"><FaGithub /></a>
-        <a href="#" className="icon"><FaDiscord /></a>
+        <a href="https://www.facebook.com/aleapontando" target="_blank" className="icon"><FaFacebookSquare /></a>
+        <a href="https://twitter.com/boltifi3d/status/1449422645062246404?s=20" target="_blank" className="icon"><FaTwitterSquare /></a>
+        <a href="https://www.instagram.com/creme_de_la_nage" target="_blank" className="icon"><FaInstagram /></a>
+        <a href="https://github.com/Creme-de-la-Dev" target="_blank" className="icon"><FaGithub /></a>
+        <a href="https://discord.gg/GG8Sgg3P" target="_blank" className="icon"><FaDiscord /></a>
       </div>
       
       </div>
