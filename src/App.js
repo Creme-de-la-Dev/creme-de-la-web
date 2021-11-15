@@ -1,5 +1,5 @@
 // React
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // Style
 import './App.css';
@@ -11,6 +11,7 @@ import Footer from './Footer';
 
 // Images
 import ale from './images/uale.png';
+import alhe from './images/Alhe2.png';
 import shows from './images/series-svg.svg';
 import games from './images/games-svg.svg';
 import merch from './images/merch-svg.svg';
@@ -32,6 +33,8 @@ function App() {
     AOS.init();
   });
 
+  const [clickCount, setClickCount] = useState(0);
+
   return (
     <div className="App">
       <Headers />
@@ -49,7 +52,7 @@ function App() {
               </Button>
             </div>
           </div>
-            <img src={ale} alt="o ale." className="ale-img animate__animated animate__fadeIn"/>
+            <img src={clickCount >= 3 ? alhe : ale} onClick={() => setClickCount(clickCount + 1)} alt="o ale." className="ale-img animate__animated animate__fadeIn" id="ale"/>
         </div>
       </div>
       <section className="content" id="main-section">
