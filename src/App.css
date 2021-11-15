@@ -64,6 +64,12 @@ button.navbar-toggler {
   padding-top: 3rem;
 }
 
+.alhe-img {
+  background: url("https://res.cloudinary.com/dd7bkl8rd/image/upload/v1636569693/Alhe2_d2piji.png") no repeat;
+  width: 35% !important;
+  padding-top: 3rem;
+}
+
 .title-class {
   display: -webkit-box;
   display: -ms-flexbox;

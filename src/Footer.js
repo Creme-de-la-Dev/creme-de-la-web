@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="footer-icons">
         <a href="https://www.facebook.com/aleapontando" target="_blank" className="icon"><FaFacebookSquare /></a>
         <a href="https://twitter.com/boltifi3d/status/1449422645062246404?s=20" target="_blank" className="icon"><FaTwitterSquare /></a>
-        <a href="https://www.instagram.com/creme_de_la_nage" target="_blank" className="icon"><FaInstagram /></a>
+        <a href="https://www.instagram.com/creme_de_la_nage/?hl=pt" target="_blank" className="icon"><FaInstagram /></a>
         <a href="https://github.com/Creme-de-la-Dev" target="_blank" className="icon"><FaGithub /></a>
         <a href="https://discord.gg/GG8Sgg3P" target="_blank" className="icon"><FaDiscord /></a>
       </div>
