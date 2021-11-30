@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css';
 
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { FaPhoneAlt, FaFacebookSquare, FaTwitterSquare, FaInstagram, FaGithub, FaDiscord } from 'react-icons/fa';
