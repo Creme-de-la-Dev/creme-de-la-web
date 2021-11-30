@@ -14,15 +14,15 @@ const Footer = () => {
       
         <div className="link-and-copy">
         <p className="footer-links">
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         ·
-        <a href="#">Séries</a>
+        <a href="/shows/">Séries</a>
         ·
-        <a href="#">Jogos</a>
+        <a href="/games/">Jogos</a>
         ·
-        <a href="#">Loja</a>
+        <a href="/store/">Loja</a>
         ·
-        <a href="#">Sobre</a>
+        <a href="/about/">Sobre</a>
         </p>
         
         <p className="footer-company-name">Creme de la Nage &copy; 2021</p>

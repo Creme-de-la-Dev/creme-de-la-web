@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Main from './components/Main';
-import Footer from './components/Footer'
-// import Games from './components/Games'
+import Games from './components/Games';
+// import Shows from './components/Shows';
 
 const Router = (props) => (
 <Switch>
   <Route exact path='/' component={Main}/>
-  <Route exact path='/banana' component={Footer} />
+  <Route exact path='/games' component={Games} />
 </Switch>
 )
 export default Router;

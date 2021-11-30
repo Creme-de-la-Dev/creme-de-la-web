@@ -29,22 +29,22 @@ const Headers = (props) => {
             navbar
           >
             <NavItem>
-              <NavLink href="/components/">
+              <NavLink href="/shows/">
                 Séries
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink href="/games/">
                 Jogos
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink href="/store/">
                 Loja
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink href="/about/">
                 Sobre nós
               </NavLink>
             </NavItem>
