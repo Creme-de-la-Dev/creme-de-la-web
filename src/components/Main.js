@@ -73,7 +73,7 @@ function Main() {
                 <p>
                   Jogos de navegador criados pela equipe Creme de la Nage estão disponíveis, sendo estes Flappy Catito, Lorax Kart e futuramente, Cremeball.
                 </p>
-                <Button className="green-cta-btn">
+                <Button className="green-cta-btn" href="/games/">
                   <FaGamepad className="game-icon" /> Jogar Agora
                 </Button>
               </div>
