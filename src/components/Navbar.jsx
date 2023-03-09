@@ -24,35 +24,35 @@ function Navbar() {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="#"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-cdln-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Séries
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Jogos
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Loja
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Sobre Nós
                   </a>
