@@ -3,8 +3,18 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 // Images
-import Logo from '../assets/ale-logo.png';
- 
+import Logo from "../assets/ale-logo.png";
+
+// Icons
+import {
+  HiHome,
+  HiFilm,
+  HiShoppingBag,
+  HiInformationCircle,
+} from "react-icons/hi";
+
+import { IoGameController } from "react-icons/io5";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -14,47 +24,58 @@ function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src={ Logo }
-                  alt="Logo"
-                />
+                <img className="h-10 w-10" src={Logo} alt="Logo" />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="#"
-                    className=" hover:bg-cdln-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-cdln-blue-700 text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
-                    Home
+                    <div className="flex flex-row items-center gap-2">
+                      <HiHome size={"1.2em"}/>
+                      Home
+                    </div>
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
-                    Séries
+                    <div className="flex flex-row items-center gap-2">
+                      <HiFilm size={"1.2em"}/>
+                      Séries
+                    </div>
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
-                    Jogos
+                    <div className="flex flex-row items-center gap-2">
+                      <IoGameController size={"1.2em"}/>
+                      Jogos
+                    </div>
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
-                    Loja
+                    <div className="flex flex-row items-center gap-2">
+                      <HiShoppingBag size={"1.2em"}/>
+                      Loja
+                    </div>
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
-                    Sobre Nós
+                    <div className="flex flex-row items-center gap-2">
+                      <HiInformationCircle size={"1.2em"}/>
+                      Sobre Nós
+                    </div>
                   </a>
                 </div>
               </div>
@@ -63,7 +84,7 @@ function Navbar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-cdln-blue-700 inline-flex items-center justify-center p-2 rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -120,35 +141,35 @@ function Navbar() {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   href="#"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Séries
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Jogos
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Loja
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Sobre Nós
                 </a>
