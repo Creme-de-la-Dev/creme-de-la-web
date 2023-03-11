@@ -17,12 +17,14 @@ import About from './pages/About';
 function App() {
 
   return (
-
+    <>
+      <Navbar />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
       </Router> 
+    </>
    
   )
 }
