@@ -143,35 +143,50 @@ function Navbar() {
                   href="#"
                   className="text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Home
+                  <div className="flex flex-row items-center gap-2">
+                      <HiHome size={"1.2em"}/>
+                      Home
+                    </div>
                 </a>
 
                 <a
                   href="#"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Séries
+                  <div className="flex flex-row items-center gap-2">
+                      <HiFilm size={"1.2em"}/>
+                      Séries
+                    </div>
                 </a>
 
                 <a
                   href="#"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Jogos
+                  <div className="flex flex-row items-center gap-2">
+                      <IoGameController size={"1.2em"}/>
+                      Jogos
+                    </div>
                 </a>
 
                 <a
                   href="#"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Loja
+                  <div className="flex flex-row items-center gap-2">
+                      <HiShoppingBag size={"1.2em"}/>
+                      Loja
+                    </div>
                 </a>
 
                 <a
                   href="#"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Sobre Nós
+                  <div className="flex flex-row items-center gap-2">
+                      <HiInformationCircle size={"1.2em"}/>
+                      Sobre Nós
+                    </div>
                 </a>
               </div>
             </div>
