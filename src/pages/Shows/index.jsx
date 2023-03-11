@@ -1,10 +1,12 @@
 // React
 import React from 'react';
 
-function Home () {
+function Shows () {
     return (
         <div className="app">
             <h1>Creme de la Web Shows</h1>
         </div>
     )
 }
+
+export default Shows;
