@@ -29,7 +29,7 @@ function Navbar() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#"
+                    href="/home"
                     className=" hover:bg-cdln-blue-700 text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
@@ -39,7 +39,7 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/shows"
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
@@ -49,7 +49,7 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/games"
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
@@ -59,7 +59,7 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/store"
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
@@ -69,7 +69,7 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/about"
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
@@ -140,7 +140,7 @@ function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  href="/home"
                   className="text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
@@ -150,7 +150,7 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/shows"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
@@ -160,7 +160,7 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/games"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
@@ -170,7 +170,7 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/store"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
@@ -180,7 +180,7 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/about"
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
