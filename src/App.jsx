@@ -1,7 +1,10 @@
 // React
 import React from 'react';
 
-// Navbar
+// React Router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Components
 import Navbar from './components/Navbar';
 
 function App() {
