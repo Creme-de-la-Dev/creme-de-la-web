@@ -24,7 +24,11 @@ function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img className="h-10 w-10 rounded-full border-2 border-solid border-white " src={Logo} alt="Logo" />
+                <img
+                  className="h-10 w-10 rounded-full border-2 border-solid border-white "
+                  src={Logo}
+                  alt="Logo"
+                />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -33,7 +37,7 @@ function Navbar() {
                     className=" hover:bg-cdln-blue-700 text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
-                      <HiHome size={"1.2em"}/>
+                      <HiHome size={"1.2em"} />
                       Home
                     </div>
                   </a>
@@ -43,7 +47,7 @@ function Navbar() {
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
-                      <HiFilm size={"1.2em"}/>
+                      <HiFilm size={"1.2em"} />
                       Séries
                     </div>
                   </a>
@@ -53,7 +57,7 @@ function Navbar() {
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
-                      <IoGameController size={"1.2em"}/>
+                      <IoGameController size={"1.2em"} />
                       Jogos
                     </div>
                   </a>
@@ -63,7 +67,7 @@ function Navbar() {
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
-                      <HiShoppingBag size={"1.2em"}/>
+                      <HiShoppingBag size={"1.2em"} />
                       Loja
                     </div>
                   </a>
@@ -73,7 +77,7 @@ function Navbar() {
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
-                      <HiInformationCircle size={"1.2em"}/>
+                      <HiInformationCircle size={"1.2em"} />
                       Sobre Nós
                     </div>
                   </a>
@@ -144,9 +148,9 @@ function Navbar() {
                   className="text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
-                      <HiHome size={"1.2em"}/>
-                      Home
-                    </div>
+                    <HiHome size={"1.2em"} />
+                    Home
+                  </div>
                 </a>
 
                 <a
@@ -154,9 +158,9 @@ function Navbar() {
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
-                      <HiFilm size={"1.2em"}/>
-                      Séries
-                    </div>
+                    <HiFilm size={"1.2em"} />
+                    Séries
+                  </div>
                 </a>
 
                 <a
@@ -164,9 +168,9 @@ function Navbar() {
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
-                      <IoGameController size={"1.2em"}/>
-                      Jogos
-                    </div>
+                    <IoGameController size={"1.2em"} />
+                    Jogos
+                  </div>
                 </a>
 
                 <a
@@ -174,9 +178,9 @@ function Navbar() {
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
-                      <HiShoppingBag size={"1.2em"}/>
-                      Loja
-                    </div>
+                    <HiShoppingBag size={"1.2em"} />
+                    Loja
+                  </div>
                 </a>
 
                 <a
@@ -184,9 +188,9 @@ function Navbar() {
                   className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   <div className="flex flex-row items-center gap-2">
-                      <HiInformationCircle size={"1.2em"}/>
-                      Sobre Nós
-                    </div>
+                    <HiInformationCircle size={"1.2em"} />
+                    Sobre Nós
+                  </div>
                 </a>
               </div>
             </div>
