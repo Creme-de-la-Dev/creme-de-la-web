@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 @layer utilities {
-    .animation-delay-2000 {
-      animation-delay: 2s;
-    }
-    .animation-delay-4000 {
-      animation-delay: 4s;
-    }
+  body::-webkit-scrollbar {
+    width: 5px;
+    background: #2D679C;
   }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #C3E5FA;
+    border-radius: 100px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #F2F9FE;
+  }
+  
+}
   
