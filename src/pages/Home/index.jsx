@@ -27,7 +27,7 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col sm:p-20">
+        <div className="flex flex-col sm:p-20 mt-10 sm:mt-0">
             <img
                   className="h-64 w-64 sm:h-full sm:w-full rounded-full border-2 border-solid border-white shadow-xl"
                   src={Logo}
