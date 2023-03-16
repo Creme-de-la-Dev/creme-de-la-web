@@ -6,14 +6,13 @@ import { Transition } from "@headlessui/react";
 import Logo from "../assets/ale-logo.png";
 
 // Icons
+import { IoGameController } from "react-icons/io5";
 import {
   HiHome,
   HiFilm,
   HiShoppingBag,
   HiInformationCircle,
 } from "react-icons/hi";
-
-import { IoGameController } from "react-icons/io5";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +33,7 @@ function Navbar() {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="/home"
-                    className=" hover:bg-cdln-blue-700 text-white px-5 py-2 rounded-md text-lg font-medium"
+                    className=" hover:bg-cdln-blue-700 text-gray-300 px-5 py-2 rounded-md text-lg font-medium"
                   >
                     <div className="flex flex-row items-center gap-2">
                       <HiHome size={"1.2em"} />
