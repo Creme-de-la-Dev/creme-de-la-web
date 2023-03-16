@@ -6,6 +6,9 @@ import { BsArrowDownCircleFill } from "react-icons/bs";
 
 // Images
 import Logo from "../../assets/ale-logo.png";
+import Game from "../../assets/Game.png";
+import Shows from "../../assets/Shows.png";
+import Store from "../../assets/Store.png";
 
 // Animations
 import "animate.css";
@@ -40,11 +43,18 @@ function Home() {
           </div>
         </div>
       </section>
-      <section class="bg-cdln-blue-900 h-screen">
-        <div class="ocean">
-          <div class="wave"></div>
-          <div class="wave"></div>
-          <div class="wave"></div>
+      <section className="bg-cdln-blue-900 h-screen">
+        <div className="ocean">
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+        </div>
+        <div class="pt-16">
+          <div className="games">
+            <img className="h-2/12 w-2/12" src={Game} alt="Game" />
+          </div>
+          <div className="shows"></div>
+          <div className="store"></div>
         </div>
       </section>
     </div>

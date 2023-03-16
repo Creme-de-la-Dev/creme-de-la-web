@@ -42,16 +42,6 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="/shows"
-                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
-                  >
-                    <div className="flex flex-row items-center gap-2">
-                      <HiFilm size={"1.2em"} />
-                      Séries
-                    </div>
-                  </a>
-
-                  <a
                     href="/games"
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
                   >
@@ -60,7 +50,15 @@ function Navbar() {
                       Jogos
                     </div>
                   </a>
-
+                  <a
+                    href="/shows"
+                    className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
+                  >
+                    <div className="flex flex-row items-center gap-2">
+                      <HiFilm size={"1.2em"} />
+                      Séries
+                    </div>
+                  </a>
                   <a
                     href="/store"
                     className="text-gray-300 hover:bg-cdln-blue-700 hover:text-white px-5 py-2 rounded-md text-lg font-medium"
