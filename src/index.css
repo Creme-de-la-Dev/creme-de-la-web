@@ -22,10 +22,10 @@
 @layer components {
   /* waves */
 .ocean {
-  height: 150px; 
+  height: 100px; 
   width: 100%;
   position: absolute;
-  bottom: -85px;
+  bottom: -100px;
   left: 0;
   right: 0;
   overflow-x: hidden;

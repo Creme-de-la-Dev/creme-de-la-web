@@ -14,12 +14,12 @@ function Home() {
   return (
     <div>
       <section className="bg-gradient-to-b from-[#265881] to-[#2D679C] h-screen">
-        <div className="md:p-8 xl:p-4 flex flex-col md:flex-row justify-between w-full items-center">
-          <div className="md:p-20 p-10 flex flex-col gap-5">
-            <h1 className="text-5xl w-full md:text-8xl text-cdln-blue-100 font-medium text-center animate__animated animate__fadeInLeft">
+        <div className="flex flex-col md:flex-row md:p-8 lg:p-4 justify-between w-full items-center">
+          <div className="flex flex-col gap-5 p-10 sm:p-15 xl:p-20">
+            <h1 className="text-5xl w-full sm:text-7xl lg:text-8xl text-cdln-blue-100 font-medium text-center animate__animated animate__fadeInLeft">
               Creme de la Web
             </h1>
-            <h2 className="md:text-3xl text-lg justify-center text-slate-400 font-light animate__animated animate__fadeInLeft">
+            <h2 className="lg:text-3xl sm:text-2xl text-lg justify-center text-slate-400 font-light animate__animated animate__fadeInLeft">
               Todo conteúdo do Creme que você adora,
               <br />
               agora em um só lugar
@@ -31,9 +31,9 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col md:p-20 mt-10 md:mt-0 animate__animated animate__pulse">
+          <div className="flex flex-col lg:p-20 mt-10 lg:mt-0 animate__animated animate__pulse justify-center">
             <img
-              className="h-64 w-64 md:h-full md:w-full rounded-full border-2 border-solid border-white shadow-xl"
+              className="h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 xl:h-full xl:w-full rounded-full border-2 border-solid border-white shadow-xl"
               src={Logo}
               alt="Logo"
             />
