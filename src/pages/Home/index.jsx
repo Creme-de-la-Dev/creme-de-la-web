@@ -67,7 +67,7 @@ function Home() {
                 sendo estes <strong>Flappy Catito</strong>, <strong>Lorax Kart</strong> e futuramente contará com diversos jogos incríveis!
                 </h2>
                 <div className="pt-5 self-center animate__animated animate__fadeIn">
-                  <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl" href="#main-section">
+                  <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl" href="/">
                     <IoGameController size={30} />
                     Conferir os jogos
                   </button>
@@ -75,8 +75,25 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="shows"></div>
-          <div className="store"></div>
+        </div>
+        <div class="pt-44">
+          <div className="games">
+            <div className="flex flex-col sm:flex-row justify-center sm:justify-evenly p-4 sm:p-0">
+              <div className="flex flex-col gap-7">
+                <h1 className="font-semibold text-5xl w-full md:text-7xl lg:text-8xl text-cdln-blue-100 text-center">Séries Aclamadas</h1>
+                <h2 className="lg:text-3xl md:text-2xl text-lg justify-center text-slate-400 font-light text-center">
+                Webshows do grupo Creme de la Nage já estão disponíveis na plataforma, sendo estes Luan’s Revolution (2015),<br/>Creme de la Nage TV (2016), Turma da Válvula (2021) e Luan's Revolution: Aftermath (2023).
+                </h2>
+                <div className="pt-5 self-center animate__animated animate__fadeIn">
+                  <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl" href="/">
+                    <HiFilm size={30} />
+                    Conferir as séries
+                  </button>
+                </div>
+              </div>
+              <img className="w-64 md:w-80 lg:w-96 self-center" src={Shows} alt="Shows" />
+            </div>
+          </div>
         </div>
       </section>
     </div>
