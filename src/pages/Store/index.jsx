@@ -3,7 +3,7 @@ import React from 'react';
 
 function Store () {
     return (
-        <div className="app">
+        <div className="app h-screen">
             <h1>Creme de la Web Store</h1>
         </div>
     )
