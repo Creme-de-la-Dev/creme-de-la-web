@@ -57,18 +57,18 @@ function Home() {
         </div>
         <div class="pt-28">
           <div className="games">
-            <div className="flex sm:flex-row justify-evenly">
-              <img className="w-64 sm:w-80 lg:w-96" src={Game} alt="Game" />
-              <div className="flex flex-col gap-5">
-                <h1 className="font-semibold text-5xl w-full sm:text-7xl lg:text-8xl text-cdln-blue-100">Jogos Divertidos</h1>
-                <h2 className="lg:text-3xl sm:text-2xl text-lg justify-center text-slate-400 font-light">
+            <div className="flex flex-col sm:flex-row justify-center sm:justify-evenly p-4 sm:p-0">
+              <img className="w-64 md:w-80 lg:w-96 self-center" src={Game} alt="Game" />
+              <div className="flex flex-col gap-7">
+                <h1 className="font-semibold text-5xl w-full md:text-7xl lg:text-8xl text-cdln-blue-100 text-center">Jogos Divertidos</h1>
+                <h2 className="lg:text-3xl md:text-2xl text-lg justify-center text-slate-400 font-light text-center">
                 Jogos fantásticos totalmente pensados e feitos pela equipe <strong>Creme de la Nage</strong> estão disponíveis,
                 <br />
                 sendo estes <strong>Flappy Catito</strong>, <strong>Lorax Kart</strong> e futuramente contará com diversos jogos incríveis!
                 </h2>
-                <div className="pt-5 justify-center self-center md:self-auto animate__animated animate__fadeIn">
+                <div className="pt-5 self-center animate__animated animate__fadeIn">
                   <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl" href="#main-section">
-                    <BsArrowDownCircleFill />
+                    <IoGameController size={30} />
                     Conferir os jogos
                   </button>
                 </div>
