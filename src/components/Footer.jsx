@@ -70,7 +70,7 @@ function Footer() {
           <ul className="mt-12 flex justify-center gap-6 md:gap-8">
             <li>
               <a
-                href="https://github.com/Creme-de-la-Dev/creme-de-la-web/blob/master/src/components/Footer.js"
+                href="https://www.facebook.com/aleapontando"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-gray-700/75"
