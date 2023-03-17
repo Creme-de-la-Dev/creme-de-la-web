@@ -3,6 +3,12 @@ import React from "react";
 
 // Icons
 import { BsArrowDownCircleFill } from "react-icons/bs";
+import { IoGameController } from "react-icons/io5";
+import {
+  HiHome,
+  HiFilm,
+  HiShoppingBag,
+} from "react-icons/hi";
 
 // Images
 import Logo from "../../assets/ale-logo.png";
@@ -28,7 +34,7 @@ function Home() {
               agora em um só lugar
             </h2>
             <div className="pt-5 justify-center self-center md:self-auto animate__animated animate__fadeIn">
-              <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-2 text-2xl">
+              <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-2 text-2xl" href="#main-section">
                 <BsArrowDownCircleFill />
                 Explorar conteúdo
               </button>
@@ -43,15 +49,31 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-cdln-blue-900 h-screen">
+      <section className="bg-cdln-blue-900 h-screen" id="main-section">
         <div className="ocean">
           <div className="wave"></div>
           <div className="wave"></div>
           <div className="wave"></div>
         </div>
-        <div class="pt-16">
+        <div class="pt-28">
           <div className="games">
-            <img className="h-2/12 w-2/12" src={Game} alt="Game" />
+            <div className="flex sm:flex-row justify-evenly">
+              <img className="w-64 sm:w-80 lg:w-96" src={Game} alt="Game" />
+              <div className="flex flex-col gap-5">
+                <h1 className="font-semibold text-5xl w-full sm:text-7xl lg:text-8xl text-cdln-blue-100">Jogos Divertidos</h1>
+                <h2 className="lg:text-3xl sm:text-2xl text-lg justify-center text-slate-400 font-light">
+                Jogos fantásticos totalmente pensados e feitos pela equipe <strong>Creme de la Nage</strong> estão disponíveis,
+                <br />
+                sendo estes <strong>Flappy Catito</strong>, <strong>Lorax Kart</strong> e futuramente contará com diversos jogos incríveis!
+                </h2>
+                <div className="pt-5 justify-center self-center md:self-auto animate__animated animate__fadeIn">
+                  <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl" href="#main-section">
+                    <BsArrowDownCircleFill />
+                    Conferir os jogos
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="shows"></div>
           <div className="store"></div>
