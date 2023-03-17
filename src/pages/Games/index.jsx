@@ -3,7 +3,7 @@ import React from 'react';
 
 function Games () {
     return (
-        <div className="app">
+        <div className="app h-screen">
             <h1>Creme de la Web Games</h1>
         </div>
     )
