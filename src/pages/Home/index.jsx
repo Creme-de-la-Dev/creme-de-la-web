@@ -64,7 +64,7 @@ function Home() {
                 alt="Game"
               />
               <div className="flex flex-col gap-7">
-                <h1 className="font-semibold text-5xl w-full md:text-7xl lg:text-8xl text-cdln-blue-100 text-center">
+                <h1 className="font-semibold text-5xl w-full md:text-6xl xl:text-8xl text-cdln-blue-100 text-center">
                   Jogos Divertidos
                 </h1>
                 <h2 className="lg:text-3xl md:text-2xl text-lg justify-center text-slate-400 font-light text-center">
@@ -97,15 +97,14 @@ function Home() {
                 src={Shows}
                 alt="Shows"
               />
-              <div className="flex flex-col gap-7">
+              <div className="flex flex-col gap-7 w-full">
                 <h1 className="font-semibold text-5xl w-full md:text-7xl lg:text-8xl text-cdln-blue-100 text-center">
                   Séries Aclamadas
                 </h1>
-                <h2 className="lg:text-3xl md:text-2xl text-lg justify-center text-slate-400 font-light text-center">
+                <h2 className="w-10/12 self-center lg:text-3xl md:text-2xl text-lg justify-center text-slate-400 font-light text-center">
                   Webshows do grupo <strong>Creme de la Nage</strong> já estão
                   disponíveis na plataforma, sendo estes{" "}
                   <strong>Luan’s Revolution (2015)</strong>,
-                  <br />
                   <strong>Creme de la Nage TV (2016)</strong>,{" "}
                   <strong>Turma da Válvula (2021)</strong> e{" "}
                   <strong>Luan's Revolution: Aftermath (2023)</strong>.
@@ -121,7 +120,7 @@ function Home() {
                 </div>
               </div>
               <img
-                className="w-64 md:w-80 lg:w-96 self-center sm:block hidden"
+                className="w-64 md:w-80 lg:w-96 self-center sm:block hidden p-4"
                 src={Shows}
                 alt="Shows"
               />
