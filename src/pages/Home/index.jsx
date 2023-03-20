@@ -75,13 +75,12 @@ function Home() {
                   jogos incríveis!
                 </h2>
                 <div className="pt-5 self-center animate__animated animate__fadeIn">
-                  <button
-                    className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl"
-                    href="/"
-                  >
-                    <IoGameController size={30} />
-                    Conferir os jogos
-                  </button>
+                  <a href="/games">
+                    <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl">
+                      <IoGameController size={30} />
+                      Conferir os jogos
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -109,13 +108,15 @@ function Home() {
                   <strong>Luan's Revolution: Aftermath (2023)</strong>.
                 </h2>
                 <div className="pt-5 self-center animate__animated animate__fadeIn">
-                  <button
-                    className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl"
-                    href="/"
-                  >
-                    <HiFilm size={30} />
-                    Conferir as séries
-                  </button>
+                  <a href="/shows">
+                    <button
+                      className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl"
+                      href="/"
+                    >
+                      <HiFilm size={30} />
+                      Conferir as séries
+                    </button>
+                  </a>
                 </div>
               </div>
               <img
@@ -146,13 +147,15 @@ function Home() {
                   com frete grátis para todo o Brasil!
                 </h2>
                 <div className="pt-5 self-center animate__animated animate__fadeIn">
-                  <button
-                    className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl"
-                    href="/"
-                  >
-                    <HiShoppingBag size={30} />
-                    Conferir Loja
-                  </button>
+                  <a href="/store">
+                    <button
+                      className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl"
+                      href="/"
+                    >
+                      <HiShoppingBag size={30} />
+                      Conferir Loja
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
