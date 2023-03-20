@@ -30,13 +30,12 @@ function Home() {
               agora em um só lugar
             </h2>
             <div className="pt-5 justify-center self-center md:self-auto animate__animated animate__fadeIn">
-              <button
-                className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-2 text-2xl"
-                href="#main-section"
-              >
-                <BsArrowDownCircleFill />
-                Explorar conteúdo
-              </button>
+              <a href="#main-section">
+                <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-2 text-2xl">
+                  <BsArrowDownCircleFill />
+                  Explorar conteúdo
+                </button>
+              </a>
             </div>
           </div>
           <div className="flex flex-col lg:p-20 mt-10 lg:mt-0 animate__animated animate__pulse justify-center">
@@ -64,7 +63,7 @@ function Home() {
                 alt="Game"
               />
               <div className="flex flex-col gap-7">
-                <h1 className="font-semibold text-5xl w-full md:text-6xl xl:text-8xl text-cdln-blue-100 text-center">
+                <h1 className="font-semibold text-5xl w-full md:text-xl xl:text-8xl text-cdln-blue-100 text-center">
                   Jogos Divertidos
                 </h1>
                 <h2 className="lg:text-3xl md:text-2xl text-lg justify-center text-slate-400 font-light text-center">
