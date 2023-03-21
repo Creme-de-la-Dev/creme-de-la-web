@@ -3,24 +3,33 @@ import React from "react";
 
 // Images
 import GamesBG from "../../assets/GamesBG.png";
+import ArrowDown from "../../assets/arrow-down.svg";
+
+// Icons
+import { BsArrowDownCircleFill } from "react-icons/bs";
 
 function Games() {
   return (
-    <div className="app h-screen">
-      <div className="h-full w-full relative">
-        <img
-          src={GamesBG}
-          className="w-full h-full object-cover absolute mix-blend-overlay"
-        />
-        <div className="p-24 w-full h-full justify-center items-center">
-          <h1 className="text-cdln-blue-400 text-9xl font-bold text-center">
-            Jogos online do Creme
-          </h1>
-          <h2 className="text-blue-300 text-5xl font-light mt-5 text-center">
-            Diversão Garantida!
-          </h2>
+    <div>
+        <div className="header h-screen">
+            <div className="h-full w-full relative">
+                <img
+                src={GamesBG}
+                className="w-full h-full object-cover absolute mix-blend-overlay"
+                />
+                <div className="p-24 w-full h-full justify-center items-center">
+                <h1 className="text-cdln-blue-400 text-9xl font-bold text-center">
+                    Jogos online do Creme
+                </h1>
+                <h2 className="text-cdln-blue-300 text-5xl font-light mt-5 text-center">
+                    Diversão Garantida!
+                </h2>
+                <div className="w-full justify-center items-center pt-20">
+                    <img src={ArrowDown} className="mx-auto h-10 w-10"/>
+                </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   );
 }
