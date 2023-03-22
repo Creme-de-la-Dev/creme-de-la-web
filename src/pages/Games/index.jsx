@@ -5,6 +5,7 @@ import React from "react";
 import GamesBG from "../../assets/GamesBG.png";
 import GamesBGsm from "../../assets/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
+import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
 
 function Games() {
   return (
@@ -34,7 +35,7 @@ function Games() {
           </div>
         </div>
       </section>
-      <section className="md:h-screen" id="main-section">
+      <section className="" id="main-section">
         <div className="hero">
           <div className="cube"></div>
           <div className="cube"></div>
@@ -43,8 +44,28 @@ function Games() {
           <div className="cube"></div>
           <div className="cube"></div>
           <div>
-            <div>
-              
+            <div className="p-10">
+              <article className="shadow-lg mx-auto relative max-w-md group cursor-pointer">
+                <div className="overflow-hidden">
+                  <img
+                    className="w-full h-auto transform hover:scale-110 duration-200"
+                    src={LoraxKart}
+                    alt="Lorax Kart"
+                  />
+                </div>
+                <div className="p-7 my-auto pb-12 ">
+                  <h1 className="text-4xl font-semibold text-gray-800 mt-4">
+                    Tropicalia
+                  </h1>
+                  <p className="text-2xl text-gray-400 mt-4 leading-relaxed">
+                    Super creative and colorful illustrations by Matheus Lopes.
+                    Check out more of his amazing artworks in his portfolio.
+                  </p>
+                </div>
+                <div className="border-t pt-8 pb-8 text-center text-base text-gray-400 uppercase tracking-widest  group-hover:text-gray-600 bg-gray-50">
+                  Matheus Lopes
+                </div>
+              </article>
             </div>
           </div>
         </div>
