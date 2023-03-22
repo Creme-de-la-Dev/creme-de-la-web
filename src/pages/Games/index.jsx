@@ -68,7 +68,7 @@ function Games() {
                     Switch. Cuidado ao esbarrar!
                   </p>
                 </div>
-                <a href="https://lorax-kart.netlify.app/" target="_blank">
+                <a href="https://flappycatito.herokuapp.com/" target="_blank">
                   <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
                     <IoGameController size={"1.5em"} />
                     <h2 className="text-center text-xl tracking-widest uppercase">
@@ -122,7 +122,7 @@ function Games() {
                     Adrenalina.
                   </p>
                 </div>
-                <a href="https://lorax-kart.netlify.app/" target="_blank">
+                <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
                   <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
                     <h2 className="text-center text-xl tracking-widest uppercase">
                       Em Breve
