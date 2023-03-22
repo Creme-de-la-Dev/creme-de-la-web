@@ -11,6 +11,7 @@ import Akon from "../../assets/AKON-PROMO.png";
 
 // Icons
 import { IoGameController } from "react-icons/io5";
+import { MdPhonelinkErase } from "react-icons/md";
 
 function Games() {
   return (
@@ -19,11 +20,11 @@ function Games() {
         <div className="h-full w-full relative">
           <img
             src={GamesBG}
-            className="hidden md:block w-full h-full object-cover absolute"
+            className="hidden lg:block w-full h-full object-cover absolute"
           />
           <img
             src={GamesBGsm}
-            className="md:hidden w-full h-full object-cover absolute"
+            className="lg:hidden w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">
             <h1 className="text-cdln-blue-50 text-8xl md:text-9xl font-bold text-center animate__animated animate__jackInTheBox">
@@ -96,10 +97,16 @@ function Games() {
                   </p>
                 </div>
                 <a href="https://lorax-kart.netlify.app/" target="_blank">
-                  <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
+                  <div className="hidden md:flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
                     <IoGameController size={"1.5em"} />
                     <h2 className="text-center text-xl tracking-widest uppercase">
                       Jogar
+                    </h2>
+                  </div>
+                  <div className="flex md:hidden gap-3 justify-center border-t py-8 items-center text-white bg-gray-500">
+                    <MdPhonelinkErase size={"1.5em"} />
+                    <h2 className="text-sm tracking-widest uppercase">
+                      Indisponível para dispositivos móveis
                     </h2>
                   </div>
                 </a>
