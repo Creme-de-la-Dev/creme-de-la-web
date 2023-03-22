@@ -3,6 +3,7 @@ import React from "react";
 
 // Images
 import GamesBG from "../../assets/GamesBG.png";
+import GamesBGsm from "../../assets/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 
 function Games() {
@@ -12,13 +13,17 @@ function Games() {
         <div className="h-full w-full relative">
           <img
             src={GamesBG}
-            className="w-full h-full object-cover absolute"
+            className="hidden md:block w-full h-full object-cover absolute"
+          />
+          <img
+            src={GamesBGsm}
+            className="md:hidden w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">
-            <h1 className="text-cdln-blue-700 text-9xl font-bold text-center animate__animated animate__jackInTheBox">
+            <h1 className="text-cdln-blue-50 text-8xl md:text-9xl font-bold text-center animate__animated animate__jackInTheBox">
               Jogos do Creme
             </h1>
-            <h2 className="text-cdln-blue-400 text-5xl font-light mt-5 text-center animate__animated animate__slideInUp">
+            <h2 className="text-cdln-blue-100 text-2xl md:text-5xl font-light mt-5 text-center animate__animated animate__slideInUp">
               Diversão Garantida!
             </h2>
             <div className="w-full justify-center items-center pt-20 animate__animated animate__fadeIn">
