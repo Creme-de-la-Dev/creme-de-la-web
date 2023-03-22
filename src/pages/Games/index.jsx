@@ -40,8 +40,8 @@ function Games() {
           </div>
         </div>
       </section>
-      <section className="" id="main-section">
-        <div className="hero">
+      <section id="main-section">
+        <div className="hero h-auto lg:h-screen">
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
@@ -49,8 +49,8 @@ function Games() {
           <div className="cube"></div>
           <div className="cube"></div>
           <div>
-            <div className="flex flex-col md:flex-row p-20">
-              <article className="relative max-w-md group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+            <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
+              <article className="relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="w-full h-auto transform hover:scale-110 duration-200"
@@ -62,7 +62,7 @@ function Games() {
                   <h1 className="text-4xl font-semibold text-gray-800 mt-4">
                     Flappy Catito
                   </h1>
-                  <p className="text-2xl text-gray-400 mt-4 leading-relaxed">
+                  <p className="text-lg md:text-2xl text-gray-400 mt-4 leading-relaxed">
                     Ajude o Catito passarinho a atravessar os obstáculos de
                     pernas e chegar no conforto de sua casa para jogar Nintendo
                     Switch. Cuidado ao esbarrar!
@@ -77,7 +77,7 @@ function Games() {
                   </div>
                 </a>
               </article>
-              <article className="relative max-w-md group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+              <article className="relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="w-full h-auto transform hover:scale-110 duration-200"
@@ -89,7 +89,7 @@ function Games() {
                   <h1 className="text-4xl font-semibold text-gray-800 mt-4">
                     Lorax Kart
                   </h1>
-                  <p className="text-2xl text-gray-400 mt-4 leading-relaxed">
+                  <p className="text-lg md:text-2xl text-gray-400 mt-4 leading-relaxed">
                     Aperte os cintos! Embarque com Lorax nesse grande desafio
                     cheio de adrenalina na grande São Paulo e busque o Flávio no
                     aeroporto de Guarulhos a tempo.
@@ -104,7 +104,7 @@ function Games() {
                   </div>
                 </a>
               </article>
-              <article className="relative max-w-md group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+              <article className="relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="w-full h-auto transform hover:scale-110 duration-200"
@@ -116,10 +116,11 @@ function Games() {
                   <h1 className="text-4xl font-semibold text-gray-800 mt-4">
                     Jogo do AKON
                   </h1>
-                  <p className="text-2xl text-gray-400 mt-4 leading-relaxed">
+                  <p className="text-lg md:text-2xl text-gray-400 mt-4 leading-relaxed">
                     Mentalize quem do grupo é o AKON. Descreva. Se prepare. E
                     fique a tento a seu redor. Tenso, Emocionante e muita
-                    Adrenalina.
+                    Adrenalina. <br />
+                    <strong>Apenas para dispositivos móveis</strong>
                   </p>
                 </div>
                 <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
@@ -131,7 +132,7 @@ function Games() {
                 </a>
               </article>
             </div>
-            <h1 className="text-center font-semibold text-cdln-blue-50 text-5xl">Mais jogos incríveis em breve!</h1>
+            <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl pb-5 lg:pb-0 md:text-5xl">Mais jogos incríveis em breve!</h1>
           </div>
         </div>
       </section>
