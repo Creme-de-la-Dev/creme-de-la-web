@@ -40,7 +40,7 @@ function Home() {
           </div>
           <div className="flex flex-col lg:p-20 mt-10 lg:mt-0 animate__animated animate__pulse justify-center">
             <img
-              className="h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 xl:h-full xl:w-full rounded-full border-2 border-solid border-white shadow-xl"
+              className="h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 xl:h-full xl:w-full"
               src={Logo}
               alt="Logo"
             />

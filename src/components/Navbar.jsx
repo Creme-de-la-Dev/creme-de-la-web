@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 // Images
-import Logo from "../assets/ale-logo.png";
+import LogoNav from "../assets/ale-logo-nav.png";
 
 // Icons
 import { IoGameController } from "react-icons/io5";
@@ -25,8 +25,8 @@ function Navbar() {
               <div className="flex-shrink-0">
                 <img
                   className="h-10 w-10 rounded-full border-2 border-solid border-white "
-                  src={Logo}
-                  alt="Logo"
+                  src={LogoNav}
+                  alt="LogoNav"
                 />
               </div>
               <div className="hidden md:block">

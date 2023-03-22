@@ -12,13 +12,13 @@ function Games() {
         <div className="h-full w-full relative">
           <img
             src={GamesBG}
-            className="w-full h-full object-cover absolute mix-blend-overlay"
+            className="w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">
-            <h1 className="text-cdln-blue-400 text-9xl font-bold text-center animate__animated animate__jackInTheBox">
-              Jogos online do Creme
+            <h1 className="text-cdln-blue-700 text-9xl font-bold text-center animate__animated animate__jackInTheBox">
+              Jogos do Creme
             </h1>
-            <h2 className="text-cdln-blue-300 text-5xl font-light mt-5 text-center animate__animated animate__slideInUp">
+            <h2 className="text-cdln-blue-400 text-5xl font-light mt-5 text-center animate__animated animate__slideInUp">
               Diversão Garantida!
             </h2>
             <div className="w-full justify-center items-center pt-20 animate__animated animate__fadeIn">
@@ -29,14 +29,19 @@ function Games() {
           </div>
         </div>
       </section>
-      <section className="h-screen" id="main-section">
-      <div class="hero"> 
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
+      <section className="md:h-screen" id="main-section">
+        <div className="hero">
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div>
+            <div>
+              
+            </div>
+          </div>
         </div>
       </section>
     </div>
