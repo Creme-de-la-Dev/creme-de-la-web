@@ -5,7 +5,9 @@ import React from "react";
 import GamesBG from "../../assets/GamesBG.png";
 import GamesBGsm from "../../assets/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
+import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
+import Akon from "../../assets/AKON-PROMO.png";
 
 // Icons
 import { IoGameController } from "react-icons/io5";
@@ -47,7 +49,34 @@ function Games() {
           <div className="cube"></div>
           <div className="cube"></div>
           <div>
-            <div className="flex flex-col md:flex-row p-10">
+            <div className="flex flex-col md:flex-row p-20">
+              <article className="relative max-w-md group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+                <div className="overflow-hidden">
+                  <img
+                    className="w-full h-auto transform hover:scale-110 duration-200"
+                    src={FlappyCatito}
+                    alt="Flappy Catito"
+                  />
+                </div>
+                <div className="p-7 my-auto pb-12 bg-cdln-blue-50">
+                  <h1 className="text-4xl font-semibold text-gray-800 mt-4">
+                    Flappy Catito
+                  </h1>
+                  <p className="text-2xl text-gray-400 mt-4 leading-relaxed">
+                    Ajude o Catito passarinho a atravessar os obstáculos de
+                    pernas e chegar no conforto de sua casa para jogar Nintendo
+                    Switch. Cuidado ao esbarrar!
+                  </p>
+                </div>
+                <a href="https://lorax-kart.netlify.app/" target="_blank">
+                  <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
+                    <IoGameController size={"1.5em"} />
+                    <h2 className="text-center text-xl tracking-widest uppercase">
+                      Jogar
+                    </h2>
+                  </div>
+                </a>
+              </article>
               <article className="relative max-w-md group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
@@ -67,13 +96,42 @@ function Games() {
                   </p>
                 </div>
                 <a href="https://lorax-kart.netlify.app/" target="_blank">
-                    <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
-                    <IoGameController size={"1.5em"}/>
-                    <h2 className="text-center text-xl tracking-widest uppercase">Jogar</h2>
-                    </div>
+                  <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
+                    <IoGameController size={"1.5em"} />
+                    <h2 className="text-center text-xl tracking-widest uppercase">
+                      Jogar
+                    </h2>
+                  </div>
+                </a>
+              </article>
+              <article className="relative max-w-md group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+                <div className="overflow-hidden">
+                  <img
+                    className="w-full h-auto transform hover:scale-110 duration-200"
+                    src={Akon}
+                    alt="Akon"
+                  />
+                </div>
+                <div className="p-7 my-auto pb-12 bg-cdln-blue-50">
+                  <h1 className="text-4xl font-semibold text-gray-800 mt-4">
+                    Jogo do AKON
+                  </h1>
+                  <p className="text-2xl text-gray-400 mt-4 leading-relaxed">
+                    Mentalize quem do grupo é o AKON. Descreva. Se prepare. E
+                    fique a tento a seu redor. Tenso, Emocionante e muita
+                    Adrenalina.
+                  </p>
+                </div>
+                <a href="https://lorax-kart.netlify.app/" target="_blank">
+                  <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
+                    <h2 className="text-center text-xl tracking-widest uppercase">
+                      Em Breve
+                    </h2>
+                  </div>
                 </a>
               </article>
             </div>
+            <h1 className="text-center font-semibold text-cdln-blue-50 text-5xl">Mais jogos incríveis em breve!</h1>
           </div>
         </div>
       </section>
