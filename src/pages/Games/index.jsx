@@ -66,10 +66,12 @@ function Games() {
                     aeroporto de Guarulhos a tempo.
                   </p>
                 </div>
-                <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
-                  <IoGameController size={"1.5em"}/>
-                  <h2 className="text-center text-xl tracking-widest uppercase">Jogar</h2>
-                </div>
+                <a href="https://lorax-kart.netlify.app/" target="_blank">
+                    <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
+                    <IoGameController size={"1.5em"}/>
+                    <h2 className="text-center text-xl tracking-widest uppercase">Jogar</h2>
+                    </div>
+                </a>
               </article>
             </div>
           </div>
