@@ -42,7 +42,7 @@ function Games() {
         </div>
       </section>
       <section id="main-section">
-        <div className="hero h-auto lg:h-screen">
+        <div className="hero h-auto lg:min-h-screen">
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
@@ -139,7 +139,7 @@ function Games() {
                 </a>
               </article>
             </div>
-            <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl pb-5 lg:pb-0 md:text-5xl">Mais jogos incríveis em breve!</h1>
+            <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">Mais jogos incríveis em breve!</h1>
           </div>
         </div>
       </section>
