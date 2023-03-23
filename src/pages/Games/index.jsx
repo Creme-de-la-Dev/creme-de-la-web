@@ -9,10 +9,6 @@ import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
 import Akon from "../../assets/AKON-PROMO.png";
 
-// Icons
-import { IoGameController } from "react-icons/io5";
-import { MdPhonelinkErase } from "react-icons/md";
-
 import GameCard from "../../components/GameCard";
 
 function Games() {
