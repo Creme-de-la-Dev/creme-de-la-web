@@ -30,7 +30,7 @@ function Games() {
             <h1 className="text-cdln-blue-50 text-8xl md:text-9xl font-bold text-center animate__animated animate__jackInTheBox">
               Jogos do Creme
             </h1>
-            <h2 className="text-cdln-blue-100 text-2xl md:text-5xl font-light mt-5 text-center animate__animated animate__slideInUp">
+            <h2 className="text-cdln-blue-100 text-2xl md:text-5xl font-normal mt-5 text-center animate__animated animate__slideInUp">
               Diversão Garantida!
             </h2>
             <div className="w-full justify-center items-center pt-20 animate__animated animate__fadeIn">
@@ -51,7 +51,7 @@ function Games() {
           <div className="cube"></div>
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
-              <article className="relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+              <article className="rounded-md overflow-hidden relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="w-full h-auto transform hover:scale-110 duration-200"
@@ -78,7 +78,7 @@ function Games() {
                   </div>
                 </a>
               </article>
-              <article className="relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+              <article className="rounded-md overflow-hidden relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="w-full h-auto transform hover:scale-110 duration-200"
@@ -111,7 +111,7 @@ function Games() {
                   </div>
                 </a>
               </article>
-              <article className="relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
+              <article className="rounded-md overflow-hidden relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="w-full h-auto transform hover:scale-110 duration-200"
