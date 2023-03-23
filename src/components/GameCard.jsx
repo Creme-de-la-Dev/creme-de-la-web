@@ -1,7 +1,8 @@
 import { IoGameController } from "react-icons/io5";
+import { MdPhonelinkErase } from "react-icons/md";
 
 export default function GameCard(props) {
-  const {available = true} = props;
+  const { available = true, mobile = false } = props;
   return (
     <article className="rounded-md overflow-hidden relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
       <div className="overflow-hidden">
@@ -20,22 +21,39 @@ export default function GameCard(props) {
         </p>
       </div>
       {available ? (
-      <a href={props.gameUrl} target="_blank">
-        <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
-          <IoGameController size={"1.5em"} />
-          <h2 className="text-center text-xl tracking-widest uppercase">
-            Jogar
-          </h2>
-        </div>
-      </a>
+        <a href={props.gameUrl} target="_blank">
+          {mobile ? (
+            <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
+              <IoGameController size={"1.5em"} />
+              <h2 className="text-center text-xl tracking-widest uppercase">
+                Jogar
+              </h2>
+            </div>
+          ) : (
+            <>
+              <div className="hidden md:flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
+                <IoGameController size={"1.5em"} />
+                <h2 className="text-center text-xl tracking-widest uppercase">
+                  Jogar
+                </h2>
+              </div>
+              <div className="flex md:hidden gap-3 justify-center border-t py-8 items-center text-white bg-gray-500">
+                <MdPhonelinkErase size={"1.5em"} />
+                <h2 className="text-sm tracking-widest uppercase">
+                  Indisponível para dispositivos móveis
+                </h2>
+              </div>
+            </>
+          )}
+        </a>
       ) : (
-      <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
-        <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
-          <h2 className="text-center text-xl tracking-widest uppercase">
-            Em Breve
-          </h2>
-        </div>
-      </a>
+        <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
+          <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
+            <h2 className="text-center text-xl tracking-widest uppercase">
+              Em Breve
+            </h2>
+          </div>
+        </a>
       )}
     </article>
   );

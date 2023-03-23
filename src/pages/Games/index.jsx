@@ -58,13 +58,13 @@ function Games() {
                 name="Flappy Catito"
                 description="Ajude o Catito passarinho a atravessar os obstáculos de pernas e chegar no conforto de sua casa para jogar Nintendo Switch. Cuidado ao esbarrar!"
                 gameUrl="https://flappycatito.herokuapp.com/"
+                mobile={true}
               />
               <GameCard
                 image={LoraxKart}
                 name="Lorax Kart"
                 description="Aperte os cintos! Embarque com Lorax nesse grande desafio cheio de adrenalina na grande São Paulo e busque o Flávio no aeroporto de Guarulhos a tempo."
                 gameUrl="https://lorax-kart.netlify.app/"
-                available={true}
               />
               <GameCard
                 image={Akon}
