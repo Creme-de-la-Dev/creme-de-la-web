@@ -64,9 +64,7 @@ function Games() {
                     Flappy Catito
                   </h1>
                   <p className="text-lg md:text-2xl text-gray-400 mt-4 leading-relaxed">
-                    Ajude o Catito passarinho a atravessar os obstáculos de
-                    pernas e chegar no conforto de sua casa para jogar Nintendo
-                    Switch. Cuidado ao esbarrar!
+                    Essa não! Catito foi transformado em um passarinho e agora precisa voltar para casa antes do pôr do sol, caso contrário continuará nessa forma para todo sempre!
                   </p>
                 </div>
                 <a href="https://flappycatito.herokuapp.com/" target="_blank">
@@ -93,7 +91,7 @@ function Games() {
                   <p className="text-lg md:text-2xl text-gray-400 mt-4 leading-relaxed">
                     Aperte os cintos! Embarque com Lorax nesse grande desafio
                     cheio de adrenalina na grande São Paulo e busque o Flávio no
-                    aeroporto de Guarulhos a tempo.
+                    aeroporto de Congonhas a tempo.
                   </p>
                 </div>
                 <a href="https://lorax-kart.netlify.app/" target="_blank">
