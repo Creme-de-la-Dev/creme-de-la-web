@@ -5,6 +5,9 @@ import React, { useState } from "react";
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaGithub} from 'react-icons/fa';
 
+// Components
+import SocialIcon from "./SocialIcon";
+
 function Footer() {
   return (
     <div>
@@ -69,47 +72,16 @@ function Footer() {
 
           <ul className="mt-12 flex justify-center gap-6 md:gap-8">
             <li>
-              <a
-                href="https://www.facebook.com/aleapontando"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-700 transition hover:text-gray-700/75"
-              >
-                <FaFacebookSquare size={25}/>
-              </a>
+            <SocialIcon href='https://www.facebook.com/aleapontando' text='Facebook' BtnIcon={FaFacebookSquare} />
             </li>
             <li>
-              <a
-                href="https://twitter.com/thefunny_mp4/status/1521276206162890755?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-700 transition hover:text-gray-700/75"
-              >
-                <span className="sr-only">Twitter</span>
-                <FaTwitter size={25} />
-              </a>
+            <SocialIcon href='https://twitter.com/thefunny_mp4/status/1521276206162890755?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g' text='Twitter' BtnIcon={FaTwitter} />
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/creme_de_la_nage/?hl=pt"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-700 transition hover:text-gray-700/75"
-              >
-                <span className="sr-only">Instagram</span>
-                <FaInstagram size={25}/>
-              </a>
+            <SocialIcon href='https://www.instagram.com/creme_de_la_nage/?hl=pt' text='Instagram' BtnIcon={FaInstagram} />
             </li>
             <li>
-              <a
-                href="https://github.com/Creme-de-la-Dev"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-700 transition hover:text-gray-700/75"
-              >
-                <span className="sr-only">GitHub</span>
-                <FaGithub size={25} />
-              </a>
+            <SocialIcon href='https://github.com/Creme-de-la-Dev' text='GitHub' BtnIcon={FaGithub} />
             </li>
           </ul>
         </div>
