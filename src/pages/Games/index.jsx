@@ -55,9 +55,9 @@ function Games() {
                 gameUrl="https://flappycatito.herokuapp.com/"
                 mobile={true}
               >
-                Ajude o Catito passarinho a atravessar os obstáculos de pernas e
-                chegar no conforto de sua casa para jogar Nintendo Switch.
-                Cuidado ao esbarrar!
+                Essa não! Catito foi transformado em um passarinho e agora
+                precisa voltar para casa antes do pôr do sol, caso contrário
+                continuará nessa forma para todo sempre!
               </GameCard>
               <GameCard
                 image={LoraxKart}
@@ -66,7 +66,7 @@ function Games() {
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
-                de Guarulhos a tempo.
+                de Congonhas a tempo.
               </GameCard>
               <GameCard
                 image={Akon}
