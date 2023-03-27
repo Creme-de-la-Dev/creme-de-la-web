@@ -112,7 +112,7 @@ function Navbar() {
         >
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <HambugerMenuButton href='/home' text='Home' current={true} BtnIcon={HiHome} />
               <HambugerMenuButton href='/shows' text='Séries' BtnIcon={HiFilm} />
               <HambugerMenuButton href='/games' text='Jogos' BtnIcon={IoGameController} />
