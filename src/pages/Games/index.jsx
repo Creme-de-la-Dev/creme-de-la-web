@@ -52,23 +52,32 @@ function Games() {
               <GameCard
                 image={FlappyCatito}
                 name="Flappy Catito"
-                description="Ajude o Catito passarinho a atravessar os obstáculos de pernas e chegar no conforto de sua casa para jogar Nintendo Switch. Cuidado ao esbarrar!"
                 gameUrl="https://flappycatito.herokuapp.com/"
                 mobile={true}
-              />
+              >
+                Ajude o Catito passarinho a atravessar os obstáculos de pernas e
+                chegar no conforto de sua casa para jogar Nintendo Switch.
+                Cuidado ao esbarrar!
+              </GameCard>
               <GameCard
                 image={LoraxKart}
                 name="Lorax Kart"
-                description="Aperte os cintos! Embarque com Lorax nesse grande desafio cheio de adrenalina na grande São Paulo e busque o Flávio no aeroporto de Guarulhos a tempo."
                 gameUrl="https://lorax-kart.netlify.app/"
-              />
+              >
+                Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
+                de adrenalina na grande São Paulo e busque o Flávio no aeroporto
+                de Guarulhos a tempo.
+              </GameCard>
               <GameCard
                 image={Akon}
                 name="Jogo do AKON"
-                description="Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique a tento a seu redor. Tenso, Emocionante e muita Adrenalina. <br /> <strong>Apenas para dispositivos móveis</strong>"
                 gameUrl="https://youtu.be/mc5ub3TULqU?t=16"
                 available={false}
-              />
+              >
+                Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
+                a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
+                <br /> <strong>Apenas para dispositivos móveis</strong>
+              </GameCard>
             </div>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
               Mais jogos incríveis em breve!
