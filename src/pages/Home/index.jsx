@@ -54,7 +54,7 @@ function Home() {
           <div className="wave"></div>
         </div>
         {/* GAMES */}
-        <div class="pt-44">
+        <div className="pt-44">
           <div className="games animate__animated animate__zoomIn">
             <div className="flex flex-col sm:flex-row justify-center sm:justify-evenly p-4 sm:p-0">
               <img
