@@ -1,7 +1,7 @@
 import { IoGameController } from "react-icons/io5";
 import { MdPhonelinkErase } from "react-icons/md";
 
-export default function GameCard({ image, name, children, gameUrl, ...props }) {
+export default function Card({ image, name, children, gameUrl, ...props }) {
   const { available = true, mobile = false } = props;
   return (
     <article className="rounded-md overflow-hidden relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
@@ -13,9 +13,7 @@ export default function GameCard({ image, name, children, gameUrl, ...props }) {
         />
       </div>
       <div className="p-7 my-auto pb-12 bg-cdln-blue-50">
-        <h1 className="text-4xl font-semibold text-gray-800 mt-4">
-          {name}
-        </h1>
+        <h1 className="text-4xl font-semibold text-gray-800 mt-4">{name}</h1>
         <p className="text-lg md:text-2xl text-gray-400 mt-4 leading-relaxed">
           {children}
         </p>

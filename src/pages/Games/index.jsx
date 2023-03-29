@@ -1,6 +1,9 @@
 // React
 import React from "react";
 
+// Components
+import Card from "../../components/Card";
+
 // Images
 import GamesBG from "../../assets/GamesBG.png";
 import GamesBGsm from "../../assets/GamesBG-sm.png";
@@ -8,8 +11,6 @@ import ArrowDown from "../../assets/arrow-down.svg";
 import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
 import Akon from "../../assets/AKON-PROMO.png";
-
-import GameCard from "../../components/GameCard";
 
 function Games() {
   return (
@@ -49,7 +50,7 @@ function Games() {
           <div className="cube"></div>
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
-              <GameCard
+              <Card
                 image={FlappyCatito}
                 name="Flappy Catito"
                 gameUrl="https://flappycatito.herokuapp.com/"
@@ -58,8 +59,8 @@ function Games() {
                 Essa não! Catito foi transformado em um passarinho e agora
                 precisa voltar para casa antes do pôr do sol, caso contrário
                 continuará nessa forma para todo sempre!
-              </GameCard>
-              <GameCard
+              </Card>
+              <Card
                 image={LoraxKart}
                 name="Lorax Kart"
                 gameUrl="https://lorax-kart.netlify.app/"
@@ -67,8 +68,8 @@ function Games() {
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
                 de Congonhas a tempo.
-              </GameCard>
-              <GameCard
+              </Card>
+              <Card
                 image={Akon}
                 name="Jogo do AKON"
                 gameUrl="https://youtu.be/mc5ub3TULqU?t=16"
@@ -77,7 +78,7 @@ function Games() {
                 Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
                 a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
                 <br /> <strong>Apenas para dispositivos móveis</strong>
-              </GameCard>
+              </Card>
             </div>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
               Mais jogos incríveis em breve!
