@@ -53,7 +53,7 @@ function Games() {
               <Card
                 image={FlappyCatito}
                 name="Flappy Catito"
-                gameUrl="https://flappycatito.herokuapp.com/"
+                url="https://flappycatito.herokuapp.com/"
                 mobile={true}
               >
                 Essa não! Catito foi transformado em um passarinho e agora
@@ -63,7 +63,7 @@ function Games() {
               <Card
                 image={LoraxKart}
                 name="Lorax Kart"
-                gameUrl="https://lorax-kart.netlify.app/"
+                url="https://lorax-kart.netlify.app/"
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
@@ -72,12 +72,12 @@ function Games() {
               <Card
                 image={Akon}
                 name="Jogo do AKON"
-                gameUrl="https://youtu.be/mc5ub3TULqU?t=16"
+                url="https://youtu.be/mc5ub3TULqU?t=16"
                 available={false}
               >
                 Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
                 a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
-                <br /> <strong>Apenas para dispositivos móveis</strong>
+                <strong>Apenas para dispositivos móveis</strong>
               </Card>
             </div>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">

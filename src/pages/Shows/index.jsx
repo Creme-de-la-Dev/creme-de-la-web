@@ -2,7 +2,7 @@
 import React from "react";
 
 // Components
-import GameCard from "../../components/Card";
+import Card from "../../components/Card";
 
 // Images
 import GamesBG from "../../assets/GamesBG.png";
@@ -50,7 +50,7 @@ function Shows() {
           <div className="cube"></div>
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
-              <GameCard
+              <Card
                 image={FlappyCatito}
                 name="Flappy Catito"
                 gameUrl="https://flappycatito.herokuapp.com/"
@@ -59,8 +59,8 @@ function Shows() {
                 Essa não! Catito foi transformado em um passarinho e agora
                 precisa voltar para casa antes do pôr do sol, caso contrário
                 continuará nessa forma para todo sempre!
-              </GameCard>
-              <GameCard
+              </Card>
+              <Card
                 image={LoraxKart}
                 name="Lorax Kart"
                 gameUrl="https://lorax-kart.netlify.app/"
@@ -68,8 +68,8 @@ function Shows() {
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
                 de Congonhas a tempo.
-              </GameCard>
-              <GameCard
+              </Card>
+              <Card
                 image={Akon}
                 name="Jogo do AKON"
                 gameUrl="https://youtu.be/mc5ub3TULqU?t=16"
@@ -77,11 +77,11 @@ function Shows() {
               >
                 Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
                 a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
-                <br /> <strong>Apenas para dispositivos móveis</strong>
-              </GameCard>
+                <strong>Apenas para dispositivos móveis</strong>
+              </Card>
             </div>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
-              Mais jogos incríveis em breve!
+              Mais séries incríveis em breve!
             </h1>
           </div>
         </div>
