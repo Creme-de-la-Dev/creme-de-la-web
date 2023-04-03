@@ -52,8 +52,9 @@ function Shows() {
             <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
               <Card
                 image={FlappyCatito}
-                name="Flappy Catito"
-                gameUrl="https://flappycatito.herokuapp.com/"
+                name="Luan's Revolution"
+                type="show"
+                url="https://flappycatito.herokuapp.com/"
                 mobile={true}
               >
                 Essa não! Catito foi transformado em um passarinho e agora
@@ -62,8 +63,9 @@ function Shows() {
               </Card>
               <Card
                 image={LoraxKart}
-                name="Lorax Kart"
-                gameUrl="https://lorax-kart.netlify.app/"
+                name="Creme de la Nage TV"
+                type="show"
+                url="https://lorax-kart.netlify.app/"
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
@@ -71,8 +73,9 @@ function Shows() {
               </Card>
               <Card
                 image={Akon}
-                name="Jogo do AKON"
-                gameUrl="https://youtu.be/mc5ub3TULqU?t=16"
+                name="Turma da Válvula"
+                type="show"
+                url="https://youtu.be/mc5ub3TULqU?t=16"
                 available={false}
               >
                 Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique

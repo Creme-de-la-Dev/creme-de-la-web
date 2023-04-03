@@ -1,7 +1,8 @@
 import { IoGameController } from "react-icons/io5";
 import { MdPhonelinkErase } from "react-icons/md";
+import { BsPlayCircleFill } from "react-icons/bs";
 
-export default function Card({ image, name, children, url, ...props }) {
+export default function Card({ image, name, children, url, type, ...props }) {
   const { available = true, mobile = false } = props;
   return (
     <article className="rounded-md overflow-hidden relative max-w-sm group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
@@ -22,18 +23,40 @@ export default function Card({ image, name, children, url, ...props }) {
         <a href={url} target="_blank">
           {mobile ? (
             <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
-              <IoGameController size={"1.5em"} />
-              <h2 className="text-center text-xl tracking-widest uppercase">
-                Jogar
-              </h2>
+              {type === "game" ? (
+                <>
+                  <IoGameController size={"1.5em"} />
+                  <h2 className="text-center text-xl tracking-widest uppercase">
+                    Jogar
+                  </h2>
+                </>
+              ) : (
+                <>
+                  <BsPlayCircleFill size={"1.5em"} />
+                  <h2 className="text-center text-xl tracking-widest uppercase">
+                    Assistir
+                  </h2>
+                </>
+              )}
             </div>
           ) : (
             <>
               <div className="hidden md:flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-200 group-hover:text-cdln-blue-50 bg-cdln-blue-600 hover:bg-cdln-blue-700">
-                <IoGameController size={"1.5em"} />
-                <h2 className="text-center text-xl tracking-widest uppercase">
-                  Jogar
-                </h2>
+                {type === "game" ? (
+                  <>
+                    <IoGameController size={"1.5em"} />
+                    <h2 className="text-center text-xl tracking-widest uppercase">
+                      Jogar
+                    </h2>
+                  </>
+                ) : (
+                  <>
+                    <BsPlayCircleFill size={"1.5em"} />
+                    <h2 className="text-center text-xl tracking-widest uppercase">
+                      Assistir
+                    </h2>
+                  </>
+                )}
               </div>
               <div className="flex md:hidden gap-3 justify-center border-t py-8 items-center text-white bg-gray-500">
                 <MdPhonelinkErase size={"1.5em"} />
