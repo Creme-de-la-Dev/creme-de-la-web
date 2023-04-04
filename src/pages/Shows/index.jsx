@@ -57,9 +57,7 @@ function Shows() {
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
               >
-                Essa não! Catito foi transformado em um passarinho e agora
-                precisa voltar para casa antes do pôr do sol, caso contrário
-                continuará nessa forma para todo sempre!
+                No ano de 2015, Lord Frene começa lentamente sua invasão Frene no planeta terra, e Luan e seu irmão secreto se conhecem em um conflito e, após um incidente, Luan decide se juntar com uma equipe para erradicar os Frenes.
               </Card>
               <Card
                 image={LoraxKart}
@@ -67,9 +65,7 @@ function Shows() {
                 type="show"
                 url="https://lorax-kart.netlify.app/"
               >
-                Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
-                de adrenalina na grande São Paulo e busque o Flávio no aeroporto
-                de Congonhas a tempo.
+                Sua turma favorita, diretamente na TV! Creme de la Nage TV é um compilado de esquetes de piadas envolvendo toda turma com piadas da época. Episódios curtos e muito engraçados para maratonar em grupo, vamo rir!
               </Card>
               <Card
                 image={Akon}
@@ -78,9 +74,7 @@ function Shows() {
                 url="https://youtu.be/mc5ub3TULqU?t=16"
                 available={false}
               >
-                Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
-                a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
-                <strong>Apenas para dispositivos móveis</strong>
+                No ano de 2020, uma pandêmia global resulta em um lockdown geral no mundo todo. Nessa situação, a turma do Creme finalmente realiza seu sonho da tão aclamada Casa do Creme e vão todos morar juntos, essa é a Turma da Válvula!
               </Card>
             </div>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
