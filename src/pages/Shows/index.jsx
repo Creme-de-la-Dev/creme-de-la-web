@@ -10,7 +10,7 @@ import GamesBGsm from "../../assets/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
-import Akon from "../../assets/AKON-PROMO.png";
+import TDV from "../../assets/TDV-PROMO.png";
 
 function Shows() {
   return (
@@ -68,10 +68,10 @@ function Shows() {
                 Sua turma favorita, diretamente na TV! Creme de la Nage TV é um compilado de esquetes de piadas envolvendo toda turma com piadas da época. Episódios curtos e muito engraçados para maratonar em grupo, vamo rir!
               </Card>
               <Card
-                image={Akon}
+                image={TDV}
                 name="Turma da Válvula"
                 type="show"
-                url="https://youtu.be/mc5ub3TULqU?t=16"
+                url="https://www.youtube.com/watch?v=ybdFFSfm6Dk"
                 available={false}
               >
                 No ano de 2020, uma pandêmia global resulta em um lockdown geral no mundo todo. Nessa situação, a turma do Creme finalmente realiza seu sonho da tão aclamada Casa do Creme e vão todos morar juntos, essa é a Turma da Válvula!

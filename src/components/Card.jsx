@@ -68,13 +68,29 @@ export default function Card({ image, name, children, url, type, ...props }) {
           )}
         </a>
       ) : (
-        <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
-          <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
-            <h2 className="text-center text-xl tracking-widest uppercase">
-              Em Breve
-            </h2>
-          </div>
-        </a>
+        <>
+          {type === "game" ? (
+            <>
+              <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
+              <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
+                <h2 className="text-center text-xl tracking-widest uppercase">
+                  Em Breve
+                </h2>
+              </div>
+            </a>
+            </>
+          ) : (
+            <a href="https://www.youtube.com/watch?v=ybdFFSfm6Dk" target="_blank">
+            <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
+              <h2 className="text-center text-xl tracking-widest uppercase">
+                Em Breve (Assistir Trailer)
+              </h2>
+            </div>
+          </a>
+          )}
+        
+        </>
+        
       )}
     </article>
   );
