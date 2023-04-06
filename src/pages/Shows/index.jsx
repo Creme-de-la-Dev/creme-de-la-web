@@ -5,8 +5,8 @@ import React from "react";
 import Card from "../../components/Card";
 
 // Images
-import GamesBG from "../../assets/GamesBG.png";
-import GamesBGsm from "../../assets/GamesBG-sm.png";
+import ShowsBG from "../../assets/ShowsBG.png";
+import ShowsBGsm from "../../assets/ShowsBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 import LR from "../../assets/LR-PROMO.png";
 import CDLNTV from "../../assets/CDLNTV-PROMO.png";
@@ -18,11 +18,11 @@ function Shows() {
       <section className="header h-screen">
         <div className="h-full w-full relative">
           <img
-            src={GamesBG}
+            src={ShowsBG}
             className="hidden lg:block w-full h-full object-cover absolute"
           />
           <img
-            src={GamesBGsm}
+            src={ShowsBGsm}
             className="lg:hidden w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">
@@ -54,7 +54,7 @@ function Shows() {
                 image={LR}
                 name="Luan's Revolution"
                 type="show"
-                url="https://flappycatito.herokuapp.com/"
+                url="https://www.youtube.com/playlist?list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE"
                 mobile={true}
               >
                 No ano de 2015, Lord Frene começa lentamente sua invasão Frene no planeta terra, e Luan e seu irmão secreto se conhecem em um conflito e, após um incidente, Luan decide se juntar com uma equipe para erradicar os Frenes.
@@ -63,7 +63,7 @@ function Shows() {
                 image={CDLNTV}
                 name="Creme de la Nage TV"
                 type="show"
-                url="https://lorax-kart.netlify.app/"
+                url="https://youtu.be/HEW9E0R1yn8?t=1"
               >
                 Sua turma favorita, diretamente na TV! Creme de la Nage TV é um compilado de esquetes de piadas envolvendo toda turma com piadas da época. Episódios curtos e muito engraçados para maratonar em grupo, vamo rir!
               </Card>
