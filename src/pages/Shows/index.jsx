@@ -8,7 +8,7 @@ import Card from "../../components/Card";
 import GamesBG from "../../assets/GamesBG.png";
 import GamesBGsm from "../../assets/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
-import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
+import LR from "../../assets/LR-PROMO.png";
 import CDLNTV from "../../assets/CDLNTV-PROMO.png";
 import TDV from "../../assets/TDV-PROMO.png";
 
@@ -51,7 +51,7 @@ function Shows() {
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
               <Card
-                image={FlappyCatito}
+                image={LR}
                 name="Luan's Revolution"
                 type="show"
                 url="https://flappycatito.herokuapp.com/"
