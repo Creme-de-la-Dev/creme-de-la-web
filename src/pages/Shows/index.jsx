@@ -9,7 +9,7 @@ import GamesBG from "../../assets/GamesBG.png";
 import GamesBGsm from "../../assets/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
-import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
+import CDLNTV from "../../assets/CDLNTV-PROMO.png";
 import TDV from "../../assets/TDV-PROMO.png";
 
 function Shows() {
@@ -60,7 +60,7 @@ function Shows() {
                 No ano de 2015, Lord Frene começa lentamente sua invasão Frene no planeta terra, e Luan e seu irmão secreto se conhecem em um conflito e, após um incidente, Luan decide se juntar com uma equipe para erradicar os Frenes.
               </Card>
               <Card
-                image={LoraxKart}
+                image={CDLNTV}
                 name="Creme de la Nage TV"
                 type="show"
                 url="https://lorax-kart.netlify.app/"

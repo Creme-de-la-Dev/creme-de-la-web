@@ -41,7 +41,7 @@ function Home() {
           </div>
           <div className="flex flex-col lg:p-20 mt-10 lg:mt-0 animate__animated animate__pulse justify-center">
             <img
-              className="w-64 sm:w-80 lg:w-96 xl:w-full"
+              className="w-64 sm:w-80 lg:w-96 xl:w-auto"
               src={Logo}
               alt="Logo"
             />
