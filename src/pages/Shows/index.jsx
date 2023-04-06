@@ -64,6 +64,7 @@ function Shows() {
                 name="Creme de la Nage TV"
                 type="show"
                 url="https://youtu.be/HEW9E0R1yn8?t=1"
+                mobile={true}
               >
                 Sua turma favorita, diretamente na TV! Creme de la Nage TV é um compilado de esquetes de piadas envolvendo toda turma com piadas da época. Episódios curtos e muito engraçados para maratonar em grupo, vamo rir!
               </Card>
@@ -72,6 +73,7 @@ function Shows() {
                 name="Turma da Válvula"
                 type="show"
                 url="https://www.youtube.com/watch?v=ybdFFSfm6Dk"
+                mobile={true}
                 available={false}
               >
                 No ano de 2020, uma pandêmia global resulta em um lockdown geral no mundo todo. Nessa situação, a turma do Creme finalmente realiza seu sonho da tão aclamada Casa do Creme e vão todos morar juntos, essa é a Turma da Válvula!
