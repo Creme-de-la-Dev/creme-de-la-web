@@ -79,7 +79,8 @@ function Home() {
           imageRight={true}
         >
           Webshows do grupo <strong>Creme de la Nage</strong> já estão
-          disponíveis na plataforma, sendo estes{" "}
+          disponíveis na plataforma, sendo estes
+          <br />
           <strong>Luan’s Revolution (2015)</strong>,
           <strong>Creme de la Nage TV (2016)</strong>,{" "}
           <strong>Turma da Válvula (2021)</strong> e{" "}
