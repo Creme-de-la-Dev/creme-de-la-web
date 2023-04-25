@@ -14,6 +14,7 @@ import Shows from "./pages/Shows";
 import Games from "./pages/Games";
 import Store from "./pages/Store";
 import About from "./pages/About";
+import Extras from "./pages/Extras";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
+          <Route path="/extras" element={<Extras />} />
         </Routes>
       </Router>
       <Footer />
