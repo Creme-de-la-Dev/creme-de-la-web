@@ -112,7 +112,6 @@ function Footer() {
               className="text-gray-50 text-sm"
               href="/extras"
             >se você consegue ler isso, clique aqui</a>
-
           </div>
         </div>
       </footer>

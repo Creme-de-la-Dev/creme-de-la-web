@@ -61,6 +61,7 @@ function Home() {
           imageAlt="Game"
           btnText="Conferir os jogos"
           BtnIcon={IoGameController}
+          link="/games"
         >
           Jogos fantásticos totalmente pensados e feitos pela equipe{" "}
           <strong>Creme de la Nage</strong> estão disponíveis,
@@ -77,6 +78,7 @@ function Home() {
           btnText="Conferir as séries"
           BtnIcon={HiFilm}
           imageRight={true}
+          link="/shows"
         >
           Webshows do grupo <strong>Creme de la Nage</strong> já estão
           disponíveis na plataforma, sendo estes
@@ -94,6 +96,7 @@ function Home() {
             imageAlt="Store"
             btnText="Conferir Loja"
             BtnIcon={HiShoppingBag}
+            link="store"
           >
             Compre já nossos itens, camisetas, canecas e brinquedos do Creme de
             la Nage
