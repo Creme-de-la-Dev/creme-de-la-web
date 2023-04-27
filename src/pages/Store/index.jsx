@@ -83,9 +83,6 @@ function Store() {
                 <strong>Apenas para dispositivos móveis</strong>
               </Card>
             </div>
-            <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
-              Mais jogos incríveis em breve!
-            </h1>
           </div>
         </div>
       </section>
