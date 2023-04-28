@@ -11,6 +11,10 @@ import FriendsShirt from "../../assets/Store/FRIENDS-SHIRT-PROMO.png";
 import MemoriesShirt from "../../assets/Store/MEMORIES-SHIRT-PROMO.png";
 import GroupShirt from "../../assets/Store/GROUP-SHIRT-PROMO.png";
 import KitKatShirt from "../../assets/Store/KIT-KAT-SHIRT-PROMO.png";
+import FunkoAle from "../../assets/Store/FUNKO-ALE-PROMO.png";
+import Beterronio from "../../assets/Store/BETERRONIO-PROMO.png";
+import LoraxMug from "../../assets/Store/MUG-LORAX-PROMO.png";
+import FreneKeychain from "../../assets/Store/FRENE-KEYCHAIN-PROMO.png";
 
 function Store() {
   return (
@@ -89,6 +93,50 @@ function Store() {
                 available={false}
               >
                 100% Algodão, disponível nas cores vermelho e preto.
+              </ProductCard>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
+              <ProductCard
+                image={FunkoAle}
+                name="Funko POP! Ale"
+                price="R$ 119,90"
+                url="https://flappycatito.herokuapp.com/"
+                mobile={true}
+                available={false}
+              >
+                Funko POP! Limitado do Ale, versão Esqueleto Médio 2019.
+              </ProductCard>
+              <ProductCard
+                image={Beterronio}
+                name="Beterrônio Colar"
+                price="R$ 89,90"
+                url="https://lorax-kart.netlify.app/"
+                mobile={true}
+                available={false}
+              >
+                Colar de beterrônio usado por Golirous Giggs em 2021.
+              </ProductCard>
+              <ProductCard
+                image={LoraxMug}
+                name="Caneca Lorax Kart"
+                price="R$ 39,90"
+                url="https://youtu.be/mc5ub3TULqU?t=16"
+                mobile={true}
+                available={false}
+              >
+                Para os mais velozes e destemidos jogadores.
+              </ProductCard>
+              <ProductCard
+                image={FreneKeychain}
+                name="Chaveiro Lord Frene"
+                price="R$ 19,90"
+                url="https://flappycatito.herokuapp.com/"
+                mobile={true}
+                available={false}
+              >
+                Chaveiro para mostrar a todos que você está na luta contra os frenes.
               </ProductCard>
             </div>
           </div>

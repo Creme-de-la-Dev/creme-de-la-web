@@ -16,7 +16,7 @@ export default function ProductCard({ image, name, children, url, price, ...prop
         <p className="text-xl font-bold text-gray-600">
           {price}
         </p>
-        <p className="text-sm md:text-xl text-gray-400 mt-4 leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-400 mt-4 leading-relaxed">
           {children}
         </p>
       </div>
@@ -47,7 +47,7 @@ export default function ProductCard({ image, name, children, url, price, ...prop
       ) : (
         <>
             <>
-              <a href="https://youtu.be/mc5ub3TULqU?t=16" target="_blank">
+              <a href="https://www.youtube.com/shorts/E56Xy3WOC7Y" target="_blank">
               <div className="flex gap-3 justify-center border-t py-8 items-center text-cdln-blue-50 bg-gray-500">
                 <h2 className="text-center text-xl tracking-widest uppercase">
                   Em Breve
