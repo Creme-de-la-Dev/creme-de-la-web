@@ -1,6 +1,6 @@
 import { IoCartSharp } from "react-icons/io5";
 
-export default function ProductCard({ image, name, children, url, ...props }) {
+export default function ProductCard({ image, name, children, url, price, ...props }) {
   const { available = true, mobile = false } = props;
   return (
     <article className="rounded-md overflow-hidden relative max-w-xs group shadow-md mx-auto transform hover:-translate-y-1 duration-300 hover:shadow-xl cursor-pointer">
@@ -12,7 +12,10 @@ export default function ProductCard({ image, name, children, url, ...props }) {
         />
       </div>
       <div className="p-5 my-auto pb-5 bg-cdln-blue-50">
-        <h1 className="text-3xl font-semibold text-gray-800 mt-4">{name}</h1>
+        <h1 className="text-3xl font-semibold text-gray-800 mt-2">{name}</h1>
+        <p className="text-xl font-bold text-gray-600">
+          {price}
+        </p>
         <p className="text-sm md:text-xl text-gray-400 mt-4 leading-relaxed">
           {children}
         </p>

@@ -53,6 +53,7 @@ function Store() {
               <ProductCard
                 image={FriendsShirt}
                 name="Camiseta Amigos"
+                price="R$ 59,90"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
                 available={false}
@@ -62,6 +63,7 @@ function Store() {
               <ProductCard
                 image={MemoriesShirt}
                 name="Camiseta Memories"
+                price="R$ 59,90"
                 url="https://lorax-kart.netlify.app/"
                 mobile={true}
                 available={false}
@@ -71,6 +73,7 @@ function Store() {
               <ProductCard
                 image={GroupShirt}
                 name="Camiseta Grupo"
+                price="R$ 59,90"
                 url="https://youtu.be/mc5ub3TULqU?t=16"
                 mobile={true}
                 available={false}
@@ -80,6 +83,7 @@ function Store() {
               <ProductCard
                 image={KitKatShirt}
                 name="Camiseta Have a Break"
+                price="R$ 59,90"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
                 available={false}
