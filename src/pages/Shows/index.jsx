@@ -5,12 +5,12 @@ import React from "react";
 import Card from "../../components/Cards/Card";
 
 // Images
-import ShowsBG from "../../assets/ShowsBG.png";
-import ShowsBGsm from "../../assets/ShowsBG-sm.png";
+import ShowsBG from "../../assets/BackgroundImages/ShowsBG.png";
+import ShowsBGsm from "../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
-import LR from "../../assets/LR-PROMO.png";
-import CDLNTV from "../../assets/CDLNTV-PROMO.png";
-import TDV from "../../assets/TDV-PROMO.png";
+import LR from "../../assets/Shows/LR-PROMO.png";
+import CDLNTV from "../../assets/Shows/CDLNTV-PROMO.png";
+import TDV from "../../assets/Shows/TDV-PROMO.png";
 
 function Shows() {
   return (

@@ -5,12 +5,12 @@ import React from "react";
 import Card from "../../components/Cards/Card";
 
 // Images
-import GamesBG from "../../assets/GamesBG.png";
-import GamesBGsm from "../../assets/GamesBG-sm.png";
+import GamesBG from "../../assets/BackgroundImages/GamesBG.png";
+import GamesBGsm from "../../assets/BackgroundImages/GamesBG-sm.png";
 import ArrowDown from "../../assets/arrow-down.svg";
-import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
-import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
-import Akon from "../../assets/AKON-PROMO.png";
+import FlappyCatito from "../../assets/Games/FLAPPY-CATITO-PROMO.png";
+import LoraxKart from "../../assets/Games/LORAX-KART-PROMO.png";
+import Akon from "../../assets/Games/AKON-PROMO.png";
 
 function Games() {
   return (

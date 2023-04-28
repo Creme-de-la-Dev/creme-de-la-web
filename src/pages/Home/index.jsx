@@ -8,10 +8,10 @@ import { HiFilm, HiShoppingBag } from "react-icons/hi";
 import ContentBanner from "../../components/ContentBanner";
 
 // Images
-import Logo from "../../assets/ale-logo.png";
-import Game from "../../assets/Game.png";
-import Shows from "../../assets/Shows.png";
-import Store from "../../assets/Store.png";
+import Logo from "../../assets/Logos/ale-logo.png";
+import Game from "../../assets/Home/Game.png";
+import Shows from "../../assets/Home/Shows.png";
+import Store from "../../assets/Home/Store.png";
 
 // Animations
 import "animate.css";

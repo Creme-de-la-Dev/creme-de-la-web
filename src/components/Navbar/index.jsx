@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 // Images
-import LogoNav from "../../assets/ale-logo-nav.png";
+import LogoNav from "../../assets/Logos/ale-logo-nav.png";
 
 // Icons
 import { IoGameController } from "react-icons/io5";

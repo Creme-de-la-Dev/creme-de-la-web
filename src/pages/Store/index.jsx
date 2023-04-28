@@ -5,11 +5,11 @@ import React from "react";
 import ProductCard from "../../components/Cards/ProductCard";
 
 // Images
-import StoreBG from "../../assets/StoreBG.png";
+import StoreBG from "../../assets/BackgroundImages/StoreBG.png";
 import ArrowDown from "../../assets/arrow-down.svg";
-import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
-import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
-import Akon from "../../assets/AKON-PROMO.png";
+import FlappyCatito from "../../assets/Games/FLAPPY-CATITO-PROMO.png";
+import LoraxKart from "../../assets/Games/LORAX-KART-PROMO.png";
+import Akon from "../../assets/Games/AKON-PROMO.png";
 
 function Store() {
   return (
@@ -52,50 +52,38 @@ function Store() {
               <ProductCard
                 image={FlappyCatito}
                 name="Flappy Catito"
-                type="game"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
                 available={false}
               >
-                Essa não! Catito foi transformado em um passarinho e agora
-                precisa voltar para casa antes do pôr do sol, caso contrário
-                continuará nessa forma para todo sempre!
+                100% Algodão, disponível nas cores azul vermelho e preto.
               </ProductCard>
               <ProductCard
                 image={LoraxKart}
                 name="Lorax Kart"
-                type="game"
                 url="https://lorax-kart.netlify.app/"
                 mobile={true}
                 available={false}
               >
-                Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
-                de adrenalina na grande São Paulo e busque o Flávio no aeroporto
-                de Congonhas a tempo.
+                100% Algodão, disponível nas cores azul, cinza, roxo e preto.
               </ProductCard>
               <ProductCard
                 image={Akon}
                 name="Jogo do AKON"
-                type="game"
                 url="https://youtu.be/mc5ub3TULqU?t=16"
                 mobile={true}
                 available={false}
               >
-                Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
-                a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
-                <strong>Apenas para dispositivos móveis</strong>
+                100% Algodão, disponível nas cores azul vermelho e preto.
               </ProductCard>
               <ProductCard
                 image={FlappyCatito}
                 name="Flappy Catito"
-                type="game"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
                 available={false}
               >
-                Essa não! Catito foi transformado em um passarinho e agora
-                precisa voltar para casa antes do pôr do sol, caso contrário
-                continuará nessa forma para todo sempre!
+                100% Algodão, disponível nas cores azul vermelho e preto.
               </ProductCard>
             </div>
           </div>
