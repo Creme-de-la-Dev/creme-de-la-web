@@ -11,9 +11,9 @@ export default function ProductCard({ image, name, children, url, ...props }) {
           alt={name}
         />
       </div>
-      <div className="p-7 my-auto pb-5 bg-cdln-blue-50">
+      <div className="p-5 my-auto pb-5 bg-cdln-blue-50">
         <h1 className="text-3xl font-semibold text-gray-800 mt-4">{name}</h1>
-        <p className="text-sm md:text-2xl text-gray-400 mt-4 leading-relaxed">
+        <p className="text-sm md:text-xl text-gray-400 mt-4 leading-relaxed">
           {children}
         </p>
       </div>

@@ -7,9 +7,10 @@ import ProductCard from "../../components/Cards/ProductCard";
 // Images
 import StoreBG from "../../assets/BackgroundImages/StoreBG.png";
 import ArrowDown from "../../assets/arrow-down.svg";
-import FlappyCatito from "../../assets/Games/FLAPPY-CATITO-PROMO.png";
-import LoraxKart from "../../assets/Games/LORAX-KART-PROMO.png";
-import Akon from "../../assets/Games/AKON-PROMO.png";
+import FriendsShirt from "../../assets/Store/FRIENDS-SHIRT-PROMO.png";
+import MemoriesShirt from "../../assets/Store/MEMORIES-SHIRT-PROMO.png";
+import GroupShirt from "../../assets/Store/GROUP-SHIRT-PROMO.png";
+import KitKatShirt from "../../assets/Store/KIT-KAT-SHIRT-PROMO.png";
 
 function Store() {
   return (
@@ -50,40 +51,40 @@ function Store() {
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
               <ProductCard
-                image={FlappyCatito}
-                name="Flappy Catito"
+                image={FriendsShirt}
+                name="Camiseta Amigos"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
                 available={false}
               >
-                100% Algodão, disponível nas cores azul vermelho e preto.
+                100% Algodão, disponível nas cores azul, vermelho e preto.
               </ProductCard>
               <ProductCard
-                image={LoraxKart}
-                name="Lorax Kart"
+                image={MemoriesShirt}
+                name="Camiseta Memories"
                 url="https://lorax-kart.netlify.app/"
                 mobile={true}
                 available={false}
               >
-                100% Algodão, disponível nas cores azul, cinza, roxo e preto.
+                100% Algodão, disponível nas cores azul, cinza e preto.
               </ProductCard>
               <ProductCard
-                image={Akon}
-                name="Jogo do AKON"
+                image={GroupShirt}
+                name="Camiseta Grupo"
                 url="https://youtu.be/mc5ub3TULqU?t=16"
                 mobile={true}
                 available={false}
               >
-                100% Algodão, disponível nas cores azul vermelho e preto.
+                100% Algodão, disponível nas cores azul, cinza e preto.
               </ProductCard>
               <ProductCard
-                image={FlappyCatito}
-                name="Flappy Catito"
+                image={KitKatShirt}
+                name="Camiseta Have a Break"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
                 available={false}
               >
-                100% Algodão, disponível nas cores azul vermelho e preto.
+                100% Algodão, disponível nas cores vermelho e preto.
               </ProductCard>
             </div>
           </div>
