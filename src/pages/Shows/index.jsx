@@ -2,7 +2,7 @@
 import React from "react";
 
 // Components
-import Card from "../../components/Card";
+import Card from "../../components/Cards/Card";
 
 // Images
 import ShowsBG from "../../assets/ShowsBG.png";

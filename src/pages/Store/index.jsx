@@ -2,11 +2,10 @@
 import React from "react";
 
 // Components
-import Card from "../../components/Card";
+import ProductCard from "../../components/Cards/ProductCard";
 
 // Images
-import GamesBG from "../../assets/GamesBG.png";
-import GamesBGsm from "../../assets/GamesBG-sm.png";
+import StoreBG from "../../assets/StoreBG.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 import FlappyCatito from "../../assets/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/LORAX-KART-PROMO.png";
@@ -18,11 +17,11 @@ function Store() {
       <section className="header h-screen">
         <div className="h-full w-full relative">
           <img
-            src={GamesBG}
+            src={StoreBG}
             className="hidden lg:block w-full h-full object-cover absolute"
           />
           <img
-            src={GamesBGsm}
+            src={StoreBG}
             className="lg:hidden w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">
@@ -49,39 +48,55 @@ function Store() {
           <div className="cube"></div>
           <div className="cube"></div>
           <div>
-            <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
-              <Card
+            <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
+              <ProductCard
                 image={FlappyCatito}
                 name="Flappy Catito"
                 type="game"
                 url="https://flappycatito.herokuapp.com/"
                 mobile={true}
+                available={false}
               >
                 Essa não! Catito foi transformado em um passarinho e agora
                 precisa voltar para casa antes do pôr do sol, caso contrário
                 continuará nessa forma para todo sempre!
-              </Card>
-              <Card
+              </ProductCard>
+              <ProductCard
                 image={LoraxKart}
                 name="Lorax Kart"
                 type="game"
                 url="https://lorax-kart.netlify.app/"
+                mobile={true}
+                available={false}
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
                 de Congonhas a tempo.
-              </Card>
-              <Card
+              </ProductCard>
+              <ProductCard
                 image={Akon}
                 name="Jogo do AKON"
                 type="game"
                 url="https://youtu.be/mc5ub3TULqU?t=16"
+                mobile={true}
                 available={false}
               >
                 Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
                 a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
                 <strong>Apenas para dispositivos móveis</strong>
-              </Card>
+              </ProductCard>
+              <ProductCard
+                image={FlappyCatito}
+                name="Flappy Catito"
+                type="game"
+                url="https://flappycatito.herokuapp.com/"
+                mobile={true}
+                available={false}
+              >
+                Essa não! Catito foi transformado em um passarinho e agora
+                precisa voltar para casa antes do pôr do sol, caso contrário
+                continuará nessa forma para todo sempre!
+              </ProductCard>
             </div>
           </div>
         </div>

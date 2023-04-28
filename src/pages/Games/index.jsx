@@ -2,7 +2,7 @@
 import React from "react";
 
 // Components
-import Card from "../../components/Card";
+import Card from "../../components/Cards/Card";
 
 // Images
 import GamesBG from "../../assets/GamesBG.png";
@@ -69,7 +69,7 @@ function Games() {
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
-                de Congonhas a tempo.
+                de Guarulhos a tempo.
               </Card>
                 <Card
                   image={Akon}
