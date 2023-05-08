@@ -8,10 +8,10 @@ import { HiFilm, HiShoppingBag } from "react-icons/hi";
 import ContentBanner from "../../components/ContentBanner";
 
 // Images
-import Logo from "../../assets/ale-logo.png";
-import Game from "../../assets/Game.png";
-import Shows from "../../assets/Shows.png";
-import Store from "../../assets/Store.png";
+import Logo from "../../assets/Logos/ale-logo.png";
+import Game from "../../assets/Home/Game.png";
+import Shows from "../../assets/Home/Shows.png";
+import Store from "../../assets/Home/Store.png";
 
 // Animations
 import "animate.css";
@@ -61,6 +61,7 @@ function Home() {
           imageAlt="Game"
           btnText="Conferir os jogos"
           BtnIcon={IoGameController}
+          link="/games"
         >
           Jogos fantásticos totalmente pensados e feitos pela equipe{" "}
           <strong>Creme de la Nage</strong> estão disponíveis,
@@ -77,6 +78,7 @@ function Home() {
           btnText="Conferir as séries"
           BtnIcon={HiFilm}
           imageRight={true}
+          link="/shows"
         >
           Webshows do grupo <strong>Creme de la Nage</strong> já estão
           disponíveis na plataforma, sendo estes
@@ -94,6 +96,7 @@ function Home() {
             imageAlt="Store"
             btnText="Conferir Loja"
             BtnIcon={HiShoppingBag}
+            link="store"
           >
             Compre já nossos itens, camisetas, canecas e brinquedos do Creme de
             la Nage

@@ -5,6 +5,7 @@ export default function ContentBanner({
   btnText,
   BtnIcon,
   children,
+  link,
   ...props
 }) {
   const { imageRight = false } = props;
@@ -29,7 +30,7 @@ export default function ContentBanner({
               {children}
             </h2>
             <div className="pt-5 self-center animate__animated animate__fadeIn">
-              <a href="/games">
+              <a href={link}>
                 <button className="bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg flex flex-row items-center gap-3 text-2xl">
                   <BtnIcon size={30} />
                   {btnText}

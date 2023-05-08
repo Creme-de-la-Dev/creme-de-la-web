@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 // Images
-import LogoNav from "../../assets/ale-logo-nav.png";
+import LogoNav from "../../assets/Logos/ale-logo-nav.png";
 
 // Icons
 import { IoGameController } from "react-icons/io5";
@@ -114,8 +114,8 @@ function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <HambugerMenuButton href='/home' text='Home' current={true} BtnIcon={HiHome} />
-              <HambugerMenuButton href='/shows' text='Séries' BtnIcon={HiFilm} />
               <HambugerMenuButton href='/games' text='Jogos' BtnIcon={IoGameController} />
+              <HambugerMenuButton href='/shows' text='Séries' BtnIcon={HiFilm} />
               <HambugerMenuButton href='/store' text='Loja' BtnIcon={HiShoppingBag} />
               <HambugerMenuButton href='/about' text='Sobre Nós' BtnIcon={HiInformationCircle} />
               </div>

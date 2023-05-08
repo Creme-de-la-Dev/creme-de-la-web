@@ -2,8 +2,13 @@
 import React, { useState } from "react";
 
 // Icons
-import { MdEmail } from 'react-icons/md';
-import { FaFacebookSquare, FaTwitter, FaInstagram, FaGithub} from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
+import {
+  FaFacebookSquare,
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 
 // Components
 import SocialIcon from "./SocialIcon";
@@ -18,7 +23,12 @@ function Footer() {
           </div>
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-          Creme de la Nage, Sapo-Boi Studios e todos seu derivados são marcas registradas e tals. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Creme de la Nage, Sapo-Boi Studios e todos seu derivados são marcas
+            registradas e tals. Lorem ipsum dolor sit {""} 
+            <a href="https://www.youtube.com/watch?v=pWsFmjckrRk">
+            amet
+            </a>
+             , consectetur adipiscing elit.
           </p>
 
           <nav aria-label="Footer Nav" className="mt-12">
@@ -72,18 +82,40 @@ function Footer() {
 
           <ul className="mt-12 flex justify-center gap-6 md:gap-8">
             <li>
-            <SocialIcon href='https://www.facebook.com/aleapontando' text='Facebook' BtnIcon={FaFacebookSquare} />
+              <SocialIcon
+                href="https://www.facebook.com/aleapontando"
+                text="Facebook"
+                BtnIcon={FaFacebookSquare}
+              />
             </li>
             <li>
-            <SocialIcon href='https://twitter.com/thefunny_mp4/status/1521276206162890755?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g' text='Twitter' BtnIcon={FaTwitter} />
+              <SocialIcon
+                href="https://twitter.com/thefunny_mp4/status/1521276206162890755?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g"
+                text="Twitter"
+                BtnIcon={FaTwitter}
+              />
             </li>
             <li>
-            <SocialIcon href='https://www.instagram.com/creme_de_la_nage/?hl=pt' text='Instagram' BtnIcon={FaInstagram} />
+              <SocialIcon
+                href="https://www.instagram.com/creme_de_la_nage/?hl=pt"
+                text="Instagram"
+                BtnIcon={FaInstagram}
+              />
             </li>
             <li>
-            <SocialIcon href='https://github.com/Creme-de-la-Dev' text='GitHub' BtnIcon={FaGithub} />
+              <SocialIcon
+                href="https://github.com/Creme-de-la-Dev"
+                text="GitHub"
+                BtnIcon={FaGithub}
+              />
             </li>
           </ul>
+          <div className="text-center mt-5 mx-auto">
+            <a
+              className="text-gray-50 text-sm"
+              href="/extras"
+            >se você consegue ler isso, clique aqui</a>
+          </div>
         </div>
       </footer>
     </div>
