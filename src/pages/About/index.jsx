@@ -14,7 +14,7 @@ function About() {
       <section className="header h-screen p-32">
         <div className="inline-flex justify-between w-full">
             <div className="flex-column max-w-4xl h-full justify-between">
-                <h1 class="text-cdln-blue-100 text-7xl md:text-8xl font-bold animate__animated animate__pulse">
+                <h1 class="text-cdln-blue-100 text-7xl md:text-8xl font-bold animate__animated animate__bounceInDown">
                     Sobre Nós
                 </h1>
                 <h2 class="text-cdln-blue-50 text-xl md:text-3xl animate__animated animate__fadeIn">  
