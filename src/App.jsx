@@ -14,7 +14,7 @@ import Shows from "./pages/Shows";
 import Games from "./pages/Games";
 import Store from "./pages/Store";
 import About from "./pages/About";
-import Extras from "./pages/Extras";
+import Secrets from "./pages/Secrets";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
-          <Route path="/extras" element={<Extras />} />
+          <Route path="/2209626308100203jodoboiox" element={<Secrets />} />
         </Routes>
       </Router>
       <Footer />

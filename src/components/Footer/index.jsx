@@ -113,7 +113,7 @@ function Footer() {
           <div className="text-center mt-5 mx-auto">
             <a
               className="text-gray-50 text-sm"
-              href="/extras"
+              href="/2209626308100203jodoboiox"
             >se você consegue ler isso, clique aqui</a>
           </div>
         </div>
