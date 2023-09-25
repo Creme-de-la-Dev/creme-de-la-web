@@ -36,26 +36,40 @@ function Secrets() {
       <section id="main-section">
         <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
-            1. Botão Mágico
+            1. O Botão.
           </h2>
           <h3 className="text-green-700 text-center text-4xl font-regular">
-            Existem 20 combinações corretas. Após digitar, aperte o botão e teste sua sorte.
+            Existem 20 combinações corretas. Após digitar, aperte o botão e
+            teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
             <form className="form self-center w-full m-16">
-                <div className="input-fields">
-                    <input placeholder="" type="tel" maxlength="1"/>
-                    <input placeholder="" type="tel" maxlength="1"/>
-                    <input placeholder="" type="tel" maxlength="1"/>
-                    <input placeholder="" type="tel" maxlength="1"/>
-                </div>
+              <div className="input-fields">
+                <input placeholder="" type="tel" maxlength="1" />
+                <input placeholder="" type="tel" maxlength="1" />
+                <input placeholder="" type="tel" maxlength="1" />
+                <input placeholder="" type="tel" maxlength="1" />
+              </div>
             </form>
             <div className="flex justify-center items-center h-full">
-                <button class="btn-class-name">
-                <span class="back"></span>
-                <span class="front"></span>
-                </button>
+              <button className="btn-class-name">
+                <span className="back"></span>
+                <span className="front"></span>
+              </button>
             </div>
+          </div>
+        </div>
+        <div className="hero lg:min-h-screen bg-black">
+          <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
+            2. Espelho, Espelho Meu.
+          </h2>
+          <div className="w-full">
+            <div className="obj">
+              <div className="objchild">
+                <span className="inn6"></span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
