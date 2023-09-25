@@ -23,7 +23,7 @@ function Secrets() {
               Ŝ̸̪̤̩͛̏̚E̸̤̋̇Ǵ̸̺̀͆͜͝R̸̠̬̿̍̏̃ͅͅE̷̮͂̆̂͝D̵̥͛͛̊̿Ȏ̵̪S̶͉̫̾̌̌
             </h1>
             <h2 className="text-cdln-blue-100 text-2xl md:text-5xl font-normal mt-5 text-center animate__animated animate__flash">
-              Onde o filho chora e mãe não vê.
+              Onde o filho chora e a mãe não vê.
             </h2>
             <div className="w-full justify-center items-center pt-20 animate__animated animate__fadeIn">
               <a href="#main-section">
@@ -39,7 +39,7 @@ function Secrets() {
             1. Botão Mágico
           </h2>
           <h3 className="text-green-700 text-center text-4xl font-regular">
-            4 números. Apenas 10 combinações corretas. Boa sorte.
+            Existem 20 combinações corretas. Após digitar, aperte o botão e teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
             <form className="form self-center w-full m-16">
