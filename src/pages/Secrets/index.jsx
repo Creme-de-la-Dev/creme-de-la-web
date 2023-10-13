@@ -64,7 +64,7 @@ function Secrets() {
             2. Espelho, Espelho Meu.
           </h2>
           <div className="w-full">
-            <div className="obj">
+            <div className="obj self-center">
               <div className="objchild">
                 <span className="inn6"></span>
               </div>
