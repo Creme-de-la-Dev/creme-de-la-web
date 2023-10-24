@@ -15,6 +15,7 @@ import Games from "./pages/Games";
 import Store from "./pages/Store";
 import About from "./pages/About";
 import Secrets from "./pages/Secrets";
+import LoraxKart from "./pages/Games/lorax-kart/LoraxKart";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
           <Route path="/2209626308100203jodoboiox" element={<Secrets />} />
+          <Route path="/games/lorax-kart" element={<LoraxKart />} />
         </Routes>
       </Router>
       <Footer />
