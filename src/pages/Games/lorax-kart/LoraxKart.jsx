@@ -1,14 +1,15 @@
 // React
-import React from "react";
+import React, { useEffect, useState } from'react';
+import "../../../games/lorax-kart/common.css"
 
 function LoraxKart() {
 
-
     return (
         <div>
-            <h2>Teste</h2>
+
         </div>
-    )
+    );
+    
 }
 
 export default LoraxKart;
