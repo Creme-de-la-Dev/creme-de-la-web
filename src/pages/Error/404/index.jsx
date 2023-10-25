@@ -12,19 +12,19 @@ const NotFound = () => {
     <div>
       <section className="header min-h-screen w-full flex align-center">
         <div className="flex align-center flex-col mx-auto">
-          <h2 className="text-center text-8xl mt-5 text-cdln-blue-100">
+          <h2 className="text-center text-8xl mt-5 text-cdln-blue-100 animate__animated animate__bounceInDown">
             404 Not Found
           </h2>
           <img
             src={Ale404}
-            className="m-5 max-w-auto xl:max-w-4xl border-sky-100 border-8 rounded-md self-center"
+            className="m-3 max-w-auto sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl border-sky-100 border-8 rounded-md self-center animate__animated animate__fadeIn"
           />
-          <p className="text-center text-cdln-blue-100 text-4xl">
+          <p className="text-center text-cdln-blue-100 text-4xl animate__animated animate__fadeIn">
             Puts! Não foi possível encontrar a página que você estava
             procurando!
           </p>
           <a href="/home" className="self-center">
-            <button className="m-5 bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg self-center flex flex-row items-center gap-3 text-2xl max-w-xl">
+            <button className=" m-5 bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg self-center flex flex-row items-center gap-3 text-2xl max-w-xl animate__animated animate__backInUp">
               <HiHome />
               Retornar à Home
             </button>
