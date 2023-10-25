@@ -8,6 +8,12 @@ import Ale404 from "../../../assets/Errors/ale404.png";
 import { HiHome } from "react-icons/hi";
 
 const NotFound = () => {
+
+  const handleClickSecret = () => {
+    const alertMessage = 'Use o código 404! no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
+    window.alert(alertMessage);
+  };
+
   return (
     <div>
       <section className="header min-h-screen w-full flex align-center">
@@ -21,7 +27,7 @@ const NotFound = () => {
           />
           <p className="text-center text-cdln-blue-100 text-4xl animate__animated animate__fadeIn">
             Puts! Não foi possível encontrar a página que você estava
-            procurando!
+            procurando<span onClick={handleClickSecret} style={{cursor: 'pointer'}}>!</span>
           </p>
           <a href="/home" className="self-center">
             <button className=" m-5 bg-cdln-blue-50 hover:bg-cdln-blue-100 text-cdln-blue-800 font-bold py-4 px-6 border-2 border-cdln-blue-400 rounded-3xl shadow-lg self-center flex flex-row items-center gap-3 text-2xl max-w-xl animate__animated animate__backInUp">
