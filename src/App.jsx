@@ -2,7 +2,7 @@
 import React from "react";
 
 // React Router
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -18,6 +18,7 @@ import Secrets from "./pages/Secrets";
 import NotFound from "./pages/Error/404";
 
 function App() {
+
   return (
     <>
       <Navbar />

@@ -90,7 +90,7 @@ function Footer() {
             </li>
             <li>
               <SocialIcon
-                href="https://twitter.com/thefunny_mp4/status/1521276206162890755?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g"
+                href="https://x.com/rebkkkj/status/1692359832383148347?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g"
                 text="Twitter"
                 BtnIcon={FaTwitter}
               />
