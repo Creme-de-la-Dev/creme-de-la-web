@@ -16,6 +16,7 @@ import Store from "./pages/Store";
 import About from "./pages/About";
 import Secrets from "./pages/Secrets";
 import NotFound from "./pages/Error/404";
+import LR from "./pages/Shows/LuansRevolution";
 
 function App() {
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
           <Route path="/2209626308100203jodoboiox" element={<Secrets />} />
+
+          <Route path="/shows/lr" element={<LR />} />
 
           {/* Route for 404 */}
           <Route path="*" element={<NotFound />} />
