@@ -5,7 +5,9 @@ function LR() {
 
     return (
         <div>
-            <h2>Luans Revolution page</h2>
+            <section className='header min-h-screen w-full flex align-center'>
+                <h2>Luans Revolution page</h2>
+            </section>
         </div>
     );
 
