@@ -12,6 +12,7 @@ import ArrowDown from "../../../assets/arrow-down.svg";
 
 function LR() {
   const [activeList, setActiveList] = useState("season1");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Video Lists
   const videoList = {
@@ -127,7 +128,12 @@ function LR() {
 
   const toggleList = (listName) => {
     setActiveList(listName);
+    setIsDropdownOpen(false);
   };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  }
 
   return (
     <div>
@@ -159,8 +165,52 @@ function LR() {
       </section>
       <section id="main-section">
         <div className="hero h-auto lg:min-h-screen">
-        <button onClick={() => toggleList('season1')}>Season 1</button>
-        <button onClick={() => toggleList('extras')}>Season 2</button>
+        <h1>Lista de Episódios</h1>
+          <button
+          onClick={toggleDropdown}
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            className="text-white bg-cdln-blue-600 hover:bg-cdln-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            Selecionar Temporada
+            <svg
+              className={`w-2.5 h-2.5 ml-2.5 ${isDropdownOpen ? 'transform rotate-180' : ''}`}
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+
+          {isDropdownOpen && (
+          <div
+            className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2"
+          >
+            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+              {Object.keys(lists).map((listName) => (
+                <li key={listName}>
+                  <a
+                    href="#"
+                    onClick={() => toggleList(listName)}
+                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >
+                    {listName}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        
           <EpisodesList episodes={videoList[activeList]} />
         </div>
       </section>
