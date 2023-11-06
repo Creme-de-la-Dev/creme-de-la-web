@@ -115,7 +115,7 @@ function LR() {
             </section>
             <section id="main-section">
                 <div className="hero h-auto lg:min-h-screen">
-
+                    
                 </div>
             </section>
         </div>
