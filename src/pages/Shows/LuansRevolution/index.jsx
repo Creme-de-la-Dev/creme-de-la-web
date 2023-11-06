@@ -3,7 +3,7 @@ import React, { useEffect, useState } from'react';
 import ReactPlayer from 'react-player/youtube';
 
 // Images
-import ShowsBG from "../../../assets/BackgroundImages/ShowsBG.png";
+import LRBG from "../../../assets/BackgroundImages/LRBG.png";
 import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../../assets/arrow-down.svg";
 
@@ -91,7 +91,7 @@ function LR() {
             <section className="header h-screen">
                 <div className="h-full w-full relative">
                 <img
-                    src={ShowsBG}
+                    src={LRBG}
                     className="hidden lg:block w-full h-full object-cover absolute"
                 />
                 <img
@@ -113,8 +113,10 @@ function LR() {
                 </div>
                 </div>
             </section>
-            <section>
+            <section id="main-section">
+                <div className="hero h-auto lg:min-h-screen">
 
+                </div>
             </section>
         </div>
     );
