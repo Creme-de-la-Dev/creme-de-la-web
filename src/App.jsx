@@ -15,6 +15,7 @@ import Games from "./pages/Games";
 import Store from "./pages/Store";
 import About from "./pages/About";
 import Secrets from "./pages/Secrets";
+import NotFound from "./pages/Error/404";
 import LoraxKart from "./pages/Games/lorax-kart/LoraxKart";
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/2209626308100203jodoboiox" element={<Secrets />} />
           <Route path="/games/lorax-kart" element={<LoraxKart />} />
+
+          {/* Route for 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <Footer />

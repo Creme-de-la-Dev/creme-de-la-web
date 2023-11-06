@@ -7,7 +7,9 @@
 # Rodando o projeto 
 Clone o projeto por meio do terminal utilizando o comando *git clone* ou fazendo o download do arquivo .zip.
 
-Para iniciar o projeto, digite _npm run dev_ em seu terminal
+Após clonar o projeto, rode _npm i_ em seu terminal para baixar as dependências do *node_modules*.
+
+Para iniciar o projeto, digite _npm run dev_ em seu terminal.
 
 Clique no link da porta do servidor local e pronto! Você poderá desfrutar e colaborar com o site mais divertido da internet!
 

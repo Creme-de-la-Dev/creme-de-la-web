@@ -110,7 +110,7 @@ function Footer() {
               />
             </li>
           </ul>
-          <div className="text-center mt-5 mx-auto">
+          <div className="hidden text-center mt-5 mx-auto">
             <a
               className="text-gray-50 text-sm"
               href="/2209626308100203jodoboiox"
