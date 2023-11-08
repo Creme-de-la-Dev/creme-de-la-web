@@ -170,7 +170,7 @@ function LR() {
       </section>
       <section id="main-section">
         <div className="hero h-auto lg:min-h-screen p-10">
-          <h1 className="text-4xl md:text-7xl text-cdln-blue-50 font-medium ">Lista de Episódios</h1>
+          <h1 className="text-4xl md:text-7xl text-cdln-blue-50 font-medium pb-4">Lista de Episódios</h1>
           <button
             onClick={toggleDropdown}
             id="dropdownDefaultButton"
