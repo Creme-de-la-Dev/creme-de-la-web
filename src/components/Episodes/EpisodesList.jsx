@@ -5,7 +5,7 @@ import Episode from './Episode';
 const EpisodesList = ({ episodes }) => {
   console.log(episodes)
   return ( 
-    <div className="episodes-list">
+    <div className="episodes-list py-8">
       {episodes.map((episode, index) => (
         <Episode
           key={index}

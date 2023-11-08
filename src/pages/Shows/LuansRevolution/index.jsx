@@ -169,13 +169,13 @@ function LR() {
         </div>
       </section>
       <section id="main-section">
-        <div className="hero h-auto lg:min-h-screen">
-          <h1>Lista de Episódios</h1>
+        <div className="hero h-auto lg:min-h-screen p-10">
+          <h1 className="text-4xl md:text-7xl text-cdln-blue-50 font-medium ">Lista de Episódios</h1>
           <button
             onClick={toggleDropdown}
             id="dropdownDefaultButton"
             data-dropdown-toggle="dropdown"
-            className="text-white bg-cdln-blue-600 hover:bg-cdln-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+            className="text-white bg-cdln-blue-600 hover:bg-cdln-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-lg px-5 py-2.5 text-center inline-flex items-center"
             type="button"
           >
             {activeList ?? 'Selecionar Temporada'}
@@ -200,7 +200,7 @@ function LR() {
 
           {isDropdownOpen && (
             <div className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2">
-              <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+              <ul className="py-2 text-lg text-gray-700 dark:text-gray-200">
                 {videoList.map((listName) => (
                   <li key={listName.title}>
                     <a
