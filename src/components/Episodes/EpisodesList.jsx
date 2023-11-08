@@ -3,7 +3,8 @@ import React from 'react';
 import Episode from './Episode';
 
 const EpisodesList = ({ episodes }) => {
-  return (
+  console.log(episodes)
+  return ( 
     <div className="episodes-list">
       {episodes.map((episode, index) => (
         <Episode

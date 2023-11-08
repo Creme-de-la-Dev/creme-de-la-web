@@ -1,6 +1,6 @@
 // React
 import React, { useEffect, useState } from "react";
-import ReactPlayer from "react-player/youtube";
+// import ReactPlayer from "react-player/youtube";
 
 // Components
 import EpisodesList from "../../../components/Episodes/EpisodesList";
@@ -11,120 +11,125 @@ import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../../assets/arrow-down.svg";
 
 function LR() {
-  const [activeList, setActiveList] = useState("season1");
+  const [activeList, setActiveList] = useState("Temporada 1");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Video Lists
-  const videoList = {
-    season1: [
-      {
-        title: "Naul",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=1&t=",
-        date: "27/08/2015",
-        description:
-          "Luan acaba de descobrir que tem um irmão secreto, assim, o observa travando uma batalha com o poderoso Lord Frene e nem imagina como essa batalha irá acabar.",
-        thumb: "https://i3.ytimg.com/vi/yy8NwjEtEkQ/hqdefault.jpg",
-      },
-      {
-        title: "A Tale of Two Luans",
-        url: "https://www.youtube.com/watch?v=xH2mYfhThqk&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=2",
-        date: "30/08/2015",
-        description:
-          "Agulha ensina Luan como desinflar sua cabeça de frenes com a roupa laranja e conta a história por trás de Naul, seu irmão secreto.",
-        thumb: "https://i3.ytimg.com/vi/xH2mYfhThqk/maxresdefault.jpg",
-      },
-      {
-        title: "Did you forget about me?",
-        url: "https://www.youtube.com/watch?v=lukhhs8figM&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=3",
-        date: "30/08/2015",
-        description:
-          "Agulha e Luan pegam o carro e vão vasculhar a antiga casa de Naul, porém são interrompidos por um inimigo inesperado",
-        thumb: "http://i3.ytimg.com/vi/lukhhs8figM/hqdefault.jpg",
-      },
-      {
-        title: "'A Better Place",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=4",
-        date: "31/08/2015",
-        description:
-          "A gasolina do carro acaba e Luan testa a bola-kart, equipamento pego na casa de Naul. Entretanto, acabam chegando em Lugar Melhor e encontrando um velho amigo que, literalmente estava em Lugar Melhor",
-        thumb: "",
-      },
-      {
-        title: "First Blood",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=5",
-        date: "10/09/2015",
-        description:
-          "Agulha e Luan usam o rastreador de frenes e encontram sua primeira vítima num encontro de anime.",
-        thumb: "",
-      },
-      {
-        title: "The Modafokin' Ballas (Pt.1)",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=6",
-        date: "15/09/2015",
-        description:
-          "Agulha e Luan fazem uma pausa para um lanche e são interrompidos por um ser de um universo paralelo, CJ",
-        thumb: "",
-      },
-      {
-        title: "The Modafokin' Ballas (Pt.2)",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=7",
-        date: "26/09/2015",
-        description:
-          "CJ, Agulha e Luan usam o rastreador de frenes para localizar os Ballas e resgatar o elemento frene e assim, conseguindo abrir o portal roxo novamente.",
-        thumb: "",
-      },
-      {
-        title: "Time to REEE",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=8",
-        date: "13/10/2015",
-        description:
-          "Agulha e Luan localizam um frene com um enorme poder e vão até ele. Ao encontrá-lo, percebem que não conseguiriam deter o frene sozinhos e requisitam ajuda ao poderoso ancestral, Gigante de Pepe.",
-        thumb: "",
-      },
-      {
-        title: "Require Assistance",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=9",
-        date: "02/11/2015",
-        description:
-          "Agulha e Luan dão uma pausa na caça e compram uma casa por um bom preço, porém as condições do local não são boas e no meio da zona, Spike some.",
-        thumb: "",
-      },
-      {
-        title: "Green Horde (Pt.1)",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=10",
-        date: "05/11/2015",
-        description:
-          "Na noite de halloween, Agulha e Luan param em um cemitério para testar uma fórmula para ressucitar pessoas em Naul, porém Spike quebra o frasco e o líquido se espalha por todo o cemitério. ",
-        thumb: "",
-      },
-      {
-        title: "Green Horde (Pt.2)",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=11",
-        date: "20/11/2015",
-        description:
-          "Com toda a equipe de Luan pronta, o combate começa, porém não surte efeito e acabam chamando o todo poderoso Melvin para ajudá-los a deter o Minion. ",
-        thumb: "",
-      },
-      {
-        title: "The Betryal",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=12",
-        date: "08/12/2015",
-        description:
-          "O Grupo chega a casa de Naul e descobrem que ela foi destruida por um membro da equipe traidor.",
-        thumb: "",
-      },
-    ],
-    extras: [
-      {
-        title: "Teste",
-        url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=1&t=",
-        date: "27/08/2015",
-        description:
-          "Luan acaba de descobrir que tem um irmão secreto, assim, o observa travando uma batalha com o poderoso Lord Frene e nem imagina como essa batalha irá acabar.",
-        thumb: "https://i3.ytimg.com/vi/yy8NwjEtEkQ/hqdefault.jpg",
-      },
-    ],
-  };
+  const videoList = [
+    {
+      title: "Temporada 1",
+      videos: [
+        {
+          title: "Naul",
+          url: "https://www.youtube.com/watch?v=yy8NwjEtEkQ&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=1&t=",
+          date: "27/08/2015",
+          description:
+            "Luan acaba de descobrir que tem um irmão secreto, assim, o observa travando uma batalha com o poderoso Lord Frene e nem imagina como essa batalha irá acabar.",
+          thumb: "https://i3.ytimg.com/vi/yy8NwjEtEkQ/hqdefault.jpg",
+        },
+        {
+          title: "A Tale of Two Luans",
+          url: "https://www.youtube.com/watch?v=xH2mYfhThqk&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=2",
+          date: "30/08/2015",
+          description:
+            "Agulha ensina Luan como desinflar sua cabeça de frenes com a roupa laranja e conta a história por trás de Naul, seu irmão secreto.",
+          thumb: "https://i3.ytimg.com/vi/xH2mYfhThqk/maxresdefault.jpg",
+        },
+        {
+          title: "Did you forget about me?",
+          url: "https://www.youtube.com/watch?v=lukhhs8figM&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=3",
+          date: "30/08/2015",
+          description:
+            "Agulha e Luan pegam o carro e vão vasculhar a antiga casa de Naul, porém são interrompidos por um inimigo inesperado",
+          thumb: "http://i3.ytimg.com/vi/lukhhs8figM/hqdefault.jpg",
+        },
+        {
+          title: "'A Better Place",
+          url: "https://www.youtube.com/watch?v=IADuIRkydPo&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=4&t",
+          date: "31/08/2015",
+          description:
+            "A gasolina do carro acaba e Luan testa a bola-kart, equipamento pego na casa de Naul. Entretanto, acabam chegando em Lugar Melhor e encontrando um velho amigo que, literalmente estava em Lugar Melhor",
+          thumb: "",
+        },
+        {
+          title: "First Blood",
+          url: "https://www.youtube.com/watch?v=ItTswQ1gZP8&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=5",
+          date: "10/09/2015",
+          description:
+            "Agulha e Luan usam o rastreador de frenes e encontram sua primeira vítima num encontro de anime.",
+          thumb: "",
+        },
+        {
+          title: "The Modafokin' Ballas (Pt.1)",
+          url: "https://www.youtube.com/watch?v=85ZvHMR8E-0&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=6",
+          date: "15/09/2015",
+          description:
+            "Agulha e Luan fazem uma pausa para um lanche e são interrompidos por um ser de um universo paralelo, CJ",
+          thumb: "",
+        },
+        {
+          title: "The Modafokin' Ballas (Pt.2)",
+          url: "https://www.youtube.com/watch?v=y09iqBQisF8&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=7&t=2s",
+          date: "26/09/2015",
+          description:
+            "CJ, Agulha e Luan usam o rastreador de frenes para localizar os Ballas e resgatar o elemento frene e assim, conseguindo abrir o portal roxo novamente.",
+          thumb: "",
+        },
+        {
+          title: "Time to REEE",
+          url: "https://www.youtube.com/watch?v=q9HxyTi5Yjs&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=8",
+          date: "13/10/2015",
+          description:
+            "Agulha e Luan localizam um frene com um enorme poder e vão até ele. Ao encontrá-lo, percebem que não conseguiriam deter o frene sozinhos e requisitam ajuda ao poderoso ancestral, Gigante de Pepe.",
+          thumb: "",
+        },
+        {
+          title: "Require Assistance",
+          url: "https://www.youtube.com/watch?v=tuv-MZnfrMw&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=9",
+          date: "02/11/2015",
+          description:
+            "Agulha e Luan dão uma pausa na caça e compram uma casa por um bom preço, porém as condições do local não são boas e no meio da zona, Spike some.",
+          thumb: "",
+        },
+        {
+          title: "Green Horde (Pt.1)",
+          url: "https://www.youtube.com/watch?v=6l3u6Dr9N8U&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=10",
+          date: "05/11/2015",
+          description:
+            "Na noite de halloween, Agulha e Luan param em um cemitério para testar uma fórmula para ressucitar pessoas em Naul, porém Spike quebra o frasco e o líquido se espalha por todo o cemitério. ",
+          thumb: "",
+        },
+        {
+          title: "Green Horde (Pt.2)",
+          url: "https://www.youtube.com/watch?v=p-0971bGAY4&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=11",
+          date: "20/11/2015",
+          description:
+            "Com toda a equipe de Luan pronta, o combate começa, porém não surte efeito e acabam chamando o todo poderoso Melvin para ajudá-los a deter o Minion. ",
+          thumb: "",
+        },
+        {
+          title: "The Betryal",
+          url: "https://www.youtube.com/watch?v=uMn0vo0hVvA&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=12",
+          date: "08/12/2015",
+          description:
+            "O Grupo chega a casa de Naul e descobrem que ela foi destruida por um membro da equipe traidor.",
+          thumb: "",
+        },
+      ],
+    },
+    {
+      title: "Extras",
+      videos: [
+        {
+          title: "Luan's Revolution: The Game",
+          url: "https://www.youtube.com/watch?v=chUpEg7ID1M&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=1",
+          date: "30/09/2015",
+          description: "Jogo do Luan's Revolution. ",
+          thumb: "https://i3.ytimg.com/vi/chUpEg7ID1M/maxresdefault.jpg",
+        },
+      ],
+    },
+  ];
 
   const toggleList = (listName) => {
     setActiveList(listName);
@@ -133,7 +138,7 @@ function LR() {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
-  }
+  };
 
   return (
     <div>
@@ -165,17 +170,19 @@ function LR() {
       </section>
       <section id="main-section">
         <div className="hero h-auto lg:min-h-screen">
-        <h1>Lista de Episódios</h1>
+          <h1>Lista de Episódios</h1>
           <button
-          onClick={toggleDropdown}
+            onClick={toggleDropdown}
             id="dropdownDefaultButton"
             data-dropdown-toggle="dropdown"
             className="text-white bg-cdln-blue-600 hover:bg-cdln-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
             type="button"
           >
-            Selecionar Temporada
+            {activeList ?? 'Selecionar Temporada'}
             <svg
-              className={`w-2.5 h-2.5 ml-2.5 ${isDropdownOpen ? 'transform rotate-180' : ''}`}
+              className={`w-2.5 h-2.5 ml-2.5 ${
+                isDropdownOpen ? "transform rotate-180" : ""
+              }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -192,26 +199,24 @@ function LR() {
           </button>
 
           {isDropdownOpen && (
-          <div
-            className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2"
-          >
-            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-              {Object.keys(lists).map((listName) => (
-                <li key={listName}>
-                  <a
-                    href="#"
-                    onClick={() => toggleList(listName)}
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >
-                    {listName}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        
-          <EpisodesList episodes={videoList[activeList]} />
+            <div className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2">
+              <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                {videoList.map((listName) => (
+                  <li key={listName.title}>
+                    <a
+                      href="#main-section"
+                      onClick={() => toggleList(listName.title)}
+                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      {listName.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <EpisodesList episodes={videoList.find(v => v.title == activeList).videos} />
         </div>
       </section>
     </div>
