@@ -33,14 +33,14 @@ function LR() {
           date: "30/08/2015",
           description:
             "Agulha ensina Luan como desinflar sua cabeça de frenes com a roupa laranja e conta a história por trás de Naul, seu irmão secreto.",
-          thumb: "https://i.postimg.cc/3JmzqpLK/image-27.png",
+          thumb: "https://i.postimg.cc/qq1rBBMv/KRAFTPUNK.png",
         },
         {
           title: "Did you forget about me?",
           url: "https://www.youtube.com/watch?v=lukhhs8figM&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=3",
           date: "30/08/2015",
           description:
-            "Agulha e Luan pegam o carro e vão vasculhar a antiga casa de Naul, porém são interrompidos por um inimigo inesperado",
+            "Agulha e Luan pegam o carro e vão vasculhar a antiga casa de Naul, porém são interrompidos por um inimigo inesperado.",
           thumb: "https://i.postimg.cc/mgSJL4fJ/image-28.png",
         },
         {
@@ -48,8 +48,8 @@ function LR() {
           url: "https://www.youtube.com/watch?v=IADuIRkydPo&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=4&t",
           date: "31/08/2015",
           description:
-            "A gasolina do carro acaba e Luan testa a bola-kart, equipamento pego na casa de Naul. Entretanto, acabam chegando em Lugar Melhor e encontrando um velho amigo que, literalmente estava em Lugar Melhor",
-          thumb: "https://i.postimg.cc/CKP284K4/image-29.png",
+            "A dupla acaba chegando em Lugar Melhor e encontrando um velho amigo que, literalmente estava em Lugar Melhor.",
+          thumb: "https://i.postimg.cc/V6V2kzSY/abetterplace.png",
         },
         {
           title: "First Blood",
@@ -64,8 +64,8 @@ function LR() {
           url: "https://www.youtube.com/watch?v=85ZvHMR8E-0&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=6",
           date: "15/09/2015",
           description:
-            "Agulha e Luan fazem uma pausa para um lanche e são interrompidos por um ser de um universo paralelo, CJ",
-          thumb: "https://i.postimg.cc/sgzbCX85/image-31.png",
+            "Agulha e Luan fazem uma pausa para um lanche e são interrompidos por um ser de um universo paralelo, CJ.",
+          thumb: "https://i.postimg.cc/kGckxWGy/thumbcrossover.png",
         },
         {
           title: "The Modafokin' Ballas (Pt.2)",
@@ -143,7 +143,7 @@ function LR() {
   return (
     <div>
       <section className="header h-screen">
-        <div className="h-full w-full relative">
+        <div className="h-full  relative">
           <img
             src={LRBG}
             className="hidden lg:block w-full h-full object-cover absolute"
