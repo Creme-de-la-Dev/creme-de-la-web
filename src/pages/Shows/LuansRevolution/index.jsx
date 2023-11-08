@@ -121,12 +121,41 @@ function LR() {
       title: "Extras",
       videos: [
         {
-          title: "Luan's Revolution: The Game",
-          url: "https://www.youtube.com/watch?v=chUpEg7ID1M&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=1",
-          date: "30/09/2015",
-          description: "Jogo do Luan's Revolution. ",
-          thumb: "https://i3.ytimg.com/vi/chUpEg7ID1M/maxresdefault.jpg",
+          title: "[TRAILER] LR: 'The Modafukin' Ballas'",
+          url: "https://www.youtube.com/watch?v=2KR4yHC8vKA&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=2",
+          date: "02/09/2015",
+          description: "Trailer do crossover da série de LegoMaster464 (As aventuras de CJ) e de Luan's Revolution (SB Studios). ",
+          thumb: "https://i.postimg.cc/pVF4Qhpv/ballas.png",
         },
+        {
+          title: "[TEASER] ♫''Luan's Revolution hj a noite''♫",
+          url: "https://www.youtube.com/watch?v=pM-I4_dsqSo&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=5",
+          date: "10/09/2015",
+          description: "LUANS RE-VO-LU-TION-HJ-EI-NOITE",
+          thumb: "https://i.postimg.cc/bY4TT34V/teaser.png",
+        },
+        {
+          title: "[TEASER] LR : ''Green Horde''",
+          url: "https://www.youtube.com/watch?v=aR_EDAqr-LQ&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=3",
+          date: "16/09/2015",
+          description: "https://www.youtube.com/watch?v=aR_EDAqr-LQ&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=3",
+          thumb: "https://i.postimg.cc/brfZGDFg/greenhorde.png",
+        },
+                {
+          title: "[Beta Gameplay] : Luan's Revolution : The Game",
+          url: "https://www.youtube.com/watch?v=chUpEg7ID1M&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=2",
+          date: "30/09/2015",
+          description: "Jogo do Luan's Revolution.",
+          thumb: "https://i.postimg.cc/fbHyvqqV/lrgame.png",
+        },
+        {
+          title: "[TRAILER] ''Luan's Revolution : Aftermath''",
+          url: "https://www.youtube.com/watch?v=p75Cs49PaYY&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=4",
+          date: "02/02/2017",
+          description: "Trailer de uma série spin-off de LR, um final alternativo ao final da 2ªtemporada de LR.",
+          thumb: "https://i.postimg.cc/BQMv3VsM/aftermath.png",
+        },
+
       ],
     },
   ];
