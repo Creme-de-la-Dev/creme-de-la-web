@@ -25,7 +25,7 @@ function LR() {
           date: "27/08/2015",
           description:
             "Luan acaba de descobrir que tem um irmão secreto, assim, o observa travando uma batalha com o poderoso Lord Frene e nem imagina como essa batalha irá acabar.",
-          thumb: "https://i3.ytimg.com/vi/yy8NwjEtEkQ/hqdefault.jpg",
+          thumb: "https://i.postimg.cc/L4rrvv3C/image-26.png",
         },
         {
           title: "A Tale of Two Luans",
@@ -33,7 +33,7 @@ function LR() {
           date: "30/08/2015",
           description:
             "Agulha ensina Luan como desinflar sua cabeça de frenes com a roupa laranja e conta a história por trás de Naul, seu irmão secreto.",
-          thumb: "https://i3.ytimg.com/vi/xH2mYfhThqk/maxresdefault.jpg",
+          thumb: "https://i.postimg.cc/3JmzqpLK/image-27.png",
         },
         {
           title: "Did you forget about me?",
@@ -41,15 +41,15 @@ function LR() {
           date: "30/08/2015",
           description:
             "Agulha e Luan pegam o carro e vão vasculhar a antiga casa de Naul, porém são interrompidos por um inimigo inesperado",
-          thumb: "http://i3.ytimg.com/vi/lukhhs8figM/hqdefault.jpg",
+          thumb: "https://i.postimg.cc/mgSJL4fJ/image-28.png",
         },
         {
-          title: "'A Better Place",
+          title: "A Better Place",
           url: "https://www.youtube.com/watch?v=IADuIRkydPo&list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE&index=4&t",
           date: "31/08/2015",
           description:
             "A gasolina do carro acaba e Luan testa a bola-kart, equipamento pego na casa de Naul. Entretanto, acabam chegando em Lugar Melhor e encontrando um velho amigo que, literalmente estava em Lugar Melhor",
-          thumb: "",
+          thumb: "https://i.postimg.cc/CKP284K4/image-29.png",
         },
         {
           title: "First Blood",
@@ -57,7 +57,7 @@ function LR() {
           date: "10/09/2015",
           description:
             "Agulha e Luan usam o rastreador de frenes e encontram sua primeira vítima num encontro de anime.",
-          thumb: "",
+          thumb: "https://i.postimg.cc/GphN9fb2/image-30.png",
         },
         {
           title: "The Modafokin' Ballas (Pt.1)",
@@ -65,7 +65,7 @@ function LR() {
           date: "15/09/2015",
           description:
             "Agulha e Luan fazem uma pausa para um lanche e são interrompidos por um ser de um universo paralelo, CJ",
-          thumb: "",
+          thumb: "https://i.postimg.cc/sgzbCX85/image-31.png",
         },
         {
           title: "The Modafokin' Ballas (Pt.2)",
@@ -73,7 +73,7 @@ function LR() {
           date: "26/09/2015",
           description:
             "CJ, Agulha e Luan usam o rastreador de frenes para localizar os Ballas e resgatar o elemento frene e assim, conseguindo abrir o portal roxo novamente.",
-          thumb: "",
+          thumb: "https://i.postimg.cc/fyXq6nfH/image-32.png",
         },
         {
           title: "Time to REEE",
@@ -81,7 +81,7 @@ function LR() {
           date: "13/10/2015",
           description:
             "Agulha e Luan localizam um frene com um enorme poder e vão até ele. Ao encontrá-lo, percebem que não conseguiriam deter o frene sozinhos e requisitam ajuda ao poderoso ancestral, Gigante de Pepe.",
-          thumb: "",
+          thumb: "https://i.postimg.cc/cHP594wg/image-33.png",
         },
         {
           title: "Require Assistance",
@@ -89,7 +89,7 @@ function LR() {
           date: "02/11/2015",
           description:
             "Agulha e Luan dão uma pausa na caça e compram uma casa por um bom preço, porém as condições do local não são boas e no meio da zona, Spike some.",
-          thumb: "",
+          thumb: "https://i.postimg.cc/ZRWMxyBz/image-34.png",
         },
         {
           title: "Green Horde (Pt.1)",
@@ -97,7 +97,7 @@ function LR() {
           date: "05/11/2015",
           description:
             "Na noite de halloween, Agulha e Luan param em um cemitério para testar uma fórmula para ressucitar pessoas em Naul, porém Spike quebra o frasco e o líquido se espalha por todo o cemitério. ",
-          thumb: "",
+          thumb: "https://i.postimg.cc/BZ1z8Hfx/image-35.png",
         },
         {
           title: "Green Horde (Pt.2)",
@@ -105,7 +105,7 @@ function LR() {
           date: "20/11/2015",
           description:
             "Com toda a equipe de Luan pronta, o combate começa, porém não surte efeito e acabam chamando o todo poderoso Melvin para ajudá-los a deter o Minion. ",
-          thumb: "",
+          thumb: "https://i.postimg.cc/28RKnyCg/image-36.png",
         },
         {
           title: "The Betryal",
@@ -113,7 +113,7 @@ function LR() {
           date: "08/12/2015",
           description:
             "O Grupo chega a casa de Naul e descobrem que ela foi destruida por um membro da equipe traidor.",
-          thumb: "",
+          thumb: "https://i.postimg.cc/4N6FPGdy/image-37.png",
         },
       ],
     },
