@@ -8,15 +8,28 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-// Pages
+// Pages:
+// Home
 import Home from "./pages/Home";
+
+// Shows
 import Shows from "./pages/Shows";
-import Games from "./pages/Games";
-import Store from "./pages/Store";
-import About from "./pages/About";
-import Secrets from "./pages/Secrets";
-import NotFound from "./pages/Error/404";
 import LR from "./pages/Shows/LuansRevolution";
+
+// Games
+import Games from "./pages/Games";
+
+// Store
+import Store from "./pages/Store";
+
+// About
+import About from "./pages/About";
+
+// Secrets
+import Secrets from "./pages/Secrets";
+
+// Errors
+import NotFound from "./pages/Error/404";
 
 function App() {
 
@@ -28,13 +41,11 @@ function App() {
           <Route path="/" element={<Home />} /> 
           <Route path="/home" element={<Home />} />
           <Route path="/shows" element={<Shows />} />
+          <Route path="/shows/lr" element={<LR />} />
           <Route path="/games" element={<Games />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
-          <Route path="/2209626308100203jodoboiox" element={<Secrets />} />
-
-          <Route path="/shows/lr" element={<LR />} />
-
+          <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
           {/* Route for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
