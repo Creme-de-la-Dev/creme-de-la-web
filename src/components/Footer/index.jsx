@@ -23,7 +23,7 @@ function Footer() {
           </div>
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-            Creme de la Nage, Sapo-Boi Studios e todos seu derivados são marcas
+            Creme de la Nage, Sapo-Boi Studios e todos seus derivados são marcas
             registradas e tals. Lorem ipsum dolor sit {""} 
             <a href="https://abrir.link/TLs7G">
             amet

@@ -138,7 +138,7 @@ function LR() {
           title: "[TEASER] LR : ''Green Horde''",
           url: "https://www.youtube.com/watch?v=aR_EDAqr-LQ&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=3",
           date: "16/09/2015",
-          description: "https://www.youtube.com/watch?v=aR_EDAqr-LQ&list=PLKUvYpigX9RlqWlMGRNTaagA51QQHcXXy&index=3",
+          description: "Teaser do tão aguardado episódio especial de halloween ''Green Horde''",
           thumb: "https://i.postimg.cc/brfZGDFg/greenhorde.png",
         },
                 {
@@ -172,7 +172,7 @@ function LR() {
   return (
     <div>
       <section className="header h-screen">
-        <div className="h-full  relative">
+        <div className="h-full relative">
           <img
             src={LRBG}
             className="hidden lg:block w-full h-full object-cover absolute"
