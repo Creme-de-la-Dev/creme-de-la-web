@@ -4,7 +4,7 @@ import React from 'react';
 const Episode = ({ title, url, date, description, thumb }) => {
   return (
     <div className="episode flex flex-row items-center p-2 hover:bg-cdln-blue-800 hover:rounded-md">
-      <a href={url} target="_blank" rel="noopener noreferrer" className='flex flex-col bg-cdln-blue-800 items-center p-2 md:p-0 rounded-md md:bg-cdln-blue-900 md:flex-row text-white no-underline'>
+      <a href={url} target="_blank" rel="noopener noreferrer" className='flex flex-col bg-cdln-blue-800 items-center p-2 md:p-0 rounded-md md:bg-transparent hover:bg-transparent md:flex-row text-white no-underline'>
         <div>
           <img src={thumb} alt={title} className='rounded-md hover:shadow-md min-w-64' />
         </div>
