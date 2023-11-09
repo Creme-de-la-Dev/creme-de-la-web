@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import RenderEpisode from "../src/components/Episodes/RenderEpisode";
+import videoList from "./pages/Shows/LuansRevolution/videoData";
 
 // Pages:
 // Home
@@ -46,13 +48,17 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
           <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
+          <Route
+            path="/watch/:episodeId"
+            element={<RenderEpisode episodes={videoList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}
+          />
           {/* Route for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <Footer />
     </>
-  );
+  ); 
 }
 
 export default App;

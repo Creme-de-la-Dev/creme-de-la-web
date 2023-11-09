@@ -1,13 +1,10 @@
-// Episode.js
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Episode = ({ title, url, date, description, thumb }) => {
+const Episode = ({ id, title, url, date, description, thumb }) => {
   return (
     <div className="episode flex flex-row items-center p-2 hover:bg-cdln-blue-800 hover:rounded-md">
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link to={`/watch/${id}`} 
         className="flex flex-col bg-cdln-blue-800 items-center p-2 md:p-0 rounded-md md:bg-transparent hover:bg-transparent md:flex-row text-white no-underline"
       >
         <div>
@@ -24,7 +21,7 @@ const Episode = ({ title, url, date, description, thumb }) => {
           <p className="text-cdln-blue-100 text-sm md:text-lg">[{date}]</p>
           <p className="text-md md:text-lg">{description}</p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

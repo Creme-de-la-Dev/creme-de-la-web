@@ -1,4 +1,3 @@
-// EpisodesList.js
 import React from 'react';
 import Episode from './Episode';
 
@@ -8,6 +7,7 @@ const EpisodesList = ({ episodes }) => {
       {episodes.map((episode, index) => (
         <Episode
           key={index}
+          id={episode.id}
           title={episode.title}
           url={episode.url}
           date={episode.date}
