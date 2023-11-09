@@ -1,5 +1,9 @@
+// React
 import React from 'react';
+
+// Components
 import Episode from './Episode';
+
 
 const EpisodesList = ({ episodes }) => {
   return ( 
