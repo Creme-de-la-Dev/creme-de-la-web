@@ -11,7 +11,7 @@ const Episode = ({ id, title, url, date, description, thumb }) => {
           <img
             src={thumb}
             alt={title}
-            className="mb-2 md:mb-0 rounded-md hover:shadow-md min-w-64"
+            className="mb-2 md:mb-0 rounded-md hover:shadow-md min-w-72"
           />
         </div>
         <div className="p-2 md:pl-5">
@@ -19,7 +19,7 @@ const Episode = ({ id, title, url, date, description, thumb }) => {
             {title}
           </h2>
           <p className="text-cdln-blue-100 text-sm md:text-lg">[{date}]</p>
-          <p className="text-md md:text-lg">{description}</p>
+          <p className="text-md md:text-lg w-auto md:w-96">{description}</p>
         </div>
       </Link>
     </div>
