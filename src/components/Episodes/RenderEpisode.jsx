@@ -26,7 +26,7 @@ const RenderEpisode = ({ episodes }) => {
                 width={"1280px"}
                 height={"720px"}
                 className="react-player border-4 border-cdln-blue-200 rounded-lg"
-                
+                playing={true}
               />
             </div>
             <p className="text-cdln-blue-100 text-sm md:text-xl">
