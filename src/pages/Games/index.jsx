@@ -79,7 +79,7 @@ function Games() {
                   available={false}
                 >
                   Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
-                  a tento a seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
+                  atento ao seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
                   <strong>Apenas para dispositivos móveis</strong>
                 </Card>
             </div>

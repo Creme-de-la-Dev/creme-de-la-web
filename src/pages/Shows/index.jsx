@@ -54,7 +54,7 @@ function Shows() {
                 image={LR}
                 name="Luan's Revolution"
                 type="show"
-                url="https://www.youtube.com/playlist?list=PLKUvYpigX9RnaJRyHqpf7whz6cjeSbNTE"
+                url="/shows/lr"
                 mobile={true}
               >
                 No ano de 2015, Lord Frene começa lentamente sua invasão Frene no planeta terra, e Luan e seu irmão secreto se conhecem em um conflito e, após um incidente, Luan decide se juntar com uma equipe para erradicar os Frenes.
