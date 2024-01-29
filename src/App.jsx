@@ -47,7 +47,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
-          <Route path="/lorax-kart/index.html" />
+          <Route path="games/lorax-kart/index.html" />
           <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
           <Route
             path="/watch/:episodeId"

@@ -65,7 +65,7 @@ function Games() {
                 image={LoraxKart}
                 name="Lorax Kart"
                 type="game"
-                url="/games/lorax-kart"
+                url="/games/lorax-kart/index.html"
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
