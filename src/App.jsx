@@ -32,7 +32,6 @@ import Secrets from "./pages/Secrets";
 
 // Errors
 import NotFound from "./pages/Error/404";
-import LoraxKart from "./pages/Games/lorax-kart/LoraxKart";
 
 function App() {
 
@@ -48,7 +47,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
-          <Route path="/games/lorax-kart" element={<LoraxKart />} />
+          <Route path="/lorax-kart/index.html" />
           <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
           <Route
             path="/watch/:episodeId"
