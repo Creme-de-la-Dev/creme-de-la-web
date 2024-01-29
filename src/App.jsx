@@ -47,11 +47,13 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
+          <Route path="/lorax-kart/index.html" />
           <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
           <Route
             path="/watch/:episodeId"
             element={<RenderEpisode episodes={videoList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}
           />
+
           {/* Route for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>

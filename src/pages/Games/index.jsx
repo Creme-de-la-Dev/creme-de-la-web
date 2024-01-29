@@ -65,7 +65,7 @@ function Games() {
                 image={LoraxKart}
                 name="Lorax Kart"
                 type="game"
-                url="https://lorax-kart.netlify.app/"
+                url="/games/lorax-kart"
               >
                 Aperte os cintos! Embarque com Lorax nesse grande desafio cheio
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
