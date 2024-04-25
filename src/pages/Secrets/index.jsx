@@ -36,10 +36,10 @@ function Secrets() {
       <section id="main-section">
         <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
-            1. O Botão.
+             O Botão.
           </h2>
           <h3 className="text-green-700 text-center text-4xl font-regular">
-            Existem 20 combinações corretas. Após digitar, aperte o botão e
+            Apenas 4 caracteres. Após digitar, aperte o botão e
             teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
@@ -59,7 +59,14 @@ function Secrets() {
             </div>
           </div>
         </div>
-        <div className="hero lg:min-h-screen bg-black">
+        <div className="hero min-h-screen min-w-screen bg-black flex items-center jusitfy-center ">
+          <button class="ui-btn">
+            <span>
+              Voltar
+            </span>
+          </button>
+        </div>
+        {/* <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
             2. Espelho, Espelho Meu.
           </h2>
@@ -71,7 +78,7 @@ function Secrets() {
             </div>
 
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
