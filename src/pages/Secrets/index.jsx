@@ -1,11 +1,23 @@
 // React
-import React from "react";
+import React, { useRef } from "react";
 
 // Images
 import SecretsBG from "../../assets/BackgroundImages/SecretsBG.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 
 function Secrets() {
+
+ const input1Ref = useRef();
+ const input2Ref = useRef();
+ const input3Ref = useRef();
+ const input4Ref = useRef();
+
+ const handleInputChange = (e, nextInputRef) => {
+    if (e.target.value.length === 1 && nextInputRef.current) {
+      nextInputRef.current.focus();
+    }
+ };
+
   return (
     <div>
       <section className="header h-screen">
@@ -43,12 +55,34 @@ function Secrets() {
             teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
-            <form className="form self-center w-full m-16">
+          <form className="form self-center w-full m-16">
               <div className="input-fields">
-                <input placeholder="" type="tel" maxlength="1" />
-                <input placeholder="" type="tel" maxlength="1" />
-                <input placeholder="" type="tel" maxlength="1" />
-                <input placeholder="" type="tel" maxlength="1" />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input2Ref)}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input3Ref)}
+                 ref={input2Ref}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input4Ref)}
+                 ref={input3Ref}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 ref={input4Ref}
+                />
               </div>
             </form>
             <div className="flex justify-center items-center h-full">
