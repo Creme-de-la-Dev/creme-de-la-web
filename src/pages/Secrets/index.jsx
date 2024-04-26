@@ -6,17 +6,20 @@ import SecretsBG from "../../assets/BackgroundImages/SecretsBG.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 
 function Secrets() {
+  const input1Ref = useRef();
+  const input2Ref = useRef();
+  const input3Ref = useRef();
+  const input4Ref = useRef();
 
- const input1Ref = useRef();
- const input2Ref = useRef();
- const input3Ref = useRef();
- const input4Ref = useRef();
+  const toInputUppercase = (e) => {
+    e.target.value = e.target.value.toUpperCase();
+  };
 
- const handleInputChange = (e, nextInputRef) => {
+  const handleInputChange = (e, nextInputRef) => {
     if (e.target.value.length === 1 && nextInputRef.current) {
       nextInputRef.current.focus();
     }
- };
+  };
 
   return (
     <div>
@@ -48,40 +51,43 @@ function Secrets() {
       <section id="main-section">
         <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
-             O Botão.
+            O Botão.
           </h2>
           <h3 className="text-green-700 text-center text-4xl font-regular">
-            Apenas 4 caracteres. Após digitar, aperte o botão e
-            teste sua sorte.
+            Apenas 4 caracteres. Após digitar, aperte o botão e teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
-          <form className="form self-center w-full m-16">
+            <form className="form self-center w-full m-16">
               <div className="input-fields">
                 <input
-                 placeholder=""
-                 type="tel"
-                 maxLength="1"
-                 onChange={(e) => handleInputChange(e, input2Ref)}
+                  placeholder=""
+                  type="tel"
+                  maxLength="1"
+                  onChange={(e) => handleInputChange(e, input2Ref)}
+                  onInput={toInputUppercase}
                 />
                 <input
-                 placeholder=""
-                 type="tel"
-                 maxLength="1"
-                 onChange={(e) => handleInputChange(e, input3Ref)}
-                 ref={input2Ref}
+                  placeholder=""
+                  type="tel"
+                  maxLength="1"
+                  onChange={(e) => handleInputChange(e, input3Ref)}
+                  onInput={toInputUppercase}
+                  ref={input2Ref}
                 />
                 <input
-                 placeholder=""
-                 type="tel"
-                 maxLength="1"
-                 onChange={(e) => handleInputChange(e, input4Ref)}
-                 ref={input3Ref}
+                  placeholder=""
+                  type="tel"
+                  maxLength="1"
+                  onChange={(e) => handleInputChange(e, input4Ref)}
+                  onInput={toInputUppercase}
+                  ref={input3Ref}
                 />
                 <input
-                 placeholder=""
-                 type="tel"
-                 maxLength="1"
-                 ref={input4Ref}
+                  placeholder=""
+                  type="tel"
+                  maxLength="1"
+                  onInput={toInputUppercase}
+                  ref={input4Ref}
                 />
               </div>
             </form>
@@ -96,9 +102,7 @@ function Secrets() {
         <div className="hero min-h-screen w-full bg-black flex items-center justify-center">
           <a href="/home">
             <button class="ui-btn">
-              <span>
-                Voltar
-              </span>
+              <span>Voltar</span>
             </button>
           </a>
         </div>
