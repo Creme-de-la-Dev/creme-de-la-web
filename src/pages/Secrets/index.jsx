@@ -59,12 +59,14 @@ function Secrets() {
             </div>
           </div>
         </div>
-        <div className="hero min-h-screen min-w-screen bg-black flex items-center jusitfy-center ">
-          <button class="ui-btn">
-            <span>
-              Voltar
-            </span>
-          </button>
+        <div className="hero min-h-screen w-full bg-black flex items-center justify-center">
+          <a href="/home">
+            <button class="ui-btn">
+              <span>
+                Voltar
+              </span>
+            </button>
+          </a>
         </div>
         {/* <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
