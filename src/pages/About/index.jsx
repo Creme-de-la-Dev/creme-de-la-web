@@ -7,7 +7,7 @@ import Creme1 from "../../assets/About/creme1.jpeg";
 function About() {
 
   const handleClickSecret = () => {
-    const alertMessage = 'Use o código 8T22 no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
+    const alertMessage = 'Use o código 40NG no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
     window.alert(alertMessage);
   };
 

@@ -1,5 +1,6 @@
 // React
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Images
 import SecretsBG from "../../assets/BackgroundImages/SecretsBG.png";
@@ -10,16 +11,29 @@ function Secrets() {
   const input2Ref = useRef();
   const input3Ref = useRef();
   const input4Ref = useRef();
-
+  
   const toInputUppercase = (e) => {
-    e.target.value = e.target.value.toUpperCase();
+      e.target.value = e.target.value.toUpperCase();
   };
-
+  
+  const [code, setCode] = useState("");
+  const navigate = useNavigate();
+  
   const handleInputChange = (e, nextInputRef) => {
-    if (e.target.value.length === 1 && nextInputRef.current) {
-      nextInputRef.current.focus();
-    }
+      const currentValue = e.target.value;
+      if (currentValue.length === 1) {
+        setCode(prevCode => prevCode + currentValue);
+        if (nextInputRef && nextInputRef.current) {
+          nextInputRef.current.focus();
+        }
+      }
   };
+  
+  const handleButtonClick = () => {
+      // Assuming the code is already updated with the input values
+      navigate(`/2209626308100203jodoboioxocoocofaiafbaabgoog/${code}`);
+  };
+ 
 
   return (
     <div>
@@ -57,42 +71,43 @@ function Secrets() {
             Apenas 4 caracteres. Após digitar, aperte o botão e teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
-            <form className="form self-center w-full m-16">
+          <form className="form self-center w-full m-16">
               <div className="input-fields">
                 <input
-                  placeholder=""
-                  type="tel"
-                  maxLength="1"
-                  onChange={(e) => handleInputChange(e, input2Ref)}
-                  onInput={toInputUppercase}
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input2Ref)}
+                 onInput={toInputUppercase}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input3Ref)}
+                 onInput={toInputUppercase}
+                 ref={input2Ref}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input4Ref)}
+                 onInput={toInputUppercase}
+                 ref={input3Ref}
                 />
                 <input
                   placeholder=""
                   type="tel"
                   maxLength="1"
-                  onChange={(e) => handleInputChange(e, input3Ref)}
-                  onInput={toInputUppercase}
-                  ref={input2Ref}
-                />
-                <input
-                  placeholder=""
-                  type="tel"
-                  maxLength="1"
-                  onChange={(e) => handleInputChange(e, input4Ref)}
-                  onInput={toInputUppercase}
-                  ref={input3Ref}
-                />
-                <input
-                  placeholder=""
-                  type="tel"
-                  maxLength="1"
+                  onChange={(e) => handleInputChange(e, null)}
                   onInput={toInputUppercase}
                   ref={input4Ref}
-                />
+                  />
               </div>
             </form>
             <div className="flex justify-center items-center h-full">
-              <button className="btn-class-name">
+              <button className="btn-class-name" onClick={handleButtonClick}>
                 <span className="back"></span>
                 <span className="front"></span>
               </button>
