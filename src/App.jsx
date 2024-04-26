@@ -1,15 +1,33 @@
-// App.js
+// Components
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RenderEpisode from "../src/components/Episodes/RenderEpisode";
+import videoList from "./pages/Shows/LuansRevolution/videoData";
 import MainLayout from '../src/components/MainLayout'; 
+
+// Pages:
+// Home
 import Home from "./pages/Home";
+
+// Shows
 import Shows from "./pages/Shows";
 import LR from "./pages/Shows/LuansRevolution";
+
+// Games
 import Games from "./pages/Games";
+
+// Store
 import Store from "./pages/Store";
+
+// About
 import About from "./pages/About";
+
+// Secrets
 import Secrets from "./pages/Secrets";
+
+// Errors
 import NotFound from "./pages/Error/404";
+
 
 function App() {
  return (
@@ -25,7 +43,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="games/lorax-kart/index.html" />
           <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
-
+          <Route
+            path="/watch/:episodeId"
+            element={<RenderEpisode episodes={videoList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainLayout>
