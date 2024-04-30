@@ -5,13 +5,14 @@ import Footer from '../components/Footer';
 
 const MainLayout = ({ children }) => {
  const location = useLocation();
- const isSecretsPage = location.pathname === "/2209626308100203jodoboioxocoocofaiafbaabgoog";
+ const videoUrlPattern = /^\/2209626308100203jodoboioxocoocofaiafbaabgoog(\/|$)/;
+ const isVideoPage = videoUrlPattern.test(location.pathname);
 
  return (
     <>
-      {!isSecretsPage && <Navbar />}
+      {!isVideoPage && <Navbar />}
       {children}
-      {!isSecretsPage && <Footer />}
+      {!isVideoPage && <Footer />}
     </>
  );
 };
