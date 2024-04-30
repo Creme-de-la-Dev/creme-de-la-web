@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RenderEpisode from "../src/components/Episodes/RenderEpisode";
+import RenderVideo from "../src/components/Videos/RenderVideo";
 import videoList from "./pages/Shows/LuansRevolution/videoData";
 import MainLayout from '../src/components/MainLayout'; 
 
@@ -42,11 +43,12 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
           <Route path="games/lorax-kart/index.html" />
-          <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
           <Route
             path="/watch/:episodeId"
             element={<RenderEpisode episodes={videoList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}
           />
+          <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />
+          <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog/:code" element={<RenderVideo />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainLayout>

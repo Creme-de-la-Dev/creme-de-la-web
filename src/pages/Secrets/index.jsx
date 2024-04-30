@@ -11,27 +11,32 @@ function Secrets() {
   const input2Ref = useRef();
   const input3Ref = useRef();
   const input4Ref = useRef();
-  
+ 
   const toInputUppercase = (e) => {
-      e.target.value = e.target.value.toUpperCase();
+     e.target.value = e.target.value.toUpperCase();
   };
-  
+ 
   const [code, setCode] = useState("");
+  const [warningMessage, setWarningMessage] = useState("");
   const navigate = useNavigate();
-  
+ 
   const handleInputChange = (e, nextInputRef) => {
-      const currentValue = e.target.value;
-      if (currentValue.length === 1) {
-        setCode(prevCode => prevCode + currentValue);
-        if (nextInputRef && nextInputRef.current) {
-          nextInputRef.current.focus();
-        }
-      }
+     const currentValue = e.target.value;
+     if (currentValue.length === 1) {
+       setCode(prevCode => prevCode + currentValue);
+       if (nextInputRef && nextInputRef.current) {
+         nextInputRef.current.focus();
+       }
+     }
   };
-  
+ 
   const handleButtonClick = () => {
-      // Assuming the code is already updated with the input values
-      navigate(`/2209626308100203jodoboioxocoocofaiafbaabgoog/${code}`);
+     // Check if all inputs are filled
+     if (code.length === 4) {
+       navigate(`/2209626308100203jodoboioxocoocofaiafbaabgoog/${code}`);
+     } else {
+       setWarningMessage("Preencha os 4 campos para apertar o botão.");
+     }
   };
  
 
@@ -112,6 +117,7 @@ function Secrets() {
                 <span className="front"></span>
               </button>
             </div>
+              {warningMessage && <p className="text-center text-red-600 pt-8">{warningMessage}</p>}
           </div>
         </div>
         <div className="hero min-h-screen w-full bg-black flex items-center justify-center">

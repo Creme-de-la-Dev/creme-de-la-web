@@ -1,27 +1,24 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player/youtube";
-import NotFound from "../../pages/Error/404";
+import { getSecretUrlByCode } from './videoUtils';
 
-const RenderVideo = ({ episodes }) => {
-  const { episodeId } = useParams();
-  const selectedEpisode = episodes.find((episode) => episode.id === episodeId);
+const RenderVideo = () => {
+ const { code } = useParams();
 
-  if (!selectedEpisode) {
-    return <NotFound />;
-  }
+ const videoUrl = getSecretUrlByCode(code);
 
-  return (
-    <div>
+ return (
+    <div className="bg-black">
       <section className="header min-h-screen p-6 w-full" id="main-section">
         <div className="flex flex-col items-center justify-center h-full">
           <h1 className="text-4xl md:text-7xl text-cdln-blue-50 font-medium py-4 text-center">
-            {selectedEpisode.title}
+            {code}
           </h1>
           <div className="flex flex-col items-center justify-center">
             <div className="player-wrapper md:w-auto md:h-auto mx-auto">
               <ReactPlayer
-                url={selectedEpisode.url}
+                url={videoUrl}
                 controls
                 width={"1280px"}
                 height={"720px"}
@@ -29,17 +26,11 @@ const RenderVideo = ({ episodes }) => {
                 playing={true}
               />
             </div>
-            <p className="text-cdln-blue-100 text-sm md:text-xl">
-              {selectedEpisode.date}
-            </p>
-            <p className="text-cdln-blue-50 text-md md:text-2xl">
-              {selectedEpisode.description}
-            </p>
           </div>
         </div>
       </section>
     </div>
-  );
+ );
 };
 
 export default RenderVideo;
