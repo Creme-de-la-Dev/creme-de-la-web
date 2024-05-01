@@ -9,7 +9,7 @@ const cdlntvList = [
           date: "13/01/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/L4rrvv3C/image-26.png",
+          thumb: "https://i.postimg.cc/Y0d1N9MR/1.png",
         },
         {
           title: "Episódio 2",
@@ -18,7 +18,7 @@ const cdlntvList = [
           date: "14/01/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/qq1rBBMv/KRAFTPUNK.png",
+          thumb: "https://i.postimg.cc/Df6d3CLG/2.png",
         },
         {
           title: "Episódio 3",
@@ -27,7 +27,7 @@ const cdlntvList = [
           date: "14/01/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/mgSJL4fJ/image-28.png",
+          thumb: "https://i.postimg.cc/RV01ScLD/3.png",
         },
         {
           title: "Episódio 4",
@@ -36,7 +36,7 @@ const cdlntvList = [
           date: "22/01/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/V6V2kzSY/abetterplace.png",
+          thumb: "https://i.postimg.cc/TYHVppkY/4.png",
         },
         {
           title: "Episódio 5",
@@ -45,7 +45,7 @@ const cdlntvList = [
           date: "01/02/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/GphN9fb2/image-30.png",
+          thumb: "https://i.postimg.cc/RZ6cf481/5.png",
         },
         {
           title: "Episódio 6",
@@ -54,7 +54,7 @@ const cdlntvList = [
           date: "24/02/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/kGckxWGy/thumbcrossover.png",
+          thumb: "https://i.postimg.cc/52h8SDdh/6.png",
         },
         {
           title: "Episódio 7",
@@ -63,7 +63,7 @@ const cdlntvList = [
           date: "26/02/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/fyXq6nfH/image-32.png",
+          thumb: "https://i.postimg.cc/LsjLCvmn/7.png",
         },
         {
           title: "Episódio 8",
@@ -72,7 +72,7 @@ const cdlntvList = [
           date: "08/10/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/cHP594wg/image-33.png",
+          thumb: "https://i.postimg.cc/k498k85w/8.png",
         },
         {
           title: "Episódio 9",
@@ -81,7 +81,7 @@ const cdlntvList = [
           date: "15/12/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/ZRWMxyBz/image-34.png",
+          thumb: "https://i.postimg.cc/ydP9BdgK/9.png",
         },
         {
           title: "Episódio 10",
@@ -90,7 +90,7 @@ const cdlntvList = [
           date: "07/01/2017",
           description:
             "",
-          thumb: "https://i.postimg.cc/BZ1z8Hfx/image-35.png",
+          thumb: "https://i.postimg.cc/1X7qnjrY/10.png",
         },
       ],
     },
@@ -104,7 +104,7 @@ const cdlntvList = [
           date: "29/09/2016",
           description:
             "",
-          thumb: "https://i.postimg.cc/pVF4Qhpv/ballas.png",
+          thumb: "https://i.postimg.cc/y6L9bDCX/11.png",
         },
         {
           title: "[TRAILER] - Temporada 2",
@@ -112,7 +112,7 @@ const cdlntvList = [
           url: "https://youtu.be/V76v0khT8Uk",
           date: "03/10/2016",
           description: "",
-          thumb: "https://i.postimg.cc/bY4TT34V/teaser.png",
+          thumb: "https://i.postimg.cc/02rmR98g/12.png",
         },
        
       ],

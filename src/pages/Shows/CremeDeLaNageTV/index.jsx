@@ -48,10 +48,10 @@ function CDLNTV() {
           />
           <div className="p-24 w-full h-full justify-center items-center">
             <h1 className="text-cdln-blue-50 text-8xl md:text-9xl font-bold text-center animate__animated animate__jackInTheBox">
-              Luan's Revolution
+              Creme de la Nage TV
             </h1>
             <h2 className="text-cdln-blue-100 text-2xl md:text-5xl font-normal mt-5 text-center animate__animated animate__slideInUp">
-              O combate aos frenes vai começar!
+              Creme na TV? Ahh vamo nessa!
             </h2>
             <div className="w-full justify-center items-center pt-20 animate__animated animate__fadeIn">
               <a href="#main-section">
@@ -111,10 +111,12 @@ function CDLNTV() {
             </div>
           )}
 
-<EpisodesList episodes={(cdlntvList.find((v) => v.title === activeList) || {}).videos || []} />
-
-
-
+          <EpisodesList
+            episodes={
+              (cdlntvList.find((v) => v.title === activeList) || {}).videos ||
+              []
+            }
+          />
         </div>
       </section>
     </div>
