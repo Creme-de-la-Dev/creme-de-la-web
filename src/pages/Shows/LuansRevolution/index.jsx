@@ -111,7 +111,9 @@ function LR() {
             </div>
           )}
 
-        <EpisodesList episodes={videoList.find((v) => v.title === activeList).videos} />
+        <EpisodesList 
+          showName="lr"
+          episodes={videoList.find((v) => v.title === activeList).videos} />
         </div>
       </section>
     </div>
