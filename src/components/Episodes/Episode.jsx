@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Episode = ({ id, title, url, date, description, thumb }) => {
+const Episode = ({ id, title, url, date, description, thumb, showName }) => {
   return (
     <div className="episode flex flex-row items-center p-2 hover:bg-cdln-blue-800 hover:rounded-md">
-      <Link to={`/watch/${id}`} 
+      <Link to={`/watch/${showName}/${id}`} 
         className="flex flex-col bg-cdln-blue-800 items-center p-2 md:p-0 rounded-md md:bg-transparent hover:bg-transparent md:flex-row text-white no-underline"
       >
         <div>

@@ -1,5 +1,6 @@
 const cdlntvList = [
     {
+      showName: "cdlntv",
       title: "Creme de la Nage TV",
       videos: [
         {
@@ -95,6 +96,7 @@ const cdlntvList = [
       ],
     },
     {
+      showName: "cdlntv",
       title: "Extras",
       videos: [
         {

@@ -112,11 +112,8 @@ function CDLNTV() {
           )}
 
           <EpisodesList
-            episodes={
-              (cdlntvList.find((v) => v.title === activeList) || {}).videos ||
-              []
-            }
-          />
+                episodes={(cdlntvList.find((v) => v.title === activeList) || {}).videos || []}
+            />
         </div>
       </section>
     </div>

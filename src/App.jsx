@@ -47,11 +47,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="games/lorax-kart/index.html" />
           <Route
-            path="/watch/:episodeId"
+            path="/watch/lr/:episodeId"
             element={<RenderEpisode episodes={videoList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}
           />
           <Route
-            path="/watch/:episodeId"
+            path="/watch/cdlntv/:episodeId"
             element={<RenderEpisode episodes={cdlntvList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}
           />
           <Route path="/2209626308100203jodoboioxocoocofaiafbaabgoog" element={<Secrets />} />

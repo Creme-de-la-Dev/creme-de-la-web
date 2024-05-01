@@ -1,5 +1,6 @@
 const videoList = [
   {
+    showName: "lr",
     title: "Temporada 1",
     videos: [
       {
@@ -113,6 +114,7 @@ const videoList = [
     ],
   },
   {
+    showName: "lr",
     title: "Extras",
     videos: [
       {
