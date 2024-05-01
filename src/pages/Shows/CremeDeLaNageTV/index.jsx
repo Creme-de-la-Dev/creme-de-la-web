@@ -10,7 +10,7 @@ import EpisodesList from "../../../components/Episodes/EpisodesList";
 import cdlntvList from "../CremeDeLaNageTV/videoData";
 
 // Images
-import LRBG from "../../../assets/BackgroundImages/LRBG.png";
+import CDLNTVBG from "../../../assets/BackgroundImages/CDLNTVBG.png";
 import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../../assets/arrow-down.svg";
 
@@ -38,12 +38,12 @@ function CDLNTV() {
       <section className="header h-screen">
         <div className="h-full relative">
           <img
-            src={LRBG}
+            src={CDLNTVBG}
             className="hidden lg:block w-full h-full object-cover absolute"
           />
           <img
             // Mudar foto para uma versão responsiva depois
-            src={LRBG}
+            src={CDLNTVBG}
             className="lg:hidden w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">

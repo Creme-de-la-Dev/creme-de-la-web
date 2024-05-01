@@ -11,7 +11,7 @@ import videoList from "../LuansRevolution/videoData";
 
 // Images
 import LRBG from "../../../assets/BackgroundImages/LRBG.png";
-import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
+// import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../../assets/arrow-down.svg";
 
 function LR() {
