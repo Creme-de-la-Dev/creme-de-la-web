@@ -1,4 +1,4 @@
-const videoList = [
+const cdlntvList = [
     {
       title: "Creme de la Nage TV",
       videos: [
@@ -119,5 +119,5 @@ const videoList = [
     },
   ];
   
-  export default videoList;
+  export default cdlntvList;
   

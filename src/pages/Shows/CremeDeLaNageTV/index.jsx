@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 // Components
 import EpisodesList from "../../../components/Episodes/EpisodesList";
-import videoList from "../LuansRevolution/videoData";
+import cdlntvList from "../CremeDeLaNageTV/videoData";
 
 // Images
 import LRBG from "../../../assets/BackgroundImages/LRBG.png";
@@ -15,7 +15,7 @@ import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../../assets/arrow-down.svg";
 
 function CDLNTV() {
-  const [activeList, setActiveList] = useState("Temporada 1");
+  const [activeList, setActiveList] = useState(cdlntvList[0].title);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -96,7 +96,7 @@ function CDLNTV() {
           {isDropdownOpen && (
             <div className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2">
               <ul className="py-2 text-lg text-gray-700 dark:text-gray-200">
-                {videoList.map((listName) => (
+                {cdlntvList.map((listName) => (
                   <li key={listName.title}>
                     <a
                       href="#main-section"
@@ -111,7 +111,10 @@ function CDLNTV() {
             </div>
           )}
 
-        <EpisodesList episodes={videoList.find((v) => v.title === activeList).videos} />
+<EpisodesList episodes={(cdlntvList.find((v) => v.title === activeList) || {}).videos || []} />
+
+
+
         </div>
       </section>
     </div>
