@@ -1,11 +1,45 @@
 // React
-import React from "react";
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Images
 import SecretsBG from "../../assets/BackgroundImages/SecretsBG.png";
 import ArrowDown from "../../assets/arrow-down.svg";
 
 function Secrets() {
+  const input1Ref = useRef();
+  const input2Ref = useRef();
+  const input3Ref = useRef();
+  const input4Ref = useRef();
+ 
+  const toInputUppercase = (e) => {
+     e.target.value = e.target.value.toUpperCase();
+  };
+ 
+  const [code, setCode] = useState("");
+  const [warningMessage, setWarningMessage] = useState("");
+  const navigate = useNavigate();
+ 
+  const handleInputChange = (e, nextInputRef) => {
+     const currentValue = e.target.value;
+     if (currentValue.length === 1) {
+       setCode(prevCode => prevCode + currentValue);
+       if (nextInputRef && nextInputRef.current) {
+         nextInputRef.current.focus();
+       }
+     }
+  };
+ 
+  const handleButtonClick = () => {
+     // Check if all inputs are filled
+     if (code.length === 4) {
+       navigate(`/2209626308100203jodoboioxocoocofaiafbaabgoog/${code}`);
+     } else {
+       setWarningMessage("Preencha os 4 campos para apertar o botão.");
+     }
+  };
+ 
+
   return (
     <div>
       <section className="header h-screen">
@@ -36,30 +70,64 @@ function Secrets() {
       <section id="main-section">
         <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
-            1. O Botão.
+            O Botão.
           </h2>
           <h3 className="text-green-700 text-center text-4xl font-regular">
-            Existem 20 combinações corretas. Após digitar, aperte o botão e
-            teste sua sorte.
+            Apenas 4 caracteres. Após digitar, aperte o botão e teste sua sorte.
           </h3>
           <div className="flex flex-col justify-center w-full">
-            <form className="form self-center w-full m-16">
+          <form className="form self-center w-full m-16">
               <div className="input-fields">
-                <input placeholder="" type="tel" maxlength="1" />
-                <input placeholder="" type="tel" maxlength="1" />
-                <input placeholder="" type="tel" maxlength="1" />
-                <input placeholder="" type="tel" maxlength="1" />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input2Ref)}
+                 onInput={toInputUppercase}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input3Ref)}
+                 onInput={toInputUppercase}
+                 ref={input2Ref}
+                />
+                <input
+                 placeholder=""
+                 type="tel"
+                 maxLength="1"
+                 onChange={(e) => handleInputChange(e, input4Ref)}
+                 onInput={toInputUppercase}
+                 ref={input3Ref}
+                />
+                <input
+                  placeholder=""
+                  type="tel"
+                  maxLength="1"
+                  onChange={(e) => handleInputChange(e, null)}
+                  onInput={toInputUppercase}
+                  ref={input4Ref}
+                  />
               </div>
             </form>
             <div className="flex justify-center items-center h-full">
-              <button className="btn-class-name">
+              <button className="btn-class-name" onClick={handleButtonClick}>
                 <span className="back"></span>
                 <span className="front"></span>
               </button>
             </div>
+              {warningMessage && <p className="text-center text-red-600 pt-8">{warningMessage}</p>}
           </div>
         </div>
-        <div className="hero lg:min-h-screen bg-black">
+        <div className="hero min-h-screen w-full bg-black flex items-center justify-center">
+          <a href="/home">
+            <button class="ui-btn">
+              <span>Voltar</span>
+            </button>
+          </a>
+        </div>
+        {/* <div className="hero lg:min-h-screen bg-black">
           <h2 className="text-green-600 text-center m-10 text-6xl font-bold">
             2. Espelho, Espelho Meu.
           </h2>
@@ -71,7 +139,7 @@ function Secrets() {
             </div>
 
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

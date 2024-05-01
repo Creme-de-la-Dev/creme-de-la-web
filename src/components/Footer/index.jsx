@@ -90,7 +90,7 @@ function Footer() {
             </li>
             <li>
               <SocialIcon
-                href="https://x.com/rebkkkj/status/1692359832383148347?s=46&t=P3dCuVZ3mQ1CluuQ6ebh8g"
+                href="https://twitter.com/rebkkkj/status/1692359832383148347/photo/1"
                 text="Twitter"
                 BtnIcon={FaTwitter}
               />
@@ -110,10 +110,10 @@ function Footer() {
               />
             </li>
           </ul>
-          <div className="hidden text-center mt-5 mx-auto">
+          <div className="text-center mt-5 mx-auto">
             <a
               className="text-gray-50 text-sm"
-              href="/2209626308100203jodoboiox"
+              href="/2209626308100203jodoboioxocoocofaiafbaabgoog"
             >se você consegue ler isso, clique aqui</a>
           </div>
         </div>
