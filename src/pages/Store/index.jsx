@@ -99,6 +99,50 @@ function Store() {
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
               <ProductCard
+                image={FriendsShirt}
+                name="Camiseta Origins"
+                price="R$ 59,90"
+                url="https://flappycatito.herokuapp.com/"
+                mobile={true}
+                available={false}
+              >
+                100% Algodão, disponível nas cores preto, vermelho e cinza.
+              </ProductCard>
+              <ProductCard
+                image={MemoriesShirt}
+                name="Camiseta O Maior Fã"
+                price="R$ 59,90"
+                url="https://lorax-kart.netlify.app/"
+                mobile={true}
+                available={false}
+              >
+                100% Algodão, disponível nas cores preto e branco.
+              </ProductCard>
+              <ProductCard
+                image={GroupShirt}
+                name="Camiseta ACUCCCA"
+                price="R$ 59,90"
+                url="https://youtu.be/mc5ub3TULqU?t=16"
+                mobile={true}
+                available={false}
+              >
+                100% Algodão, disponível nas cores azul, cinza e preto.
+              </ProductCard>
+              <ProductCard
+                image={KitKatShirt}
+                name="Fantasia Anti-Frene"
+                price="R$ 119,90"
+                url="https://flappycatito.herokuapp.com/"
+                mobile={true}
+                available={false}
+              >
+                100% Algodão, traje completo com capacete feito sob medida.
+              </ProductCard>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
+              <ProductCard
                 image={FunkoAle}
                 name="Funko POP! Ale"
                 price="R$ 119,90"
