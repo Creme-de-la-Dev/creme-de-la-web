@@ -15,6 +15,10 @@ import FunkoAle from "../../assets/Store/FUNKO-ALE-PROMO.png";
 import Beterronio from "../../assets/Store/BETERRONIO-PROMO.png";
 import LoraxMug from "../../assets/Store/MUG-LORAX-PROMO.png";
 import FreneKeychain from "../../assets/Store/FRENE-KEYCHAIN-PROMO.png";
+import OriginsShirt from "../../assets/Store/ORIGINS-SHIRT-PROMO.png";
+import FanShirt from "../../assets/Store/FAN-SHIRT-PROMO.png";
+import AcucccaShirt from "../../assets/Store/ACUCCCA-SHIRT-PROMO.png";
+import Cosplay from "../../assets/Store/COSPLAY-PROMO.png";
 
 function Store() {
   return (
@@ -58,7 +62,7 @@ function Store() {
                 image={FriendsShirt}
                 name="Camiseta Amigos"
                 price="R$ 59,90"
-                url="https://flappycatito.herokuapp.com/"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -68,7 +72,7 @@ function Store() {
                 image={MemoriesShirt}
                 name="Camiseta Memories"
                 price="R$ 59,90"
-                url="https://lorax-kart.netlify.app/"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -78,7 +82,7 @@ function Store() {
                 image={GroupShirt}
                 name="Camiseta Grupo"
                 price="R$ 59,90"
-                url="https://youtu.be/mc5ub3TULqU?t=16"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -88,7 +92,7 @@ function Store() {
                 image={KitKatShirt}
                 name="Camiseta Have a Break"
                 price="R$ 59,90"
-                url="https://flappycatito.herokuapp.com/"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -99,40 +103,40 @@ function Store() {
           <div>
             <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
               <ProductCard
-                image={FriendsShirt}
+                image={OriginsShirt}
                 name="Camiseta Origins"
                 price="R$ 59,90"
-                url="https://flappycatito.herokuapp.com/"
+                url=""
                 mobile={true}
                 available={false}
               >
                 100% Algodão, disponível nas cores preto, vermelho e cinza.
               </ProductCard>
               <ProductCard
-                image={MemoriesShirt}
+                image={FanShirt}
                 name="Camiseta O Maior Fã"
                 price="R$ 59,90"
-                url="https://lorax-kart.netlify.app/"
+                url=""
                 mobile={true}
                 available={false}
               >
                 100% Algodão, disponível nas cores preto e branco.
               </ProductCard>
               <ProductCard
-                image={GroupShirt}
+                image={AcucccaShirt}
                 name="Camiseta ACUCCCA"
                 price="R$ 59,90"
-                url="https://youtu.be/mc5ub3TULqU?t=16"
+                url=""
                 mobile={true}
                 available={false}
               >
                 100% Algodão, disponível nas cores azul, cinza e preto.
               </ProductCard>
               <ProductCard
-                image={KitKatShirt}
+                image={Cosplay}
                 name="Fantasia Anti-Frene"
                 price="R$ 119,90"
-                url="https://flappycatito.herokuapp.com/"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -146,7 +150,7 @@ function Store() {
                 image={FunkoAle}
                 name="Funko POP! Ale"
                 price="R$ 119,90"
-                url="https://flappycatito.herokuapp.com/"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -156,7 +160,7 @@ function Store() {
                 image={Beterronio}
                 name="Beterrônio Colar"
                 price="R$ 89,90"
-                url="https://lorax-kart.netlify.app/"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -166,7 +170,7 @@ function Store() {
                 image={LoraxMug}
                 name="Caneca Lorax Kart"
                 price="R$ 39,90"
-                url="https://youtu.be/mc5ub3TULqU?t=16"
+                url=""
                 mobile={true}
                 available={false}
               >
@@ -176,7 +180,7 @@ function Store() {
                 image={FreneKeychain}
                 name="Chaveiro Lord Frene"
                 price="R$ 19,90"
-                url="https://flappycatito.herokuapp.com/"
+                url=""
                 mobile={true}
                 available={false}
               >
