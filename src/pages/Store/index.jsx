@@ -19,6 +19,10 @@ import OriginsShirt from "../../assets/Store/ORIGINS-SHIRT-PROMO.png";
 import FanShirt from "../../assets/Store/FAN-SHIRT-PROMO.png";
 import AcucccaShirt from "../../assets/Store/ACUCCCA-SHIRT-PROMO.png";
 import Cosplay from "../../assets/Store/COSPLAY-PROMO.png";
+import LRBWPoster from "../../assets/Store/LR-BW-POSTER-PROMO.png";
+import LRRBPoster from "../../assets/Store/LR-RB-POSTER-PROMO.png";
+import LoraxPoster from "../../assets/Store/LORAX-KART-POSTER-PROMO.png";
+import SecretsPoster from "../../assets/Store/SECRETS-POSTER-PROMO.png";
 
 function Store() {
   return (
@@ -185,6 +189,52 @@ function Store() {
                 available={false}
               >
                 Chaveiro para mostrar a todos que você está na luta contra os frenes.
+              </ProductCard>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col lg:flex-row p-5 lg:p-10 gap-8 lg:gap-0">
+              <ProductCard
+                image={LRBWPoster}
+                name="Poster LR (Sem Cor)"
+                price="R$ 79,90"
+                url=""
+                mobile={true}
+                available={false}
+              >
+                Duas metades, Bem vs Mal. 30cmX60cm
+              </ProductCard>
+              <ProductCard
+                image={LRRBPoster}
+                name="Poster LR (Colorido)"
+                price="R$ 79,90"
+                url=""
+                mobile={true}
+                available={false}
+              >
+                Duas metades, Bem vs Mal. 30cmX60cm
+              </ProductCard>
+              <ProductCard
+                image={LoraxPoster}
+                name="Poster Lorax Kart"
+                price="R$ 79,90"
+                url=""
+                mobile={true}
+                available={false}
+              >
+                Aperte os cintos, a corrida vai começar! 45cmX90cm
+              </ProductCard>
+              <ProductCard
+                image={SecretsPoster}
+                name="Poster Segredos"
+                price="R$ 79,90"
+                url=""
+                mobile={true}
+                available={false}
+              >
+                45cmX90cm.
+                <br></br>
+                ㅤ
               </ProductCard>
             </div>
           </div>
