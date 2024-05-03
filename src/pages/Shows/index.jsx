@@ -63,7 +63,7 @@ function Shows() {
                 image={CDLNTV}
                 name="Creme de la Nage TV"
                 type="show"
-                url="https://youtu.be/HEW9E0R1yn8?t=1"
+                url="/shows/cdlntv"
                 mobile={true}
               >
                 Sua turma favorita, diretamente na TV! Creme de la Nage TV é um compilado de esquetes de piadas envolvendo toda turma com piadas da época. Episódios curtos e muito engraçados para maratonar em grupo, vamo rir!

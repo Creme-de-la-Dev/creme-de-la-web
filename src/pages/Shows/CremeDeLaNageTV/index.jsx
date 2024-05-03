@@ -7,15 +7,15 @@ import { Link, useNavigate } from "react-router-dom";
 
 // Components
 import EpisodesList from "../../../components/Episodes/EpisodesList";
-import videoList from "../LuansRevolution/videoData";
+import cdlntvList from "../CremeDeLaNageTV/videoData";
 
 // Images
-import LRBG from "../../../assets/BackgroundImages/LRBG.png";
-// import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
+import CDLNTVBG from "../../../assets/BackgroundImages/CDLNTVBG.png";
+import ShowsBGsm from "../../../assets/BackgroundImages/ShowsBG-sm.png";
 import ArrowDown from "../../../assets/arrow-down.svg";
 
-function LR() {
-  const [activeList, setActiveList] = useState("Temporada 1");
+function CDLNTV() {
+  const [activeList, setActiveList] = useState(cdlntvList[0].title);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -38,20 +38,20 @@ function LR() {
       <section className="header h-screen">
         <div className="h-full relative">
           <img
-            src={LRBG}
+            src={CDLNTVBG}
             className="hidden lg:block w-full h-full object-cover absolute"
           />
           <img
             // Mudar foto para uma versão responsiva depois
-            src={LRBG}
+            src={CDLNTVBG}
             className="lg:hidden w-full h-full object-cover absolute"
           />
           <div className="p-24 w-full h-full justify-center items-center">
             <h1 className="text-cdln-blue-50 text-8xl md:text-9xl font-bold text-center animate__animated animate__jackInTheBox">
-              Luan's Revolution
+              Creme de la Nage TV
             </h1>
             <h2 className="text-cdln-blue-100 text-2xl md:text-5xl font-normal mt-5 text-center animate__animated animate__slideInUp">
-              O combate aos frenes vai começar!
+              Creme na TV? Ahh vamo nessa!
             </h2>
             <div className="w-full justify-center items-center pt-20 animate__animated animate__fadeIn">
               <a href="#main-section">
@@ -96,7 +96,7 @@ function LR() {
           {isDropdownOpen && (
             <div className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute mt-2">
               <ul className="py-2 text-lg text-gray-700 dark:text-gray-200">
-                {videoList.map((listName) => (
+                {cdlntvList.map((listName) => (
                   <li key={listName.title}>
                     <a
                       href="#main-section"
@@ -111,13 +111,14 @@ function LR() {
             </div>
           )}
 
-        <EpisodesList 
-          showName="lr"
-          episodes={videoList.find((v) => v.title === activeList).videos} />
+          <EpisodesList
+              showName="cdlntv"
+              episodes={(cdlntvList.find((v) => v.title === activeList) || {}).videos || []}
+            />
         </div>
       </section>
     </div>
   );
 }
 
-export default LR;
+export default CDLNTV;

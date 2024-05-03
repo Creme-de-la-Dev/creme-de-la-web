@@ -5,7 +5,7 @@ import React from 'react';
 import Episode from './Episode';
 
 
-const EpisodesList = ({ episodes }) => {
+const EpisodesList = ({ episodes, showName }) => {
   return ( 
     <div className="episodes-list py-8">
       {episodes.map((episode, index) => (
@@ -17,6 +17,7 @@ const EpisodesList = ({ episodes }) => {
           date={episode.date}
           description={episode.description}
           thumb={episode.thumb}
+          showName={showName}
         />
       ))}
     </div>
