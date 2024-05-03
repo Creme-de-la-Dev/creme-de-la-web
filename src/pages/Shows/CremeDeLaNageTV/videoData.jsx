@@ -100,7 +100,7 @@ const cdlntvList = [
       title: "Extras",
       videos: [
         {
-          title: "[TEASER] - Temporada 2'",
+          title: "[TEASER] - Temporada 2",
           id:"cdlntvex1",
           url: "https://youtu.be/_G6dkHpscvM",
           date: "29/09/2016",
