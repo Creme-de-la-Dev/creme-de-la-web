@@ -1,5 +1,8 @@
 export const secretUrls = {
     "----": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
+    "0000": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
+    "....": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
+    "!!!!": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
 
     "AKON": "https://www.youtube.com/watch?v=vhp0Bz-IHZQ",
     "40NG": "https://www.youtube.com/watch?v=EXJwNBu4FP8",
