@@ -17,6 +17,12 @@ import Store from "../../assets/Home/Store.png";
 import "animate.css";
 
 function Home() {
+
+  const handleClickSecret = () => {
+    const alertMessage = 'Use o código "DOR." no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
+    window.alert(alertMessage);
+  };
+
   return (
     <div>
       <section className="bg-gradient-to-b from-[#265881] to-[#2D679C] h-screen">
@@ -83,7 +89,7 @@ function Home() {
           Webshows do grupo <strong>Creme de la Nage</strong> já estão
           disponíveis na plataforma, sendo estes
           <br />
-          <strong>Luan’s Revolution (2015)</strong>,
+          <strong>Luan’s Revolution <span onClick={handleClickSecret} style={{cursor: 'pointer'}}>(2015)</span></strong>,
           <strong>Creme de la Nage TV (2016)</strong>,{" "}
           <strong>Turma da Válvula (2021)</strong> e{" "}
           <strong>Luan's Revolution: Aftermath (2023)</strong>.
