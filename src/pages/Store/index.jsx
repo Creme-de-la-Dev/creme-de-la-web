@@ -134,7 +134,7 @@ function Store() {
                 mobile={true}
                 available={false}
               >
-                100% Algodão, disponível nas cores azul, cinza e preto.
+                100% Algodão, disponível na cor preta. Corte Oversized.
               </ProductCard>
               <ProductCard
                 image={Cosplay}
