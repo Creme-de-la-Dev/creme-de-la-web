@@ -15,7 +15,7 @@ import TDV from "../../assets/Shows/TDV-PROMO.png";
 function Shows() {
 
   const handleClickSecret = () => {
-    const alertMessage = 'Use o código LRT2 no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
+    const alertMessage = 'Use o código LR2T no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
     window.alert(alertMessage);
   };
 
