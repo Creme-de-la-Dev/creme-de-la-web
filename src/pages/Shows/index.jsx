@@ -13,6 +13,12 @@ import CDLNTV from "../../assets/Shows/CDLNTV-PROMO.png";
 import TDV from "../../assets/Shows/TDV-PROMO.png";
 
 function Shows() {
+
+  const handleClickSecret = () => {
+    const alertMessage = 'Use o código LRT2 no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...';
+    window.alert(alertMessage);
+  };
+
   return (
     <div>
       <section className="header h-screen">
@@ -80,7 +86,7 @@ function Shows() {
               </Card>
             </div>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
-              Mais séries incríveis em breve!
+              Mais séries incríveis <span onClick={handleClickSecret} style={{cursor: 'pointer'}}>em</span> breve!
             </h1>
           </div>
         </div>

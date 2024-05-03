@@ -10,6 +10,7 @@ export const secretUrls = {
     "BGS!": "https://www.youtube.com/watch?v=v-9lVVxkPtI",
     "*DG4": "https://www.youtube.com/watch?v=FmW-EjUd5Ms",
     "L1R0": "https://www.youtube.com/watch?v=vVDHdjhph1c",
+    "MIAU": "https://youtu.be/SA7sNvrRgCw"
    };
    
    export function getSecretUrlByCode(code) {
