@@ -3,7 +3,9 @@ export const secretUrls = {
     "0000": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
     "....": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
     "!!!!": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
+    "FUCK": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
 
+    
     "AKON": "https://www.youtube.com/watch?v=vhp0Bz-IHZQ",
     "40NG": "https://www.youtube.com/watch?v=EXJwNBu4FP8",
     "LR2T": "https://www.youtube.com/watch?v=4OnZCdgO9YM",
