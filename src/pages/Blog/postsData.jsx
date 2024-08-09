@@ -1,10 +1,10 @@
-import PostIMG from "../../assets/Blog/1.0.1.png";
+import v101 from "../../assets/Blog/1.0.1.png";
 
 export const posts = [
   {
     title: "Versão 1.0.1 lançada!",
     date: "03/05/2024",
-    image: PostIMG,
+    image: v101,
     content: (
       <>
         Nesta atualização:<br />
