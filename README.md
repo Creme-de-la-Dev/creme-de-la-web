@@ -47,7 +47,7 @@ Para executar o projeto Creme de la Web na sua máquina local, siga estes passos
 1. **Clone o repositório:**
 
     ```sh
-    git clone https://github.com/Creme-de-la-Dev/creme-de-la-web-v2.git
+    git clone https://github.com/Creme-de-la-Dev/creme-de-la-web.git
     ```
 
 2. **Navegue até o diretório do projeto:**
@@ -131,7 +131,7 @@ To run the Creme de la Web project on your local machine, follow these steps:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/Creme-de-la-Dev/creme-de-la-web-v2.git
+    git clone https://github.com/Creme-de-la-Dev/creme-de-la-web.git
     ```
 
 2. **Navigate to the project directory:**
