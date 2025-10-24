@@ -23,6 +23,7 @@ export const posts = [
 //     content: (
 //       <>
 //         Nesta atualização:<br />
+//         - Nova página para notícias do site! (Blog);<br />
 //         - Correção de bugs de usabilidade e layout;<br />
 //         - Adicionados novos 10 códigos secretos.
 //       </>
