@@ -12,6 +12,7 @@ export const posts = [
         - Lorax Kart portado 100% para dentro do site;<br />
         - Creme de la Nage TV portado 100% para dentro do site (sem susto dessa vez);<br />
         - Correção de bugs de usabilidade e layout;<br />
+        - 8 novos produtos na loja;<br />
         - Adicionados 10 Easter Eggs secretos.
       </>
     ),
@@ -23,7 +24,7 @@ export const posts = [
     image: v110,
     content: (
       <>
-        FELIZ HALLOWEEN! 🎃👻<br /><br />
+        FELIZ HALLOWEEN! <span onClick={() => alert('Use o código PENG no botão da aba "SEGREDOS"... se você for capaz de achar onde ela está escondida, é claro...')} style={{cursor: 'pointer'}}>🎃</span>👻<br /><br />
         Nesta atualização:<br />
         - Nova página para notícias do site! (Blog);<br />
         - Novo jogo FIVE NIGHTS AT CREME'S!;<br />

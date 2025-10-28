@@ -13,6 +13,7 @@ import FlappyCatito from "../../assets/Games/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/Games/LORAX-KART-PROMO.png";
 import Akon from "../../assets/Games/AKON-PROMO.png";
 import Fnac from "../../assets/Games/FNAC-PROMO.png";
+import Maranhas from "../../assets/Games/MA-PROMO.png"; 
 
 function Games() {
   return (
@@ -93,6 +94,16 @@ function Games() {
                 Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
                 atento ao seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
                 <strong>Apenas para dispositivos móveis</strong>
+              </Card>
+              <Card
+                image={Maranhas}
+                name="Maranhas Adventure"
+                type="game"
+                url="https://www.youtube.com/watch?v=GMgsFZ4rkEI"
+                available={false}
+              >
+                Ajude Maranhas a escapar das garras do Alhe e descobrir o segredo da serpente da Ilha!{" "}
+                Uma grande aventura aguarda por você. Em breve...
               </Card>
             </Carousel>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
