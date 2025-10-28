@@ -4,6 +4,7 @@ export const secretUrls = {
     "....": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
     "!!!!": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
     "FUCK": "https://youtu.be/HEW9E0R1yn8?si=KThRCwhqK7sy1XtG&t=1",
+    "ALHE": "https://www.youtube.com/watch?v=GvkFzP_mAwI",
 
     
     "AKON": "https://www.youtube.com/watch?v=vhp0Bz-IHZQ",
@@ -17,6 +18,8 @@ export const secretUrls = {
     "L1R0": "https://www.youtube.com/watch?v=vVDHdjhph1c",
     "MIAU": "https://youtu.be/SA7sNvrRgCw",
     "DOR.": "https://www.youtube.com/watch?v=xgEWD3vEAAc",
+    "PENG": "https://www.youtube.com/watch?v=CTyiaJO64aM&t",
+    "K@F(": "https://www.youtube.com/watch?v=vdwP2W06A-s",
    };
    
    export function getSecretUrlByCode(code) {
