@@ -3,6 +3,7 @@ import React from "react";
 
 // Components
 import Card from "../../components/Cards/Card";
+import Carousel from "../../components/Carousel";
 
 // Images
 import GamesBG from "../../assets/BackgroundImages/GamesBG.png";
@@ -11,6 +12,7 @@ import ArrowDown from "../../assets/arrow-down.svg";
 import FlappyCatito from "../../assets/Games/FLAPPY-CATITO-PROMO.png";
 import LoraxKart from "../../assets/Games/LORAX-KART-PROMO.png";
 import Akon from "../../assets/Games/AKON-PROMO.png";
+import Fnac from "../../assets/Games/FNAC-PROMO.png";
 
 function Games() {
   return (
@@ -49,7 +51,7 @@ function Games() {
           <div className="cube"></div>
           <div className="cube"></div>
           <div>
-            <div className="flex flex-col lg:flex-row p-5 lg:p-20 gap-8 lg:gap-0">
+            <Carousel>
               <Card
                 image={FlappyCatito}
                 name="Flappy Catito"
@@ -71,18 +73,28 @@ function Games() {
                 de adrenalina na grande São Paulo e busque o Flávio no aeroporto
                 de Guarulhos a tempo.
               </Card>
-                <Card
-                  image={Akon}
-                  name="Jogo do AKON"
-                  type="game"
-                  url="https://youtu.be/mc5ub3TULqU?t=16"
-                  available={false}
-                >
-                  Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
-                  atento ao seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
-                  <strong>Apenas para dispositivos móveis</strong>
-                </Card>
-            </div>
+              <Card
+                image={Fnac}
+                name="Five Nights at Creme's!"
+                type="game"
+                url="/games/fnac/feed.html"
+                mobile={true}
+              >
+                Você é o novo segurança noturno do Creme de la Burger! Sobreviva a 5 noites
+                nessa espelunca e viva para contar história.
+              </Card>
+              <Card
+                image={Akon}
+                name="Jogo do AKON"
+                type="game"
+                url="https://youtu.be/mc5ub3TULqU?t=16"
+                available={false}
+              >
+                Mentalize quem do grupo é o AKON. Descreva. Se prepare. E fique
+                atento ao seu redor. Tenso, Emocionante e muita Adrenalina.{" "}
+                <strong>Apenas para dispositivos móveis</strong>
+              </Card>
+            </Carousel>
             <h1 className="text-center font-semibold text-cdln-blue-50 text-2xl mb-5 lg:pb-0 md:text-5xl">
               Mais jogos incríveis em breve!
             </h1>
