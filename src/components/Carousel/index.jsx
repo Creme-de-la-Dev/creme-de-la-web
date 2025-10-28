@@ -23,19 +23,43 @@ const Carousel = ({ children, itemsPerView = { desktop: 3, mobile: 1 } }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [currentIndex, items.length]);
 
-  const totalSlides = Math.ceil(items.length / itemsToShow);
+  const getMaxIndex = () => {
+    if (window.innerWidth >= 1024) {
+      return items.length - 1;
+    } else {
+      return Math.ceil(items.length / itemsPerView.mobile) - 1;
+    }
+  };
+
+  const totalSlides = window.innerWidth >= 1024 ? items.length : Math.ceil(items.length / itemsToShow);
   
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % totalSlides);
+    if (window.innerWidth >= 1024) {
+      setCurrentIndex((prev) => (prev + 1) % items.length);
+    } else {
+      setCurrentIndex((prev) => (prev + 1) % totalSlides);
+    }
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+    if (window.innerWidth >= 1024) {
+      setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
+    } else {
+      setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+    }
   };
 
   const getCurrentItems = () => {
-    const startIndex = currentIndex * itemsToShow;
-    return items.slice(startIndex, startIndex + itemsToShow);
+    if (window.innerWidth >= 1024) {
+      const result = [];
+      for (let i = 0; i < itemsPerView.desktop; i++) {
+        result.push(items[(currentIndex + i) % items.length]);
+      }
+      return result;
+    } else {
+      const startIndex = currentIndex * itemsToShow;
+      return items.slice(startIndex, startIndex + itemsToShow);
+    }
   };
 
   if (items.length <= itemsToShow) {
