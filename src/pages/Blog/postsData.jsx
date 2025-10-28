@@ -1,4 +1,5 @@
 import v101 from "../../assets/Blog/1.0.1.png";
+import v110 from "../../assets/Blog/1.1.0.png";
 
 export const posts = [
   {
@@ -16,17 +17,19 @@ export const posts = [
     ),
   },
 
-//   {
-//     title: "Versão 1.2 lançada!",
-//     date: "31/10/2025",
-//     image: PostIMG,
-//     content: (
-//       <>
-//         Nesta atualização:<br />
-//         - Nova página para notícias do site! (Blog);<br />
-//         - Correção de bugs de usabilidade e layout;<br />
-//         - Adicionados novos 10 códigos secretos.
-//       </>
-//     ),
-//   },
+  {
+    title: "Versão 1.2 lançada!",
+    date: "31/10/2025",
+    image: v110,
+    content: (
+      <>
+        FELIZ HALLOWEEN! 🎃👻<br /><br />
+        Nesta atualização:<br />
+        - Nova página para notícias do site! (Blog);<br />
+        - Novo jogo FIVE NIGHTS AT CREME'S!;<br />
+        - Correção de bugs de usabilidade e layout;<br />
+        - Adicionados 10 novos códigos secretos.
+      </>
+    ),
+  },
 ];
