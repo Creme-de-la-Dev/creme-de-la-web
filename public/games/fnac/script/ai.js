@@ -89,39 +89,39 @@ function getRoomState1b() {
 	var chicaIn1b = (animatronicStates[0].currentRoom === "1b");
 	var freddyIn1b = (animatronicStates[2].currentRoom === "1b");
 
-	console.log("getRoomState1b: Bonnie=" + bonnieIn1b + ", Chica=" + chicaIn1b + ", Freddy=" + freddyIn1b);
+	// console.log("getRoomState1b: Bonnie=" + bonnieIn1b + ", Chica=" + chicaIn1b + ", Freddy=" + freddyIn1b);
 
 	// Check all combinations
 	if (freddyIn1b && bonnieIn1b && chicaIn1b) {
-		console.log("getRoomState1b returning 7 (All three)");
+		// console.log("getRoomState1b returning 7 (All three)");
 		return 7; // All three
 	}
 	if (freddyIn1b && bonnieIn1b && !chicaIn1b) {
-		console.log("getRoomState1b returning 6 (Bonnie + Freddy)");
+		// console.log("getRoomState1b returning 6 (Bonnie + Freddy)");
 		return 6; // Bonnie + Freddy
 	}
 	if (freddyIn1b && !bonnieIn1b && chicaIn1b) {
-		console.log("getRoomState1b returning 5 (Chica + Freddy)");
+		// console.log("getRoomState1b returning 5 (Chica + Freddy)");
 		return 5; // Chica + Freddy
 	}
 	if (!freddyIn1b && bonnieIn1b && chicaIn1b) {
-		console.log("getRoomState1b returning 4 (Bonnie + Chica)");
+		// console.log("getRoomState1b returning 4 (Bonnie + Chica)");
 		return 4; // Bonnie + Chica
 	}
 	if (freddyIn1b && !bonnieIn1b && !chicaIn1b) {
-		console.log("getRoomState1b returning 3 (Freddy only)");
+		// console.log("getRoomState1b returning 3 (Freddy only)");
 		return 3; // Freddy only
 	}
 	if (!freddyIn1b && !bonnieIn1b && chicaIn1b) {
-		console.log("getRoomState1b returning 2 (Chica only)");
+		// console.log("getRoomState1b returning 2 (Chica only)");
 		return 2; // Chica only
 	}
 	if (!freddyIn1b && bonnieIn1b && !chicaIn1b) {
-		console.log("getRoomState1b returning 1 (Bonnie only)");
+		// console.log("getRoomState1b returning 1 (Bonnie only)");
 		return 1; // Bonnie only
 	}
 
-	console.log("getRoomState1b returning 0 (Empty)");
+	// console.log("getRoomState1b returning 0 (Empty)");
 	return 0; // Empty
 }
 
@@ -140,23 +140,23 @@ function getRoomState7() {
 	var chicaIn7 = (animatronicStates[0].currentRoom === "7");
 	var freddyIn7 = (animatronicStates[2].currentRoom === "7");
 
-	console.log("getRoomState7: Chica=" + chicaIn7 + ", Freddy=" + freddyIn7);
+	// console.log("getRoomState7: Chica=" + chicaIn7 + ", Freddy=" + freddyIn7);
 
 	// Check all combinations
 	if (freddyIn7 && chicaIn7) {
-		console.log("getRoomState7 returning 1 (Chica + Freddy)");
+		// console.log("getRoomState7 returning 1 (Chica + Freddy)");
 		return 1; // Chica + Freddy
 	}
 	if (!freddyIn7 && chicaIn7) {
-		console.log("getRoomState7 returning 2 (Chica only)");
+		// console.log("getRoomState7 returning 2 (Chica only)");
 		return 2; // Chica only
 	}
 	if (freddyIn7 && !chicaIn7) {
-		console.log("getRoomState7 returning 3 (Freddy only)");
+		// console.log("getRoomState7 returning 3 (Freddy only)");
 		return 3; // Freddy only
 	}
 
-	console.log("getRoomState7 returning 0 (Empty)");
+	// console.log("getRoomState7 returning 0 (Empty)");
 	return 0; // Empty
 }
 
@@ -175,23 +175,23 @@ function getRoomState4a() {
 	var chicaIn4a = (animatronicStates[0].currentRoom === "4a");
 	var freddyIn4a = (animatronicStates[2].currentRoom === "4a");
 
-	console.log("getRoomState4a: Chica=" + chicaIn4a + ", Freddy=" + freddyIn4a);
+	// console.log("getRoomState4a: Chica=" + chicaIn4a + ", Freddy=" + freddyIn4a);
 
 	// Check all combinations
 	if (freddyIn4a && chicaIn4a) {
-		console.log("getRoomState4a returning 3 (Chica + Freddy)");
+		// console.log("getRoomState4a returning 3 (Chica + Freddy)");
 		return 3; // Chica + Freddy
 	}
 	if (!freddyIn4a && chicaIn4a) {
-		console.log("getRoomState4a returning 1 (Chica only)");
+		// console.log("getRoomState4a returning 1 (Chica only)");
 		return 1; // Chica only
 	}
 	if (freddyIn4a && !chicaIn4a) {
-		console.log("getRoomState4a returning 2 (Freddy only)");
+		// console.log("getRoomState4a returning 2 (Freddy only)");
 		return 2; // Freddy only
 	}
 
-	console.log("getRoomState4a returning 0 (Empty)");
+	// console.log("getRoomState4a returning 0 (Empty)");
 	return 0; // Empty
 }
 
@@ -210,23 +210,23 @@ function getRoomState4b() {
 	var chicaIn4b = (animatronicStates[0].currentRoom === "4b");
 	var freddyIn4b = (animatronicStates[2].currentRoom === "4b");
 
-	console.log("getRoomState4b: Chica=" + chicaIn4b + ", Freddy=" + freddyIn4b);
+	// console.log("getRoomState4b: Chica=" + chicaIn4b + ", Freddy=" + freddyIn4b);
 
 	// Check all combinations
 	if (freddyIn4b && chicaIn4b) {
-		console.log("getRoomState4b returning 3 (Chica + Freddy)");
+		// console.log("getRoomState4b returning 3 (Chica + Freddy)");
 		return 3; // Chica + Freddy
 	}
 	if (!freddyIn4b && chicaIn4b) {
-		console.log("getRoomState4b returning 1 (Chica only)");
+		// console.log("getRoomState4b returning 1 (Chica only)");
 		return 1; // Chica only
 	}
 	if (freddyIn4b && !chicaIn4b) {
-		console.log("getRoomState4b returning 2 (Freddy only)");
+		// console.log("getRoomState4b returning 2 (Freddy only)");
 		return 2; // Freddy only
 	}
 
-	console.log("getRoomState4b returning 0 (Empty)");
+	// console.log("getRoomState4b returning 0 (Empty)");
 	return 0; // Empty
 }
 
@@ -273,18 +273,18 @@ function updateBunnyAI() {
 			};
 			//			if((Math.random()*100)<=bunnyChanceToMoveCloser[bunnydifficulty]){
 			if (1 == 1) {
-				// Store the old room before moving
-				var oldBonnieRoom = roomClosenessBunny[animatronicStates[1].currentRoomArray].name;
+			// Store the old room before moving
+			var oldBonnieRoom = roomClosenessBunny[animatronicStates[1].currentRoomArray].name;
 
-				animatronicStates[1].currentRoomArray -= 1
-				animatronicStates[1].currentRoom = roomClosenessBunny[animatronicStates[1].currentRoomArray].name
+			animatronicStates[1].currentRoomArray -= 1
+			animatronicStates[1].currentRoom = roomClosenessBunny[animatronicStates[1].currentRoomArray].name
 
-				console.log("=== BONNIE MOVED ===");
-				console.log("Bonnie OLD position: " + oldBonnieRoom);
-				console.log("Bonnie NEW position: " + animatronicStates[1].currentRoom + " (array index: " + animatronicStates[1].currentRoomArray + ")");
-				console.log("Clearing " + oldBonnieRoom + " to state 0 (or recalculating if 1a)");
+			// console.log("=== BONNIE MOVED ===");
+			// console.log("Bonnie OLD position: " + oldBonnieRoom);
+			// console.log("Bonnie NEW position: " + animatronicStates[1].currentRoom + " (array index: " + animatronicStates[1].currentRoomArray + ")");
+			// console.log("Clearing " + oldBonnieRoom + " to state 0 (or recalculating if 1a)");
 
-				// Clear the old room - special handling for rooms with multiple animatronics
+			// Clear the old room - special handling for rooms with multiple animatronics
 				if (oldBonnieRoom === "1a") {
 					updateRoomState("1a", getRoomState1a());
 				} else if (oldBonnieRoom === "1b") {
@@ -400,18 +400,18 @@ function updateChicaAI() {
 			//			if((Math.random()*100)<=chicaChanceToMoveCloser[chicadifficulty]){
 			if (1 == 1) {
 				//		updateAIPosition(1,1,roomClosenessBunny[3].name,1,0)
-				// Store the old room before moving
-				var oldChicaRoom = roomClosenessChica[animatronicStates[0].currentRoomArray].name;
+			// Store the old room before moving
+			var oldChicaRoom = roomClosenessChica[animatronicStates[0].currentRoomArray].name;
 
-				animatronicStates[0].currentRoomArray -= 1
-				animatronicStates[0].currentRoom = roomClosenessChica[animatronicStates[0].currentRoomArray].name
+			animatronicStates[0].currentRoomArray -= 1
+			animatronicStates[0].currentRoom = roomClosenessChica[animatronicStates[0].currentRoomArray].name
 
-				console.log("=== CHICA MOVED ===");
-				console.log("Chica OLD position: " + oldChicaRoom);
-				console.log("Chica NEW position: " + animatronicStates[0].currentRoom + " (array index: " + animatronicStates[0].currentRoomArray + ")");
-				console.log("Clearing " + oldChicaRoom + " to state 0 (or recalculating if 1a)");
+			// console.log("=== CHICA MOVED ===");
+			// console.log("Chica OLD position: " + oldChicaRoom);
+			// console.log("Chica NEW position: " + animatronicStates[0].currentRoom + " (array index: " + animatronicStates[0].currentRoomArray + ")");
+			// console.log("Clearing " + oldChicaRoom + " to state 0 (or recalculating if 1a)");
 
-				// Clear the old room - special handling for rooms with multiple animatronics
+			// Clear the old room - special handling for rooms with multiple animatronics
 				if (oldChicaRoom === "1a") {
 					updateRoomState("1a", getRoomState1a());
 				} else if (oldChicaRoom === "1b") {
@@ -503,74 +503,74 @@ function updateFoxxyAI() {
 	switch (animatronicStates[3].state) {
 		case 0:  // Stage 0 - Behind curtain, hasn't started moving yet
 			foxxytimer++;
-			console.log("=== FOXY STATE 0 (Behind Curtain) === Timer: " + foxxytimer + "/" + foxydifficultyarray[foxydifficulty]);
+			// console.log("=== FOXY STATE 0 (Behind Curtain) === Timer: " + foxxytimer + "/" + foxydifficultyarray[foxydifficulty]);
 			if (foxxytimer >= foxydifficultyarray[foxydifficulty]) {
 				// 13% chance to advance to next state
-				if (Math.random() <= 0.13) {
-					console.log("FOXY: 13% chance SUCCESS! Moving to State 1 (Peeking out)");
+				if (Math.random() <= 0.5) {
+					// console.log("FOXY: 13% chance SUCCESS! Moving to State 1 (Peeking out)");
 					updateAIState(3, 1);
 					sound.playSound("pirate_song2.wav", 0.01);
 				} else {
-					console.log("FOXY: 13% chance FAILED. Resetting timer and staying in State 0");
+					// console.log("FOXY: 13% chance FAILED. Resetting timer and staying in State 0");
 					foxxytimer = 0;
 				}
 			}
 			break;
 		case 1:  // Stage 1 - Peeking out
 			foxxytimer++;
-			console.log("=== FOXY STATE 1 (Peeking Out) === Timer: " + foxxytimer + "/" + foxydifficultyarray[foxydifficulty]);
+			// console.log("=== FOXY STATE 1 (Peeking Out) === Timer: " + foxxytimer + "/" + foxydifficultyarray[foxydifficulty]);
 			if (foxxytimer >= foxydifficultyarray[foxydifficulty]) {
 				// 13% chance to advance to next state
-				if (Math.random() <= 0.13) {
-					console.log("FOXY: 13% chance SUCCESS! Moving to State 2 (Getting ready to run)");
+				if (Math.random() <= 0.3) {
+					// console.log("FOXY: 13% chance SUCCESS! Moving to State 2 (Getting ready to run)");
 					updateAIState(3, 2);
 					sound.playSound("pirate_song2.wav", 0.01);
 				} else {
-					console.log("FOXY: 13% chance FAILED. Resetting timer and staying in State 1");
+					// console.log("FOXY: 13% chance FAILED. Resetting timer and staying in State 1");
 					foxxytimer = 0;
 				}
 			};
 			break;
 		case 2:  // Stage 2 - Ready to run
 			foxxytimer++;
-			console.log("=== FOXY STATE 2 (Ready to Run) === Timer: " + foxxytimer + "/" + foxydifficultyarray[foxydifficulty]);
+			// console.log("=== FOXY STATE 2 (Ready to Run) === Timer: " + foxxytimer + "/" + foxydifficultyarray[foxydifficulty]);
 			if (foxxytimer >= foxydifficultyarray[foxydifficulty]) {
 				// 13% chance to advance to next state
 				if (Math.random() <= 0.13) {
-					console.log("FOXY: 13% chance SUCCESS! Moving to State 3 (Running to office!)");
+					// console.log("FOXY: 13% chance SUCCESS! Moving to State 3 (Running to office!)");
 					updateAIState(3, 3);
 					sound.playSound("pirate_song2.wav", 0.01);
 				} else {
-					console.log("FOXY: 13% chance FAILED. Resetting timer and staying in State 2");
+					// console.log("FOXY: 13% chance FAILED. Resetting timer and staying in State 2");
 					foxxytimer = 0;
 				}
 			}
 			break;
 		case 3:  // Stage 3 - Running to office
 			foxxytimer++;
-			console.log("=== FOXY STATE 3 (Running!) === Timer: " + foxxytimer + " | Left door open: " + leftdooropen);
+			// console.log("=== FOXY STATE 3 (Running!) === Timer: " + foxxytimer + " | Left door open: " + leftdooropen);
 			if (foxxytimer >= 6 && leftdooropen == false) {
-				console.log("FOXY: Door is OPEN and timer >= 6! ATTACKING!");
+				// console.log("FOXY: Door is OPEN and timer >= 6! ATTACKING!");
 				if (feedopen == true) {
 					OpenCloseFeed();
 				};
 				playfoxxyofficeanimation();
 			} else if (foxxytimer < 5 && leftdooropen == true) {
-				console.log("FOXY: Door is CLOSED and timer < 5! Moving to State 4 (Draining power)");
+				// console.log("FOXY: Door is CLOSED and timer < 5! Moving to State 4 (Draining power)");
 				updateAIState(3, 4);
 			};
 			break;
 		case 4:  // Stage 4 - At door, draining power or attacking
 			foxxytimer++;
-			console.log("=== FOXY STATE 4 (At Door) === Timer: " + foxxytimer + " | Left door open: " + leftdooropen);
+			// console.log("=== FOXY STATE 4 (At Door) === Timer: " + foxxytimer + " | Left door open: " + leftdooropen);
 			if (foxxytimer <= 9 && leftdooropen == true) {
-				console.log("FOXY: Draining power... (-0.775)");
+				// console.log("FOXY: Draining power... (-0.775)");
 				currentPower -= (0.775);
 			} else if (foxxytimer <= 9 && leftdooropen == false) {
-				console.log("FOXY: Door opened while at door! ATTACKING!");
+				// console.log("FOXY: Door opened while at door! ATTACKING!");
 				playfoxxyofficeanimation();
 			} else if (foxxytimer >= 10 && leftdooropen == true) {
-				console.log("FOXY: Gave up after draining power. Returning to State 0 (Behind curtain)");
+				// console.log("FOXY: Gave up after draining power. Returning to State 0 (Behind curtain)");
 				updateAIState(3, 0);
 			};
 			break;
@@ -592,14 +592,14 @@ function updateFreddyAI() {
 			if (freddytimer >= freddydifficultyarray[freddydifficulty]) {
 				// Similar to Foxy, add a 15% chance to move
 				if (Math.random() < 0.15) {
-					console.log("=== FREDDY MOVEMENT CHECK ===");
-					console.log("Timer reached: " + freddytimer + " (required: " + freddydifficultyarray[freddydifficulty] + ")");
-					console.log("Movement chance SUCCESS - Freddy will move");
+					// console.log("=== FREDDY MOVEMENT CHECK ===");
+					// console.log("Timer reached: " + freddytimer + " (required: " + freddydifficultyarray[freddydifficulty] + ")");
+					// console.log("Movement chance SUCCESS - Freddy will move");
 					updateAIState(2, 2);
 				} else {
-					console.log("=== FREDDY MOVEMENT CHECK ===");
-					console.log("Timer reached: " + freddytimer + " (required: " + freddydifficultyarray[freddydifficulty] + ")");
-					console.log("Movement chance FAILED - Freddy stays put, timer reset");
+					// console.log("=== FREDDY MOVEMENT CHECK ===");
+					// console.log("Timer reached: " + freddytimer + " (required: " + freddydifficultyarray[freddydifficulty] + ")");
+					// console.log("Movement chance FAILED - Freddy stays put, timer reset");
 					freddytimer = 0;
 				}
 			};
@@ -622,18 +622,18 @@ function updateFreddyAI() {
 				return;
 			};
 			if (1 == 1) {
-				// Store the old room before moving
-				var oldFreddyRoom = roomClosenessFreddy[animatronicStates[2].currentRoomArray].name;
+			// Store the old room before moving
+			var oldFreddyRoom = roomClosenessFreddy[animatronicStates[2].currentRoomArray].name;
 
-				animatronicStates[2].currentRoomArray -= 1
-				animatronicStates[2].currentRoom = roomClosenessFreddy[animatronicStates[2].currentRoomArray].name
+			animatronicStates[2].currentRoomArray -= 1
+			animatronicStates[2].currentRoom = roomClosenessFreddy[animatronicStates[2].currentRoomArray].name
 
-				console.log("=== FREDDY MOVED ===");
-				console.log("Freddy OLD position: " + oldFreddyRoom);
-				console.log("Freddy NEW position: " + animatronicStates[2].currentRoom + " (array index: " + animatronicStates[2].currentRoomArray + ")");
-				console.log("Clearing " + oldFreddyRoom + " to state 0 (or recalculating if 1a)");
+			// console.log("=== FREDDY MOVED ===");
+			// console.log("Freddy OLD position: " + oldFreddyRoom);
+			// console.log("Freddy NEW position: " + animatronicStates[2].currentRoom + " (array index: " + animatronicStates[2].currentRoomArray + ")");
+			// console.log("Clearing " + oldFreddyRoom + " to state 0 (or recalculating if 1a)");
 
-				// Clear the old room - special handling for rooms with multiple animatronics
+			// Clear the old room - special handling for rooms with multiple animatronics
 				if (oldFreddyRoom === "1a") {
 					debuglog("FREDDY HAS LEFT THE STAGE");
 					updateRoomState("1a", getRoomState1a());
