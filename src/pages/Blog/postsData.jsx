@@ -29,7 +29,6 @@ export const posts = [
         - Nova página para notícias do site! (Blog);<br />
         - Novo jogo FIVE NIGHTS AT CREME'S!;<br />
         - Correção de bugs de usabilidade e layout;<br />
-        - Adicionados 10 novos códigos secretos.
       </>
     ),
   },
