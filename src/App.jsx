@@ -50,6 +50,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="games/lorax-kart/index.html" />
+          <Route path="games/fnac/feed.html" />
           <Route
             path="/watch/lr/:episodeId"
             element={<RenderEpisode episodes={videoList.reduce((acc, curr) => acc.concat(curr.videos), [])} />}

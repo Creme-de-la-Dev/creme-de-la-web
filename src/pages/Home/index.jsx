@@ -73,7 +73,7 @@ function Home() {
           <strong>Creme de la Nage</strong> estão disponíveis,
           <br />
           sendo estes <strong>Flappy Catito</strong>,{" "}
-          <strong>Lorax Kart</strong> e futuramente contará com diversos jogos
+          <strong>Lorax Kart</strong>, <strong>Five Nights at Creme's!</strong> <br /> e futuramente contará com diversos outros jogos
           incríveis!
         </ContentBanner>
         {/* SHOWS */}
