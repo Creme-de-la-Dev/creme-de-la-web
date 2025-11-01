@@ -458,7 +458,7 @@ function updateChicaAI() {
 			chicatimer++;
 			debuglog("chicatimer = " + chicatimer);
 			if (chicatimer <= 9 && leftlighton == true) {
-				updateAIState(1, 1, false);
+				updateAIState(0, 1, false);
 			};
 			if (chicatimer <= 9 && rightdooropen == true) {
 				//	currentPower-=(0.775);
